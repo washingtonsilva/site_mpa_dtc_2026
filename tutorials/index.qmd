@@ -1,0 +1,36 @@
+---
+lang: pt-BR
+title: "Tutoriais"
+---
+
+Conclua primeiro a [Preparação do ambiente computacional](../instrucoes.qmd).
+Em seguida, siga os
+tutoriais disponíveis na ordem indicada.
+
+## Git e GitHub
+
+Crie seu repositório individual a partir do template, abra-o como Projeto
+RStudio e registre sua primeira alteração usando Git Bash no Terminal.
+
+[Abrir tutorial](git-github.qmd)
+
+## Overleaf
+
+Crie um projeto LaTeX simples, identifique o arquivo-fonte e o PDF gerado e
+faça sua primeira recompilação.
+
+[Abrir tutorial](overleaf.qmd)
+
+## Quarto e RStudio: primeiro documento
+
+Crie um arquivo `.qmd` no seu Projeto RStudio, configure seu cabeçalho YAML,
+escreva um texto curto e renderize-o em HTML.
+
+[Abrir tutorial](quarto-rstudio.qmd)
+
+## Markdown para documentos Quarto
+
+Amplie o arquivo `.qmd` já criado com títulos, texto, listas, links, imagens,
+tabelas e fórmulas.
+
+[Abrir tutorial](markdown.qmd)

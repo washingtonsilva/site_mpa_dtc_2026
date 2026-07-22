@@ -1,0 +1,173 @@
+---
+lang: pt-BR
+title: "Avaliações"
+subtitle: "Entregas, critérios e prazos"
+---
+
+Aqui estão as informações sobre as avaliações da disciplina. O
+[Programa da Disciplina](programa.qmd) apresenta os pesos; nesta página estão
+os requisitos, critérios, entregas e atualizações de cada componente.
+
+## Visão geral
+
+| Componente | Pontos | Registro ou entrega |
+|:--|--:|:--|
+| Atividades práticas em aula | 50 | Repositório GitHub individual |
+| [Miniartigo científico em LaTeX](#sec-miniartigo) | 20 | Projeto privado no Overleaf |
+| [Blog Quarto](#sec-blog) | 30 | Repositório GitHub individual e GitHub Pages |
+
+São necessários pelo menos **60 pontos** para aprovação. Não haverá provas
+formais: a avaliação se baseia em artefatos produzidos e na prática
+supervisionada.
+
+## Regras gerais
+
+- As avaliações são individuais.
+- Os materiais das atividades práticas e do Blog Quarto devem ser registrados
+  no repositório GitHub individual público, salvo indicação expressa em
+  contrário.
+- Não inclua dados confidenciais, pessoais, identificáveis ou sujeitos a
+  sigilo organizacional. Use dados públicos, anonimizados ou didáticos e
+  identifique fontes e licenças quando aplicável.
+- O miniartigo é a exceção à publicação em repositório público: seu projeto
+  e seus elementos reproduzidos permanecem privados, conforme a seção
+  correspondente.
+- Consulte esta página para prazos, rubricas e atualizações. Avisos enviados
+  por outros meios apenas indicarão onde encontrá-los aqui.
+
+## Atividades práticas em aula
+
+As sete atividades das Aulas 1 a 7 totalizam **50 pontos** e serão realizadas
+individualmente, predominantemente durante os encontros síncronos, com
+supervisão do professor. A versão avaliada será o último *commit* enviado ao
+repositório GitHub individual antes do encerramento de cada aula.
+
+| Aula | Pontos | Informações a publicar |
+|:--:|--:|:--|
+| 1 | 4 | Enunciado, materiais e checklist serão inseridos nesta página. |
+| 2 | 6 | Componente privado do miniartigo; ver também a seção do miniartigo. |
+| 3 | 7 | Enunciado, materiais e checklist serão inseridos nesta página. |
+| 4 | 9 | Enunciado, materiais e checklist serão inseridos nesta página. |
+| 5 | 8 | Enunciado, materiais e checklist serão inseridos nesta página. |
+| 6 | 8 | Enunciado, materiais e checklist serão inseridos nesta página. |
+| 7 | 8 | Enunciado, materiais e checklist serão inseridos nesta página. |
+
+Antes de cada atividade, esta página trará a competência, o contexto, os
+entregáveis, o tempo previsto, os materiais de apoio, os critérios e o
+checklist de submissão. A atividade da Aula 2 avalia a prática guiada; os 20
+pontos do miniartigo avaliam a integração final, a revisão e a qualidade do
+documento, sem contar o mesmo desempenho duas vezes.
+
+## Miniartigo científico em LaTeX {#sec-miniartigo}
+
+**Valor: 20 pontos.** Você reconstruirá, no Overleaf e em LaTeX, partes
+delimitadas de um artigo curto publicado. A atividade avalia o uso de LaTeX e
+a estrutura do documento; não exige artigo original nem avalia autoria
+científica.
+
+::: {.callout-important icon="false"}
+## Regra de privacidade
+
+O projeto Overleaf, o arquivo-fonte, o PDF produzido e todos os elementos
+reproduzidos para esta atividade devem permanecer **privados**. Não os
+publique no GitHub, não gere link público e não os reutilize fora da
+disciplina.
+:::
+
+### O trabalho
+
+Cada mestrando criará seu próprio projeto a partir do
+[template da Revista Brasileira de Finanças no Overleaf](https://www.overleaf.com/latex/templates/brazilian-review-of-finance-a-template/hzwtyhsyrbhs){target="_blank"}.
+O artigo indicado pelo professor será a fonte de consulta. Você digitará os
+trechos delimitados, salvará a figura em formato adequado, recriará tabelas e
+equações e elaborará o arquivo `.bib`.
+
+Não haverá projeto-base, texto, figura, tabela ou bibliografia prontos. Criar
+esses elementos faz parte da atividade.
+
+### Competências avaliadas
+
+- organização de arquivos em um projeto LaTeX;
+- estrutura semântica e compilação do documento;
+- inclusão e atribuição de figuras;
+- recriação de tabelas e equações;
+- citações, arquivo `.bib` e referências bibliográficas;
+- referências cruzadas;
+- revisão e qualidade tipográfica do resultado.
+
+### Procedimento de trabalho
+
+1. Leia o enunciado e identifique o artigo, sua referência, URL ou DOI,
+   licença e as partes autorizadas para reconstrução.
+2. Abra o template RBFin, escolha **Open as Template**, renomeie o projeto
+   conforme a convenção que será indicada e confirme que ele compila sem erros.
+3. Preserve os arquivos originais do template. Não substitua a classe do
+   documento por `elsarticle` ou outra classe; `elsarticle` será usada apenas
+   para comparação de convenções editoriais.
+4. Reconstrua somente os elementos pedidos no enunciado e mantenha a
+   identificação completa do artigo de referência. Inclua atribuição em
+   figuras e tabelas quando necessário.
+5. Compartilhe o projeto diretamente com o professor no Overleaf, ou siga o
+   procedimento privado que vier a ser indicado.
+
+Não envie o PDF do artigo de referência ao Overleaf. Também não carregue
+arquivos auxiliares de compilação, como `.aux`, `.log` ou `.synctex.gz`.
+
+### Limites da reconstrução
+
+O artigo de referência não deve ser reproduzido integralmente. Somente as
+partes indicadas no enunciado poderão ser transcritas ou recriadas, e o uso
+será restrito à disciplina. A referência completa, a autoria intelectual e a
+fonte do artigo devem estar identificadas de modo explícito.
+
+### Informações que serão publicadas
+
+Antes do início da atividade, esta seção receberá:
+
+- o artigo de referência, sua fonte e a licença identificada;
+- o escopo exato de seções, figura, tabela, equação, citações e referências
+  cruzadas a reconstruir;
+- a convenção de nome do projeto e o prazo;
+- a rubrica de 20 pontos;
+- o procedimento privado definitivo de entrega.
+
+Aguarde a publicação dessas informações antes de iniciar a reconstrução.
+Antes, conclua o tutorial [Overleaf: primeiros passos](tutorials/overleaf.qmd).
+
+## Blog Quarto {#sec-blog}
+
+**Valor: 30 pontos.** Você criará e publicará um blog individual com Quarto e
+GitHub Pages. Ele poderá servir de base para um produto técnico ou tecnológico.
+
+### Requisitos mínimos já definidos
+
+O blog deverá:
+
+- ser individual;
+- ser construído com Quarto;
+- ser publicado com GitHub Pages;
+- conter pelo menos três postagens;
+- incluir, entre elas, um relatório técnico reprodutível com código, dados e
+  resultados.
+
+### Entrega esperada
+
+A entrega será verificada no repositório individual público e no site
+publicado com GitHub Pages. Esta seção informará a URL a entregar, a organização
+esperada do repositório e a verificação final.
+
+### Informações que serão publicadas
+
+Antes da atividade final, esta seção receberá:
+
+- o calendário de desenvolvimento e de entrega;
+- a rubrica de 30 pontos;
+- a estrutura esperada para o repositório e para o site;
+- os requisitos editoriais e de acessibilidade das postagens;
+- as orientações para o relatório técnico reprodutível;
+- o checklist de publicação e entrega.
+
+Esses itens ainda serão definidos. Para se preparar, conclua os tutoriais de
+[Git e GitHub](tutorials/git-github.qmd),
+[Quarto e RStudio](tutorials/quarto-rstudio.qmd) e
+[Markdown](tutorials/markdown.qmd).

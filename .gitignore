@@ -1,0 +1,166 @@
+# macOS
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100/
+.Trashes/
+.TemporaryItems/
+
+
+# Positron
+
+# =============================================================================
+
+# O Positron utiliza a infraestrutura do Code OSS.
+
+# Não ignore .vscode/ por padrão, pois ela pode conter configurações
+
+# compartilháveis da disciplina, como settings.json e extensions.json.
+
+# =============================================================================
+
+# Memória operacional local do Codex
+
+codex.md
+
+# Quarto
+
+.quarto/
+_site/
+_book/
+_output/
+
+*_cache/
+
+**/*.quarto_ipynb
+
+# Configurações locais do Quarto
+
+_quarto.yml.local
+_quarto-*.yml.local
+
+# Não ignore _freeze/ quando o recurso execute: freeze estiver em uso.
+
+# O conteúdo dessa pasta deve, em geral, ser versionado.
+
+# R
+
+.Rhistory
+.RData
+.RDataTmp
+.Ruserdata
+
+# Pode conter credenciais e variáveis locais
+
+.Renviron
+.Renviron.*
+!.Renviron.example
+
+# Python e Jupyter
+
+__pycache__/
+*.py[cod]
+
+.venv/
+venv/
+__pypackages__/
+
+.ipynb_checkpoints/
+.jupyter_cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Dados locais ou proprietários
+
+# Ajuste os nomes das pastas à estrutura efetivamente usada no projeto.
+
+# Evite ignorar extensões inteiras, como *.csv ou *.xlsx, pois alguns
+
+# conjuntos de dados didáticos podem precisar ser versionados.
+
+dados/proprietarios/
+
+# LaTeX e BibLaTeX: arquivos auxiliares de compilação
+
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.fmt
+*.fot
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+
+# Índices, glossários e listas auxiliares
+
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.xdy
+*.idx
+*.ilg
+*.ind
+*.loa
+*.lol
+*.nlg
+*.nlo
+*.nls
+*.thm
+*.tdo
+
+# Pacotes e ferramentas complementares de LaTeX
+
+*.maf
+*.mlf
+*.mlt
+*.mtc
+*.mtc[0-9]
+*.pdfsync
+*.pyg
+*.pygstyle
+*.pygtex
+*.pytxcode
+*.pytxpyg
+*.pytxmcr
+*.synctex\(busy\)
+*.synctex.gz\(busy\)
+_minted-*/
+pythontex-files-*/
+
+# Arquivos temporários e cópias de segurança de editores
+
+*.bak
+*.tmp
+*.swp
+*~
+
+
+# Variáveis de ambiente e credenciais
+
+.env
+.env.*
+!.env.example
+
+/.quarto/

@@ -1,0 +1,380 @@
+---
+lang: pt-BR
+title: "Programa da Disciplina"
+subtitle: "Documentos Técnicos e Científicos com Quarto e LaTeX 2026/2 <br> Mestrado Profissional em Administração"
+author: "Prof. Dr. Washington S. da Silva"
+---
+
+
+
+## Organização dos artefatos e comunicação
+
+O site reúne o programa, o cronograma, as rubricas, as atividades, o
+repositório-template, o cadastro de repositórios e perguntas frequentes.
+Comunicados por outros meios apenas indicam onde encontrar essas informações.
+
+Cada estudante será responsável por seu repositório individual público. A
+organização dos arquivos e as instruções de entrega serão definidas na página
+**Avaliações** do site da disciplina. O repositório deve conter
+somente materiais próprios, arquivos didáticos fornecidos pela disciplina ou
+conteúdos com licença compatível. É vedado inserir dados confidenciais,
+pessoais, identificáveis ou sujeitos a sigilo organizacional. Os exemplos e
+avaliações utilizarão dados públicos, anonimizados ou didáticos.
+
+O miniartigo em LaTeX é uma exceção: por reconstruir tecnicamente partes de
+artigo publicado, seu projeto Overleaf, fonte, PDF e elementos reproduzidos
+permanecerão privados e não serão enviados ao repositório GitHub público nem
+compartilhados por link público.
+
+
+
+## Objetivo Geral
+
+Capacitar o mestrando a produzir documentos técnicos, científicos e 
+profissionais reprodutíveis com Quarto, integrando texto, código, 
+resultados computacionais, referências e elementos de formatação, com 
+apoio de LaTeX, Git/GitHub e boas práticas de organização, documentação e 
+comunicação de resultados.
+
+
+
+## Objetivos Específicos
+
+Ao final da disciplina, espera-se que o mestrando seja capaz de:
+
+- Compreender os fundamentos da composição tipográfica digital e o 
+  paradigma da programação literada, reconhecendo a reprodutibilidade e a 
+  auditabilidade como critérios de qualidade de documentos técnicos e 
+  científicos.
+
+- Editar e compor um miniartigo científico em LaTeX no ambiente Overleaf,
+  incluindo estrutura do documento, equações, figuras, tabelas, referências
+  cruzadas e gestão de referências bibliográficas com BibTeX, utilizando
+  templates de periódicos das áreas de finanças e economia (Revista
+  Brasileira de Finanças e classe `elsarticle` da Elsevier).
+
+- Criar documentos Quarto que integrem texto, código R, dados e 
+  resultados computacionais, gerando saídas em HTML, PDF e Word.
+
+- Produzir relatórios técnicos reprodutíveis e relatórios parametrizados 
+  voltados a contextos profissionais e organizacionais.
+
+- Elaborar apresentações em HTML (Reveal.js) e em PDF a partir de 
+  documentos Quarto.
+
+- Construir e publicar um blog ou site pessoal/profissional com Quarto,
+  utilizando GitHub Pages.
+
+- Utilizar Git e GitHub para versionamento, organização e submissão dos 
+  artefatos produzidos na disciplina.
+
+
+
+## Avaliação
+
+O planejamento da disciplina prevê que os pontos serão distribuídos da 
+seguinte forma:
+
+1. **Atividades práticas em aula = 50 pontos**: sete atividades individuais,
+   realizadas durante as Aulas 1 a 7, com supervisão do professor, e
+   registradas no repositório GitHub individual do aluno. A versão avaliada
+   será a do último *commit* enviado ao GitHub antes do encerramento da aula;
+   não haverá envio duplicado por e-mail, formulário ou plataforma externa.
+   A progressão e os valores são: Aula 1 = 4 pontos; Aula 2 = 6 pontos;
+   Aula 3 = 7 pontos; Aula 4 = 9 pontos; Aulas 5, 6 e 7 = 8 pontos cada.
+   A página **Avaliações** reúne os enunciados, entregáveis, critérios,
+   arquivos de apoio e checklist de submissão.
+
+2. **Miniartigo científico em LaTeX = 20 pontos**: edição técnica
+   individual, no Overleaf, por meio da reconstrução técnica de um artigo
+   curto de referência selecionado pelo professor. Todos os estudantes
+   criarão seus próprios projetos a partir do template oficial da Revista
+   Brasileira de Finanças, com a orientação de configuração publicada no site.
+   O professor indicará o artigo curto de referência, sua fonte, licença e as
+   partes exatas a reconstruir. A configuração do projeto, a organização dos
+   arquivos, a criação do `.bib`, a recriação dos elementos e a compilação
+   fazem parte da prática supervisionada. A avaliação concentra-se nas
+   competências de composição e estruturação em LaTeX, e não na maturidade
+   prévia do projeto de dissertação do mestrando.
+
+   Serão avaliados a organização dos arquivos, a
+   estrutura semântica do documento, a compilação, o uso de figuras e
+   tabelas, as equações, as citações, o arquivo `.bib`, as referências
+   cruzadas e a qualidade tipográfica do resultado. O artigo-fonte terá sua
+   autoria intelectual, referência completa e licença identificadas de modo
+   explícito; o exercício não avalia autoria científica nem reproduz o
+   artigo integralmente. A reconstrução é restrita à disciplina: o projeto
+   Overleaf, o fonte, o PDF e os elementos reproduzidos devem permanecer
+   privados, sem publicação no GitHub ou por link público. A entrega será feita
+   por compartilhamento direto com o professor no Overleaf ou por procedimento
+   privado indicado no enunciado.
+
+3. **Blog Quarto = 30 pontos**: construção e publicação de um blog
+   individual com Quarto e GitHub Pages, contendo ao menos
+   três postagens, sendo obrigatoriamente uma delas um relatório técnico 
+   reprodutível com código, dados e resultados. O blog funciona como 
+   avaliação integradora da disciplina e pode constituir base para o 
+   produto técnico/tecnológico exigido pelo programa.
+
+Para aprovação, são necessários pelo menos 60 pontos. As rubricas dos itens 2
+e 3, o calendário de entregas e as instruções completas estarão na página
+**Avaliações** antes da primeira aula. Não haverá provas formais: a disciplina
+avalia os artefatos produzidos e a prática supervisionada.
+
+
+
+## Bibliografia Básica
+
+ALEXANDER, Rohan. **Telling Stories with Data: With Applications in R and 
+Python**. Boca Raton: CRC Press, 2023. Disponível em: 
+<https://tellingstorieswithdata.com/>. Acesso em: 1 maio 2026.
+
+OETIKER, Tobias; SERWIN, Marcin; PARTL, Hubert; HYNA, Irene; 
+SCHLEGL, Elisabeth. **The Not So Short Introduction to LaTeX**. 
+[S. l.]: [s. n.], 2025. Disponível em: 
+<https://tobi.oetiker.ch/lshort/lshort.pdf>. Acesso em: 20 jul. 2026.
+
+POSIT. **Quarto Documentation**. Disponível em: <https://quarto.org/docs/>. 
+Acesso em: 20 jul. 2026.
+
+
+
+## Bibliografia Complementar
+
+BRYAN, Jennifer. **Happy Git and GitHub for the useR**. Disponível em: 
+<https://happygitwithr.com/>. Acesso em: 1 maio 2026.
+
+FIGUEIREDO, Ludmilla; SCHERER, Cédric; CABRAL, Juliano Sarmento. A simple
+kit to use computational notebooks for more openness, reproducibility, and
+productivity in research. **PLOS Computational Biology**, San Francisco,
+v. 18, n. 9, e1010356, 2022. Disponível em:
+<https://doi.org/10.1371/journal.pcbi.1010356>. Acesso em: 20 jul. 2026.
+
+HEALY, Kieran. **The Plain Person's Guide to Plain Text Social Science**. 
+Durham: Duke University, 2019. Disponível em: <https://plain-text.co/>. 
+Acesso em: 20 jul. 2026.
+
+KNUTH, Donald Ervin. Literate programming. **The Computer Journal**, 
+Oxford, v. 27, n. 2, p. 97-111, 1984. Disponível em: 
+<https://doi.org/10.1093/comjnl/27.2.97>. Acesso em: 20 jul. 2026.
+
+LIMONGI, Ricardo; ROGERS, Pablo. Open Science in Three Acts: Foundations,
+Practice, and Implementation – First Act. **BAR - Brazilian Administration
+Review**, [S. l.], v. 22, n. 1, e250079, 2025. Disponível em:
+<https://doi.org/10.1590/1807-7692bar2025250079>. Acesso em: 21 jul. 2026.
+
+LIMONGI, Ricardo; ROGERS, Pablo. Open Science in Three Acts: Foundations,
+Practice, and Implementation – Second Act. **BAR - Brazilian Administration
+Review**, [S. l.], v. 22, n. 2, e250116, 2025. Disponível em:
+<https://doi.org/10.1590/1807-7692bar2025250116>. Acesso em: 21 jul. 2026.
+
+ROGERS, Pablo; LIMONGI, Ricardo. Open Science in Three Acts: Foundations,
+Practice, and Implementation — Third Act. **BAR - Brazilian Administration
+Review**, [S. l.], v. 22, n. 3, e250162, 2025. Disponível em:
+<https://doi.org/10.1590/1807-7692bar2025250162>. Acesso em: 21 jul. 2026.
+
+WICKHAM, Hadley; ÇETINKAYA-RUNDEL, Mine; GROLEMUND, Garrett. 
+**R for Data Science: Import, Tidy, Transform, Visualize, and Model Data**. 
+2. ed. Sebastopol: O'Reilly Media, 2023. Disponível em: 
+<https://r4ds.hadley.nz/>. Acesso em: 1 maio 2026.
+
+XIE, Yihui; DERVIEUX, Christophe; RIEDERER, Emily. **R Markdown Cookbook**. 
+Boca Raton: CRC Press, 2020. Disponível em: 
+<https://bookdown.org/yihui/rmarkdown-cookbook/>. Acesso em: 1 maio 2026.
+
+
+
+## Recursos Online
+
+### LaTeX e Overleaf
+
+- **Comece aqui:** [101 Get Started with LaTeX in Overleaf](https://learn.overleaf.com/101-get-started-with-latex-in-overleaf){target="_blank"}.
+
+- [Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes){target="_blank"}: revisão rápida dos fundamentos.
+
+- [Overleaf Learn: Articles](https://www.overleaf.com/learn/latex/Articles){target="_blank"}: consulta para a estrutura e os elementos do miniartigo.
+
+- [Template da Revista Brasileira de Finanças no Overleaf](https://www.overleaf.com/latex/templates/brazilian-review-of-finance-a-template/hzwtyhsyrbhs){target="_blank"}: template externo que cada mestrando usará para criar seu projeto individual de miniartigo.
+
+- [Instruções LaTeX da Elsevier (classe `elsarticle`)](https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions){target="_blank"}: comparação de convenções editoriais e de preparação de arquivos de submissão.
+
+### Quarto
+
+- **Comece aqui:** [documentação oficial do Sistema Quarto](https://quarto.org/docs/guide/){target="_blank"}.
+
+- **Aulas 3 e 4 — documentos reprodutíveis:** [Quarto com R](https://quarto.org/docs/computations/r.html){target="_blank"}, [citações](https://quarto.org/docs/authoring/citations.html){target="_blank"}, [referências cruzadas](https://quarto.org/docs/authoring/cross-references.html){target="_blank"} e [identidade visual com `_brand.yml`](https://quarto.org/docs/authoring/brand.html){target="_blank"}.
+
+- **Aula 5 — automação:** [parâmetros](https://quarto.org/docs/computations/parameters.html){target="_blank"} e [gerenciamento da execução](https://quarto.org/docs/projects/code-execution.html){target="_blank"}.
+
+- **Aula 6 — apresentações:** [apresentações com Quarto](https://quarto.org/docs/presentations/){target="_blank"}.
+
+- **Aula 7 — blogs e publicação:** [criar um blog](https://quarto.org/docs/websites/website-blog.html){target="_blank"} e [GitHub Pages](https://quarto.org/docs/publishing/github-pages.html){target="_blank"}.
+
+- **Inspiração e aprofundamento:** [Creating Polished, Branded Documents with Quarto](https://ivelasq-r-pharma-2025-branded-quarto.share.connect.posit.cloud){target="_blank"} e [Branded Websites, Presentations, Dashboards, and PDFs with Quarto (posit::conf 2025)](https://posit-conf-2025.github.io/quarto-brand/){target="_blank"}.
+
+- **Aula 8 — demonstrações complementares:** [Quarto Manuscripts](https://quarto.org/docs/manuscripts/){target="_blank"}, [Quarto Journals: formatos de periódicos para Quarto](https://github.com/quarto-journals){target="_blank"} e [formato de saída Typst no Quarto](https://quarto.org/docs/output-formats/typst.html){target="_blank"}.
+
+### Git e GitHub (nivelamento)
+
+- **Comece aqui:** [Happy Git and GitHub for the useR](https://happygitwithr.com/){target="_blank"}.
+
+- [Hello World do GitHub](https://docs.github.com/en/get-started/start-your-journey/hello-world){target="_blank"}: primeiro repositório, *branch*, *commit*, *pull request* e *merge*.
+
+
+
+## Ementa
+
+Produção reprodutível de documentos técnicos, científicos e profissionais com 
+Quarto. Integração entre texto, código, resultados computacionais, tabelas, 
+gráficos, equações, citações e referências cruzadas. Fundamentos de Markdown, 
+LaTeX, BibTeX e controle de versão com Git/GitHub. Geração de documentos em 
+HTML, PDF e Word. Relatórios parametrizados e comunicação de resultados em 
+pesquisas aplicadas e contextos profissionais.
+
+
+
+## Conteúdo Planejado
+
+Trata-se apenas de um planejamento e pode ser alterado conforme o andamento 
+da disciplina e rendimento da turma.
+
+### 1. LaTeX
+
+- Composição tipográfica digital: propósito, comparação entre edição visual
+  (WYSIWYG) e marcação, e programação literada como ponte conceitual para o
+  módulo Quarto.
+- Ambiente Overleaf: criação de um projeto simples na Aula 1; estrutura de um
+  documento LaTeX, preâmbulo, classes e pacotes; texto, seções, listas e
+  equações.
+- Edição técnica de miniartigo científico: organização de arquivos,
+  estrutura semântica, figuras, tabelas, referências cruzadas, notas de
+  rodapé, BibTeX, arquivos `.bib`, estilos de citação (`natbib`) e revisão
+  tipográfica.
+- Template da Revista Brasileira de Finanças como padrão didático para que cada
+  mestrando configure seu projeto individual; classe `elsarticle` e diretrizes
+  de submissão da Revista Brasileira de Economia (RBE) apenas como comparação
+  de convenções editoriais.
+
+### 2. Sistema de publicação Quarto
+
+- Programação literada e reprodutibilidade: o paradigma, sua motivação e
+  suas implicações para auditabilidade de análises e relatórios.
+- Anatomia de um documento Quarto: cabeçalho YAML, Markdown, blocos de
+  código R, opções de execução e fluxo de trabalho com RStudio e Git/GitHub.
+  O primeiro documento será produzido e renderizado em HTML; PDF e Word serão
+  comparados como saídas para finalidades comunicacionais distintas.
+- Relatórios técnicos reprodutíveis: organização de projeto, dados brutos
+  preservados, caminhos relativos, `README`, execução e renderização
+  repetíveis; tabelas, gráficos, equações, citações, referências cruzadas e
+  identidade visual com `_brand.yml`.
+- Relatórios parametrizados: parâmetros no YAML, versões destinadas a
+  públicos ou cenários distintos, nomes de arquivos e renderização em lote
+  simples para automação de relatórios repetitivos.
+- Apresentações: Reveal.js (HTML) como formato prático principal; Beamer como
+  alternativa em PDF que aproveita o módulo LaTeX.
+- Blogs e sites com Quarto: estrutura de projeto, listagens, temas,
+  acessibilidade básica e publicação com GitHub Pages.
+- Panorama complementar (demonstração): Quarto Manuscripts, dashboards com
+  Quarto, formatos de periódicos para Quarto (`quarto-journals`) e introdução
+  ao Typst como sistema de composição.
+
+
+
+## Recursos Didáticos e Materiais de Estudo
+
+Entre os recursos didáticos utilizados na disciplina estão:
+
+- **Materiais Primários para Estudo**:
+
+  - Bibliografia recomendada.
+  
+  - Slides e notas de aula (disponibilizados no site da disciplina).
+  
+  - Tutoriais desenvolvidos em Quarto.
+  
+  - Arquivos quarto (*reports*) demonstrativos (.qmd).
+
+  - Link para o template RBFin, roteiro de configuração do projeto individual
+    e enunciado do miniartigo, com artigo de referência, escopo de reconstrução
+    e critérios da atividade avaliativa.
+
+- **Ambiente e Ferramentas**:
+
+  - Overleaf (plano gratuito) para o módulo de LaTeX.
+
+  - R, RStudio, Quarto CLI e Git nas máquinas dos alunos para o módulo 
+    de Quarto.
+
+  - Site da disciplina e repositório-template para acesso aos materiais,
+    às instruções e aos arquivos iniciais.
+
+  - Repositório GitHub individual público para registro e entrega dos
+    artefatos avaliativos.
+    
+  - Ambiente virtual de aprendizagem para suporte e comunicação.
+  
+  - Arquivos de dados públicos, anonimizados ou didáticos para os exemplos.
+
+**Importante**: Os slides, tutoriais e demais recursos disponibilizados
+no site constituem os materiais primários para estudo e preparação para as
+avaliações, devendo ser utilizados em conjunto com a bibliografia
+recomendada. O ambiente virtual de aprendizagem será utilizado apenas para
+comunicação institucional complementar.
+
+
+
+## Metodologia de Ensino
+
+As aulas serão síncronas, online, estruturadas em dois momentos: (i) exposição dialogada e 
+demonstração ao vivo (*live coding*) dos conceitos e ferramentas, de forma breve; e 
+(ii) prática supervisionada, que ocupará a maior parte de cada aula, na qual os mestrandos 
+executarão individualmente as atividades avaliativas com acompanhamento do professor 
+para esclarecimento de dúvidas. Essa ênfase na prática durante o horário de 
+aula é deliberada, visto que considera-se que o domínio das ferramentas tratadas só 
+se desenvolve pelo uso.
+
+Todos os materiais da disciplina serão produzidos com as próprias 
+ferramentas ensinadas (Quarto e LaTeX), servindo simultaneamente como 
+conteúdo e como exemplo de aplicação. A comunicação, a distribuição de 
+materiais e a referência às submissões ocorrerão por meio do site da
+disciplina e dos repositórios GitHub individuais. Não será utilizado GitHub
+Classroom.
+
+Na Aula 1, cada estudante criará um projeto Overleaf simples para a prática
+inicial. Na atividade do miniartigo, cada mestrando abrirá o template oficial
+RBFin como projeto próprio e reconstruirá as partes delimitadas do artigo de
+referência selecionado. Assim, não haverá convites individuais nem projeto-base
+montado previamente; a configuração do projeto, dos arquivos, da bibliografia
+e dos elementos do artigo fará parte da prática supervisionada. O trabalho
+permanecerá privado no Overleaf.
+
+As atividades práticas das Aulas 1 e 2 poderão preparar componentes do
+miniartigo em LaTeX. Nesses casos, a pontuação das atividades em aula
+avaliará a execução guiada e os objetivos específicos de cada encontro;
+a avaliação do miniartigo incidirá sobre a integração final, a revisão e a
+qualidade técnica do documento completo, evitando dupla contagem do mesmo
+desempenho.
+
+Na seção correspondente da página **Avaliações**, estarão a competência, o
+contexto, os entregáveis, o tempo previsto, os materiais de apoio, os critérios
+e o checklist de submissão. A exposição dialogada e o *live coding* serão
+limitados ao necessário para a realização da atividade.
+
+
+
+## Plano de Aula
+
+Alterações excepcionais no cronograma serão publicadas no site da disciplina
+e não modificarão retroativamente critérios, pontuações ou prazos já
+divulgados. A aula 8 terá duração de 2 horas; as demais, de 4 horas.
+
+| Aula | Data | Tópicos planejados | Artefato prático e atividade | Pontos |
+|:----:|:----:|:-------------------|:------------------------------|:------:|
+| 1 | 03/08/26 | Apresentação da disciplina. Composição tipográfica e programação literada como ponte conceitual. LaTeX no Overleaf: criação de projeto simples, estrutura do documento, texto, seções, listas e equações. | Documento LaTeX compilável em projeto individual simples, com título, seções, lista e equação. | 4 |
+| 2 | 10/08/26 | Miniartigo científico em LaTeX: configuração de projeto individual a partir do RBFin; reconstrução técnica de elementos delimitados de artigo de referência; figuras, tabelas, referências cruzadas e BibTeX. `elsarticle` como comparação. | Componente privado do miniartigo com figura, tabela, citação, `.bib` e referência cruzada funcionais. | 6 |
+| 3 | 17/08/26 | Introdução ao Quarto: anatomia do `.qmd`, YAML, Markdown, código R e renderização em HTML. Comparação entre HTML, PDF e Word; uso do ambiente previamente validado. | Primeiro `.qmd` renderizado em HTML, com texto, código R e resultado computacional. | 7 |
+| 4 | 24/08/26 | Relatórios técnicos reprodutíveis: organização de projeto, dados, caminhos relativos, `README`, tabelas, gráficos, citações, referências cruzadas e `_brand.yml`. | Relatório técnico reproduzível para um problema de Administração ou Finanças. | 9 |
+| 5 | 31/08/26 | Relatórios parametrizados e automação simples para públicos, cenários ou períodos distintos. | Duas versões parametrizadas do relatório da Aula 4, com nomes de arquivo adequados. | 8 |
+| 6 | 14/09/26 | Apresentações com Quarto: Reveal.js como formato principal e Beamer como alternativa PDF. | Apresentação Reveal.js que comunique resultados de uma análise ou problema aplicado. | 8 |
+| 7 | 21/09/26 | Blogs e sites com Quarto: estrutura, temas, listagens, acessibilidade básica e publicação com GitHub Pages. | Blog publicado com estrutura inicial e primeira postagem. | 8 |
+| 8 | 28/09/26 | Panorama complementar: Quarto Manuscripts, `quarto-journals`, dashboards e Typst. Apresentação dos blogs, entrega final e encerramento. | Verificação final dos artefatos e apresentação do blog; não há nova atividade avaliativa. | — |

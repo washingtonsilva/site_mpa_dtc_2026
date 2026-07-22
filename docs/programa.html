@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Prof.&nbsp;Dr.&nbsp;Washington S. da Silva">
+
+<title>Programa da Disciplina – Documentos Técnicos e Científicos com Quarto e LaTeX</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-e078bda6ae2ac17717d8234870e3bbb3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Documentos Técnicos e Científicos com Quarto e LaTeX</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+</div>
+          <div id="quarto-search" class="" title="Procurar"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./programa.html">Programa da Disciplina</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Início</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./programa.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Programa da Disciplina</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cronograma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cronograma</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./instrucoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ambiente computacional</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./avaliacoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avaliações</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tutorials/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutoriais</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#organização-dos-artefatos-e-comunicação" id="toc-organização-dos-artefatos-e-comunicação" class="nav-link active" data-scroll-target="#organização-dos-artefatos-e-comunicação">Organização dos artefatos e comunicação</a></li>
+  <li><a href="#objetivo-geral" id="toc-objetivo-geral" class="nav-link" data-scroll-target="#objetivo-geral">Objetivo Geral</a></li>
+  <li><a href="#objetivos-específicos" id="toc-objetivos-específicos" class="nav-link" data-scroll-target="#objetivos-específicos">Objetivos Específicos</a></li>
+  <li><a href="#avaliação" id="toc-avaliação" class="nav-link" data-scroll-target="#avaliação">Avaliação</a></li>
+  <li><a href="#bibliografia-básica" id="toc-bibliografia-básica" class="nav-link" data-scroll-target="#bibliografia-básica">Bibliografia Básica</a></li>
+  <li><a href="#bibliografia-complementar" id="toc-bibliografia-complementar" class="nav-link" data-scroll-target="#bibliografia-complementar">Bibliografia Complementar</a></li>
+  <li><a href="#recursos-online" id="toc-recursos-online" class="nav-link" data-scroll-target="#recursos-online">Recursos Online</a>
+  <ul class="collapse">
+  <li><a href="#latex-e-overleaf" id="toc-latex-e-overleaf" class="nav-link" data-scroll-target="#latex-e-overleaf">LaTeX e Overleaf</a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
+  <li><a href="#git-e-github-nivelamento" id="toc-git-e-github-nivelamento" class="nav-link" data-scroll-target="#git-e-github-nivelamento">Git e GitHub (nivelamento)</a></li>
+  </ul></li>
+  <li><a href="#ementa" id="toc-ementa" class="nav-link" data-scroll-target="#ementa">Ementa</a></li>
+  <li><a href="#conteúdo-planejado" id="toc-conteúdo-planejado" class="nav-link" data-scroll-target="#conteúdo-planejado">Conteúdo Planejado</a>
+  <ul class="collapse">
+  <li><a href="#latex" id="toc-latex" class="nav-link" data-scroll-target="#latex">1. LaTeX</a></li>
+  <li><a href="#sistema-de-publicação-quarto" id="toc-sistema-de-publicação-quarto" class="nav-link" data-scroll-target="#sistema-de-publicação-quarto">2. Sistema de publicação Quarto</a></li>
+  </ul></li>
+  <li><a href="#recursos-didáticos-e-materiais-de-estudo" id="toc-recursos-didáticos-e-materiais-de-estudo" class="nav-link" data-scroll-target="#recursos-didáticos-e-materiais-de-estudo">Recursos Didáticos e Materiais de Estudo</a></li>
+  <li><a href="#metodologia-de-ensino" id="toc-metodologia-de-ensino" class="nav-link" data-scroll-target="#metodologia-de-ensino">Metodologia de Ensino</a></li>
+  <li><a href="#plano-de-aula" id="toc-plano-de-aula" class="nav-link" data-scroll-target="#plano-de-aula">Plano de Aula</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Programa da Disciplina</h1>
+<p class="subtitle lead">Documentos Técnicos e Científicos com Quarto e LaTeX 2026/2 <br> Mestrado Profissional em Administração</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Prof.&nbsp;Dr.&nbsp;Washington S. da Silva </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="organização-dos-artefatos-e-comunicação" class="level2">
+<h2 class="anchored" data-anchor-id="organização-dos-artefatos-e-comunicação">Organização dos artefatos e comunicação</h2>
+<p>O site reúne o programa, o cronograma, as rubricas, as atividades, o repositório-template, o cadastro de repositórios e perguntas frequentes. Comunicados por outros meios apenas indicam onde encontrar essas informações.</p>
+<p>Cada estudante será responsável por seu repositório individual público. A organização dos arquivos e as instruções de entrega serão definidas na página <strong>Avaliações</strong> do site da disciplina. O repositório deve conter somente materiais próprios, arquivos didáticos fornecidos pela disciplina ou conteúdos com licença compatível. É vedado inserir dados confidenciais, pessoais, identificáveis ou sujeitos a sigilo organizacional. Os exemplos e avaliações utilizarão dados públicos, anonimizados ou didáticos.</p>
+<p>O miniartigo em LaTeX é uma exceção: por reconstruir tecnicamente partes de artigo publicado, seu projeto Overleaf, fonte, PDF e elementos reproduzidos permanecerão privados e não serão enviados ao repositório GitHub público nem compartilhados por link público.</p>
+</section>
+<section id="objetivo-geral" class="level2">
+<h2 class="anchored" data-anchor-id="objetivo-geral">Objetivo Geral</h2>
+<p>Capacitar o mestrando a produzir documentos técnicos, científicos e profissionais reprodutíveis com Quarto, integrando texto, código, resultados computacionais, referências e elementos de formatação, com apoio de LaTeX, Git/GitHub e boas práticas de organização, documentação e comunicação de resultados.</p>
+</section>
+<section id="objetivos-específicos" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-específicos">Objetivos Específicos</h2>
+<p>Ao final da disciplina, espera-se que o mestrando seja capaz de:</p>
+<ul>
+<li><p>Compreender os fundamentos da composição tipográfica digital e o paradigma da programação literada, reconhecendo a reprodutibilidade e a auditabilidade como critérios de qualidade de documentos técnicos e científicos.</p></li>
+<li><p>Editar e compor um miniartigo científico em LaTeX no ambiente Overleaf, incluindo estrutura do documento, equações, figuras, tabelas, referências cruzadas e gestão de referências bibliográficas com BibTeX, utilizando templates de periódicos das áreas de finanças e economia (Revista Brasileira de Finanças e classe <code>elsarticle</code> da Elsevier).</p></li>
+<li><p>Criar documentos Quarto que integrem texto, código R, dados e resultados computacionais, gerando saídas em HTML, PDF e Word.</p></li>
+<li><p>Produzir relatórios técnicos reprodutíveis e relatórios parametrizados voltados a contextos profissionais e organizacionais.</p></li>
+<li><p>Elaborar apresentações em HTML (Reveal.js) e em PDF a partir de documentos Quarto.</p></li>
+<li><p>Construir e publicar um blog ou site pessoal/profissional com Quarto, utilizando GitHub Pages.</p></li>
+<li><p>Utilizar Git e GitHub para versionamento, organização e submissão dos artefatos produzidos na disciplina.</p></li>
+</ul>
+</section>
+<section id="avaliação" class="level2">
+<h2 class="anchored" data-anchor-id="avaliação">Avaliação</h2>
+<p>O planejamento da disciplina prevê que os pontos serão distribuídos da seguinte forma:</p>
+<ol type="1">
+<li><p><strong>Atividades práticas em aula = 50 pontos</strong>: sete atividades individuais, realizadas durante as Aulas 1 a 7, com supervisão do professor, e registradas no repositório GitHub individual do aluno. A versão avaliada será a do último <em>commit</em> enviado ao GitHub antes do encerramento da aula; não haverá envio duplicado por e-mail, formulário ou plataforma externa. A progressão e os valores são: Aula 1 = 4 pontos; Aula 2 = 6 pontos; Aula 3 = 7 pontos; Aula 4 = 9 pontos; Aulas 5, 6 e 7 = 8 pontos cada. A página <strong>Avaliações</strong> reúne os enunciados, entregáveis, critérios, arquivos de apoio e checklist de submissão.</p></li>
+<li><p><strong>Miniartigo científico em LaTeX = 20 pontos</strong>: edição técnica individual, no Overleaf, por meio da reconstrução técnica de um artigo curto de referência selecionado pelo professor. Todos os estudantes criarão seus próprios projetos a partir do template oficial da Revista Brasileira de Finanças, com a orientação de configuração publicada no site. O professor indicará o artigo curto de referência, sua fonte, licença e as partes exatas a reconstruir. A configuração do projeto, a organização dos arquivos, a criação do <code>.bib</code>, a recriação dos elementos e a compilação fazem parte da prática supervisionada. A avaliação concentra-se nas competências de composição e estruturação em LaTeX, e não na maturidade prévia do projeto de dissertação do mestrando.</p>
+<p>Serão avaliados a organização dos arquivos, a estrutura semântica do documento, a compilação, o uso de figuras e tabelas, as equações, as citações, o arquivo <code>.bib</code>, as referências cruzadas e a qualidade tipográfica do resultado. O artigo-fonte terá sua autoria intelectual, referência completa e licença identificadas de modo explícito; o exercício não avalia autoria científica nem reproduz o artigo integralmente. A reconstrução é restrita à disciplina: o projeto Overleaf, o fonte, o PDF e os elementos reproduzidos devem permanecer privados, sem publicação no GitHub ou por link público. A entrega será feita por compartilhamento direto com o professor no Overleaf ou por procedimento privado indicado no enunciado.</p></li>
+<li><p><strong>Blog Quarto = 30 pontos</strong>: construção e publicação de um blog individual com Quarto e GitHub Pages, contendo ao menos três postagens, sendo obrigatoriamente uma delas um relatório técnico reprodutível com código, dados e resultados. O blog funciona como avaliação integradora da disciplina e pode constituir base para o produto técnico/tecnológico exigido pelo programa.</p></li>
+</ol>
+<p>Para aprovação, são necessários pelo menos 60 pontos. As rubricas dos itens 2 e 3, o calendário de entregas e as instruções completas estarão na página <strong>Avaliações</strong> antes da primeira aula. Não haverá provas formais: a disciplina avalia os artefatos produzidos e a prática supervisionada.</p>
+</section>
+<section id="bibliografia-básica" class="level2">
+<h2 class="anchored" data-anchor-id="bibliografia-básica">Bibliografia Básica</h2>
+<p>ALEXANDER, Rohan. <strong>Telling Stories with Data: With Applications in R and Python</strong>. Boca Raton: CRC Press, 2023. Disponível em: <a href="https://tellingstorieswithdata.com/" class="uri">https://tellingstorieswithdata.com/</a>. Acesso em: 1 maio 2026.</p>
+<p>OETIKER, Tobias; SERWIN, Marcin; PARTL, Hubert; HYNA, Irene; SCHLEGL, Elisabeth. <strong>The Not So Short Introduction to LaTeX</strong>. [S. l.]: [s. n.], 2025. Disponível em: <a href="https://tobi.oetiker.ch/lshort/lshort.pdf" class="uri">https://tobi.oetiker.ch/lshort/lshort.pdf</a>. Acesso em: 20 jul. 2026.</p>
+<p>POSIT. <strong>Quarto Documentation</strong>. Disponível em: <a href="https://quarto.org/docs/" class="uri">https://quarto.org/docs/</a>. Acesso em: 20 jul. 2026.</p>
+</section>
+<section id="bibliografia-complementar" class="level2">
+<h2 class="anchored" data-anchor-id="bibliografia-complementar">Bibliografia Complementar</h2>
+<p>BRYAN, Jennifer. <strong>Happy Git and GitHub for the useR</strong>. Disponível em: <a href="https://happygitwithr.com/" class="uri">https://happygitwithr.com/</a>. Acesso em: 1 maio 2026.</p>
+<p>FIGUEIREDO, Ludmilla; SCHERER, Cédric; CABRAL, Juliano Sarmento. A simple kit to use computational notebooks for more openness, reproducibility, and productivity in research. <strong>PLOS Computational Biology</strong>, San Francisco, v. 18, n.&nbsp;9, e1010356, 2022. Disponível em: <a href="https://doi.org/10.1371/journal.pcbi.1010356" class="uri">https://doi.org/10.1371/journal.pcbi.1010356</a>. Acesso em: 20 jul. 2026.</p>
+<p>HEALY, Kieran. <strong>The Plain Person’s Guide to Plain Text Social Science</strong>. Durham: Duke University, 2019. Disponível em: <a href="https://plain-text.co/" class="uri">https://plain-text.co/</a>. Acesso em: 20 jul. 2026.</p>
+<p>KNUTH, Donald Ervin. Literate programming. <strong>The Computer Journal</strong>, Oxford, v. 27, n.&nbsp;2, p.&nbsp;97-111, 1984. Disponível em: <a href="https://doi.org/10.1093/comjnl/27.2.97" class="uri">https://doi.org/10.1093/comjnl/27.2.97</a>. Acesso em: 20 jul. 2026.</p>
+<p>LIMONGI, Ricardo; ROGERS, Pablo. Open Science in Three Acts: Foundations, Practice, and Implementation – First Act. <strong>BAR - Brazilian Administration Review</strong>, [S. l.], v. 22, n.&nbsp;1, e250079, 2025. Disponível em: <a href="https://doi.org/10.1590/1807-7692bar2025250079" class="uri">https://doi.org/10.1590/1807-7692bar2025250079</a>. Acesso em: 21 jul. 2026.</p>
+<p>LIMONGI, Ricardo; ROGERS, Pablo. Open Science in Three Acts: Foundations, Practice, and Implementation – Second Act. <strong>BAR - Brazilian Administration Review</strong>, [S. l.], v. 22, n.&nbsp;2, e250116, 2025. Disponível em: <a href="https://doi.org/10.1590/1807-7692bar2025250116" class="uri">https://doi.org/10.1590/1807-7692bar2025250116</a>. Acesso em: 21 jul. 2026.</p>
+<p>ROGERS, Pablo; LIMONGI, Ricardo. Open Science in Three Acts: Foundations, Practice, and Implementation — Third Act. <strong>BAR - Brazilian Administration Review</strong>, [S. l.], v. 22, n.&nbsp;3, e250162, 2025. Disponível em: <a href="https://doi.org/10.1590/1807-7692bar2025250162" class="uri">https://doi.org/10.1590/1807-7692bar2025250162</a>. Acesso em: 21 jul. 2026.</p>
+<p>WICKHAM, Hadley; ÇETINKAYA-RUNDEL, Mine; GROLEMUND, Garrett. <strong>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</strong>. 2. ed.&nbsp;Sebastopol: O’Reilly Media, 2023. Disponível em: <a href="https://r4ds.hadley.nz/" class="uri">https://r4ds.hadley.nz/</a>. Acesso em: 1 maio 2026.</p>
+<p>XIE, Yihui; DERVIEUX, Christophe; RIEDERER, Emily. <strong>R Markdown Cookbook</strong>. Boca Raton: CRC Press, 2020. Disponível em: <a href="https://bookdown.org/yihui/rmarkdown-cookbook/" class="uri">https://bookdown.org/yihui/rmarkdown-cookbook/</a>. Acesso em: 1 maio 2026.</p>
+</section>
+<section id="recursos-online" class="level2">
+<h2 class="anchored" data-anchor-id="recursos-online">Recursos Online</h2>
+<section id="latex-e-overleaf" class="level3">
+<h3 class="anchored" data-anchor-id="latex-e-overleaf">LaTeX e Overleaf</h3>
+<ul>
+<li><p><strong>Comece aqui:</strong> <a href="https://learn.overleaf.com/101-get-started-with-latex-in-overleaf" target="_blank">101 Get Started with LaTeX in Overleaf</a>.</p></li>
+<li><p><a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes" target="_blank">Learn LaTeX in 30 minutes</a>: revisão rápida dos fundamentos.</p></li>
+<li><p><a href="https://www.overleaf.com/learn/latex/Articles" target="_blank">Overleaf Learn: Articles</a>: consulta para a estrutura e os elementos do miniartigo.</p></li>
+<li><p><a href="https://www.overleaf.com/latex/templates/brazilian-review-of-finance-a-template/hzwtyhsyrbhs" target="_blank">Template da Revista Brasileira de Finanças no Overleaf</a>: template externo que cada mestrando usará para criar seu projeto individual de miniartigo.</p></li>
+<li><p><a href="https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions" target="_blank">Instruções LaTeX da Elsevier (classe <code>elsarticle</code>)</a>: comparação de convenções editoriais e de preparação de arquivos de submissão.</p></li>
+</ul>
+</section>
+<section id="quarto" class="level3">
+<h3 class="anchored" data-anchor-id="quarto">Quarto</h3>
+<ul>
+<li><p><strong>Comece aqui:</strong> <a href="https://quarto.org/docs/guide/" target="_blank">documentação oficial do Sistema Quarto</a>.</p></li>
+<li><p><strong>Aulas 3 e 4 — documentos reprodutíveis:</strong> <a href="https://quarto.org/docs/computations/r.html" target="_blank">Quarto com R</a>, <a href="https://quarto.org/docs/authoring/citations.html" target="_blank">citações</a>, <a href="https://quarto.org/docs/authoring/cross-references.html" target="_blank">referências cruzadas</a> e <a href="https://quarto.org/docs/authoring/brand.html" target="_blank">identidade visual com <code>_brand.yml</code></a>.</p></li>
+<li><p><strong>Aula 5 — automação:</strong> <a href="https://quarto.org/docs/computations/parameters.html" target="_blank">parâmetros</a> e <a href="https://quarto.org/docs/projects/code-execution.html" target="_blank">gerenciamento da execução</a>.</p></li>
+<li><p><strong>Aula 6 — apresentações:</strong> <a href="https://quarto.org/docs/presentations/" target="_blank">apresentações com Quarto</a>.</p></li>
+<li><p><strong>Aula 7 — blogs e publicação:</strong> <a href="https://quarto.org/docs/websites/website-blog.html" target="_blank">criar um blog</a> e <a href="https://quarto.org/docs/publishing/github-pages.html" target="_blank">GitHub Pages</a>.</p></li>
+<li><p><strong>Inspiração e aprofundamento:</strong> <a href="https://ivelasq-r-pharma-2025-branded-quarto.share.connect.posit.cloud" target="_blank">Creating Polished, Branded Documents with Quarto</a> e <a href="https://posit-conf-2025.github.io/quarto-brand/" target="_blank">Branded Websites, Presentations, Dashboards, and PDFs with Quarto (posit::conf 2025)</a>.</p></li>
+<li><p><strong>Aula 8 — demonstrações complementares:</strong> <a href="https://quarto.org/docs/manuscripts/" target="_blank">Quarto Manuscripts</a>, <a href="https://github.com/quarto-journals" target="_blank">Quarto Journals: formatos de periódicos para Quarto</a> e <a href="https://quarto.org/docs/output-formats/typst.html" target="_blank">formato de saída Typst no Quarto</a>.</p></li>
+</ul>
+</section>
+<section id="git-e-github-nivelamento" class="level3">
+<h3 class="anchored" data-anchor-id="git-e-github-nivelamento">Git e GitHub (nivelamento)</h3>
+<ul>
+<li><p><strong>Comece aqui:</strong> <a href="https://happygitwithr.com/" target="_blank">Happy Git and GitHub for the useR</a>.</p></li>
+<li><p><a href="https://docs.github.com/en/get-started/start-your-journey/hello-world" target="_blank">Hello World do GitHub</a>: primeiro repositório, <em>branch</em>, <em>commit</em>, <em>pull request</em> e <em>merge</em>.</p></li>
+</ul>
+</section>
+</section>
+<section id="ementa" class="level2">
+<h2 class="anchored" data-anchor-id="ementa">Ementa</h2>
+<p>Produção reprodutível de documentos técnicos, científicos e profissionais com Quarto. Integração entre texto, código, resultados computacionais, tabelas, gráficos, equações, citações e referências cruzadas. Fundamentos de Markdown, LaTeX, BibTeX e controle de versão com Git/GitHub. Geração de documentos em HTML, PDF e Word. Relatórios parametrizados e comunicação de resultados em pesquisas aplicadas e contextos profissionais.</p>
+</section>
+<section id="conteúdo-planejado" class="level2">
+<h2 class="anchored" data-anchor-id="conteúdo-planejado">Conteúdo Planejado</h2>
+<p>Trata-se apenas de um planejamento e pode ser alterado conforme o andamento da disciplina e rendimento da turma.</p>
+<section id="latex" class="level3">
+<h3 class="anchored" data-anchor-id="latex">1. LaTeX</h3>
+<ul>
+<li>Composição tipográfica digital: propósito, comparação entre edição visual (WYSIWYG) e marcação, e programação literada como ponte conceitual para o módulo Quarto.</li>
+<li>Ambiente Overleaf: criação de um projeto simples na Aula 1; estrutura de um documento LaTeX, preâmbulo, classes e pacotes; texto, seções, listas e equações.</li>
+<li>Edição técnica de miniartigo científico: organização de arquivos, estrutura semântica, figuras, tabelas, referências cruzadas, notas de rodapé, BibTeX, arquivos <code>.bib</code>, estilos de citação (<code>natbib</code>) e revisão tipográfica.</li>
+<li>Template da Revista Brasileira de Finanças como padrão didático para que cada mestrando configure seu projeto individual; classe <code>elsarticle</code> e diretrizes de submissão da Revista Brasileira de Economia (RBE) apenas como comparação de convenções editoriais.</li>
+</ul>
+</section>
+<section id="sistema-de-publicação-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="sistema-de-publicação-quarto">2. Sistema de publicação Quarto</h3>
+<ul>
+<li>Programação literada e reprodutibilidade: o paradigma, sua motivação e suas implicações para auditabilidade de análises e relatórios.</li>
+<li>Anatomia de um documento Quarto: cabeçalho YAML, Markdown, blocos de código R, opções de execução e fluxo de trabalho com RStudio e Git/GitHub. O primeiro documento será produzido e renderizado em HTML; PDF e Word serão comparados como saídas para finalidades comunicacionais distintas.</li>
+<li>Relatórios técnicos reprodutíveis: organização de projeto, dados brutos preservados, caminhos relativos, <code>README</code>, execução e renderização repetíveis; tabelas, gráficos, equações, citações, referências cruzadas e identidade visual com <code>_brand.yml</code>.</li>
+<li>Relatórios parametrizados: parâmetros no YAML, versões destinadas a públicos ou cenários distintos, nomes de arquivos e renderização em lote simples para automação de relatórios repetitivos.</li>
+<li>Apresentações: Reveal.js (HTML) como formato prático principal; Beamer como alternativa em PDF que aproveita o módulo LaTeX.</li>
+<li>Blogs e sites com Quarto: estrutura de projeto, listagens, temas, acessibilidade básica e publicação com GitHub Pages.</li>
+<li>Panorama complementar (demonstração): Quarto Manuscripts, dashboards com Quarto, formatos de periódicos para Quarto (<code>quarto-journals</code>) e introdução ao Typst como sistema de composição.</li>
+</ul>
+</section>
+</section>
+<section id="recursos-didáticos-e-materiais-de-estudo" class="level2">
+<h2 class="anchored" data-anchor-id="recursos-didáticos-e-materiais-de-estudo">Recursos Didáticos e Materiais de Estudo</h2>
+<p>Entre os recursos didáticos utilizados na disciplina estão:</p>
+<ul>
+<li><p><strong>Materiais Primários para Estudo</strong>:</p>
+<ul>
+<li><p>Bibliografia recomendada.</p></li>
+<li><p>Slides e notas de aula (disponibilizados no site da disciplina).</p></li>
+<li><p>Tutoriais desenvolvidos em Quarto.</p></li>
+<li><p>Arquivos quarto (<em>reports</em>) demonstrativos (.qmd).</p></li>
+<li><p>Link para o template RBFin, roteiro de configuração do projeto individual e enunciado do miniartigo, com artigo de referência, escopo de reconstrução e critérios da atividade avaliativa.</p></li>
+</ul></li>
+<li><p><strong>Ambiente e Ferramentas</strong>:</p>
+<ul>
+<li><p>Overleaf (plano gratuito) para o módulo de LaTeX.</p></li>
+<li><p>R, RStudio, Quarto CLI e Git nas máquinas dos alunos para o módulo de Quarto.</p></li>
+<li><p>Site da disciplina e repositório-template para acesso aos materiais, às instruções e aos arquivos iniciais.</p></li>
+<li><p>Repositório GitHub individual público para registro e entrega dos artefatos avaliativos.</p></li>
+<li><p>Ambiente virtual de aprendizagem para suporte e comunicação.</p></li>
+<li><p>Arquivos de dados públicos, anonimizados ou didáticos para os exemplos.</p></li>
+</ul></li>
+</ul>
+<p><strong>Importante</strong>: Os slides, tutoriais e demais recursos disponibilizados no site constituem os materiais primários para estudo e preparação para as avaliações, devendo ser utilizados em conjunto com a bibliografia recomendada. O ambiente virtual de aprendizagem será utilizado apenas para comunicação institucional complementar.</p>
+</section>
+<section id="metodologia-de-ensino" class="level2">
+<h2 class="anchored" data-anchor-id="metodologia-de-ensino">Metodologia de Ensino</h2>
+<p>As aulas serão síncronas, online, estruturadas em dois momentos: (i) exposição dialogada e demonstração ao vivo (<em>live coding</em>) dos conceitos e ferramentas, de forma breve; e (ii) prática supervisionada, que ocupará a maior parte de cada aula, na qual os mestrandos executarão individualmente as atividades avaliativas com acompanhamento do professor para esclarecimento de dúvidas. Essa ênfase na prática durante o horário de aula é deliberada, visto que considera-se que o domínio das ferramentas tratadas só se desenvolve pelo uso.</p>
+<p>Todos os materiais da disciplina serão produzidos com as próprias ferramentas ensinadas (Quarto e LaTeX), servindo simultaneamente como conteúdo e como exemplo de aplicação. A comunicação, a distribuição de materiais e a referência às submissões ocorrerão por meio do site da disciplina e dos repositórios GitHub individuais. Não será utilizado GitHub Classroom.</p>
+<p>Na Aula 1, cada estudante criará um projeto Overleaf simples para a prática inicial. Na atividade do miniartigo, cada mestrando abrirá o template oficial RBFin como projeto próprio e reconstruirá as partes delimitadas do artigo de referência selecionado. Assim, não haverá convites individuais nem projeto-base montado previamente; a configuração do projeto, dos arquivos, da bibliografia e dos elementos do artigo fará parte da prática supervisionada. O trabalho permanecerá privado no Overleaf.</p>
+<p>As atividades práticas das Aulas 1 e 2 poderão preparar componentes do miniartigo em LaTeX. Nesses casos, a pontuação das atividades em aula avaliará a execução guiada e os objetivos específicos de cada encontro; a avaliação do miniartigo incidirá sobre a integração final, a revisão e a qualidade técnica do documento completo, evitando dupla contagem do mesmo desempenho.</p>
+<p>Na seção correspondente da página <strong>Avaliações</strong>, estarão a competência, o contexto, os entregáveis, o tempo previsto, os materiais de apoio, os critérios e o checklist de submissão. A exposição dialogada e o <em>live coding</em> serão limitados ao necessário para a realização da atividade.</p>
+</section>
+<section id="plano-de-aula" class="level2">
+<h2 class="anchored" data-anchor-id="plano-de-aula">Plano de Aula</h2>
+<p>Alterações excepcionais no cronograma serão publicadas no site da disciplina e não modificarão retroativamente critérios, pontuações ou prazos já divulgados. A aula 8 terá duração de 2 horas; as demais, de 4 horas.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 28%">
+<col style="width: 43%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Aula</th>
+<th style="text-align: center;">Data</th>
+<th style="text-align: left;">Tópicos planejados</th>
+<th style="text-align: left;">Artefato prático e atividade</th>
+<th style="text-align: center;">Pontos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">03/08/26</td>
+<td style="text-align: left;">Apresentação da disciplina. Composição tipográfica e programação literada como ponte conceitual. LaTeX no Overleaf: criação de projeto simples, estrutura do documento, texto, seções, listas e equações.</td>
+<td style="text-align: left;">Documento LaTeX compilável em projeto individual simples, com título, seções, lista e equação.</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">10/08/26</td>
+<td style="text-align: left;">Miniartigo científico em LaTeX: configuração de projeto individual a partir do RBFin; reconstrução técnica de elementos delimitados de artigo de referência; figuras, tabelas, referências cruzadas e BibTeX. <code>elsarticle</code> como comparação.</td>
+<td style="text-align: left;">Componente privado do miniartigo com figura, tabela, citação, <code>.bib</code> e referência cruzada funcionais.</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">17/08/26</td>
+<td style="text-align: left;">Introdução ao Quarto: anatomia do <code>.qmd</code>, YAML, Markdown, código R e renderização em HTML. Comparação entre HTML, PDF e Word; uso do ambiente previamente validado.</td>
+<td style="text-align: left;">Primeiro <code>.qmd</code> renderizado em HTML, com texto, código R e resultado computacional.</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">24/08/26</td>
+<td style="text-align: left;">Relatórios técnicos reprodutíveis: organização de projeto, dados, caminhos relativos, <code>README</code>, tabelas, gráficos, citações, referências cruzadas e <code>_brand.yml</code>.</td>
+<td style="text-align: left;">Relatório técnico reproduzível para um problema de Administração ou Finanças.</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">31/08/26</td>
+<td style="text-align: left;">Relatórios parametrizados e automação simples para públicos, cenários ou períodos distintos.</td>
+<td style="text-align: left;">Duas versões parametrizadas do relatório da Aula 4, com nomes de arquivo adequados.</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">14/09/26</td>
+<td style="text-align: left;">Apresentações com Quarto: Reveal.js como formato principal e Beamer como alternativa PDF.</td>
+<td style="text-align: left;">Apresentação Reveal.js que comunique resultados de uma análise ou problema aplicado.</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">21/09/26</td>
+<td style="text-align: left;">Blogs e sites com Quarto: estrutura, temas, listagens, acessibilidade básica e publicação com GitHub Pages.</td>
+<td style="text-align: left;">Blog publicado com estrutura inicial e primeira postagem.</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">28/09/26</td>
+<td style="text-align: left;">Panorama complementar: Quarto Manuscripts, <code>quarto-journals</code>, dashboards e Typst. Apresentação dos blogs, entrega final e encerramento.</td>
+<td style="text-align: left;">Verificação final dos artefatos e apresentação do blog; não há nova atividade avaliativa.</td>
+<td style="text-align: center;">—</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2026 Washington Santos da Silva</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/washingtonssilva/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://washingtonsilva.github.io">
+      <i class="bi bi-globe" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

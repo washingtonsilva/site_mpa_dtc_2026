@@ -1,0 +1,28 @@
+---
+lang: pt-BR
+title: "Documentos Técnicos e Científicos com Quarto e LaTeX - 2026/2"
+subtitle: "Mestrado Profissional em Administração <br> IFMG Campus Formiga"
+---
+
+## Bem-vindo à disciplina
+
+Esta disciplina prepara os mestrandos para produzir documentos técnicos,
+científicos e profissionais reprodutíveis, integrando texto, código, dados,
+resultados, referências e formatação.
+
+
+## Informações gerais
+
+- **Professor:** [Prof. Dr. Washington Santos da Silva](https://washingtonsilva.github.io){target="_blank"}
+- **E-mail:** washington.silva@ifmg.edu.br
+- **Horário de aula:** Segunda-Feira, 18:30-22:30
+- **Local:** aulas síncronas via Google Meet
+
+
+## Conteúdo
+
+Consulte o [Programa da Disciplina](programa.qmd) para objetivos, ementa,
+bibliografia e avaliações.
+
+O [Cronograma](cronograma.qmd) reúne os materiais de cada aula, como slides,
+dados e leituras.

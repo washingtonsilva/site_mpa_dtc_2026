@@ -1,0 +1,170 @@
+---
+lang: pt-BR
+title: "Markdown para documentos Quarto"
+subtitle: "Aprofunde a escrita do corpo do documento"
+---
+
+Markdown é uma forma simples de escrever documentos com texto legível e
+marcações curtas. No Quarto, essas marcações indicam a **estrutura** do
+documento — títulos, listas, links, tabelas e fórmulas — e não a aparência
+manual de cada elemento.
+
+Este tutorial aprofunda a escrita do corpo de arquivos `.qmd`. Antes de
+começar, conclua [Quarto e RStudio: primeiro documento](quarto-rstudio.qmd):
+você usará o arquivo criado ali para praticar estas marcações.
+
+::: {.callout-important icon="false"}
+## Ideia central
+
+Escreva primeiro um texto bem estruturado. O Quarto aplicará a formatação
+adequada quando gerar HTML, PDF ou outro formato de saída.
+:::
+
+## 1. Títulos e parágrafos
+
+Use `#` para indicar níveis de título. Uma linha em branco separa parágrafos.
+
+```markdown
+## Resultados
+
+Esta seção apresenta os principais resultados da análise.
+
+### Desempenho no período
+
+Os indicadores melhoraram no segundo trimestre.
+```
+
+Nesta página, o título do documento já foi definido no cabeçalho do arquivo;
+por isso, o conteúdo começa em `##`. Em um template da disciplina, preserve a
+hierarquia de títulos que ele já oferecer. Não escolha `#`, `##` ou `###` para
+alterar apenas o tamanho visual do texto.
+
+## 2. Ênfase, código e listas
+
+Use asteriscos para dar ênfase e crases para nomes de arquivos, comandos ou
+trechos curtos de código.
+
+```markdown
+O arquivo **relatorio.qmd** reúne os resultados da *análise exploratória*.
+Execute `quarto render` para gerar o documento.
+```
+
+Listas são úteis quando os itens têm ou não têm uma ordem necessária.
+
+```markdown
+- Organize os dados.
+- Descreva o método.
+- Apresente os resultados.
+
+1. Crie o arquivo.
+2. Escreva o conteúdo.
+3. Renderize o documento.
+```
+
+Mantenha uma linha em branco antes e depois de uma lista. Isso torna o
+arquivo-fonte mais fácil de ler e evita ambiguidades na renderização.
+
+## 3. Links, imagens e citações em bloco
+
+Um link associa um texto descritivo a um endereço. Evite exibir URLs longas
+no corpo do documento quando um texto claro é mais informativo.
+
+```markdown
+Consulte a [documentação do Quarto](https://quarto.org/docs/).
+```
+
+Para inserir uma imagem, indique um texto alternativo e o caminho do arquivo.
+O texto alternativo descreve a imagem para leitores que não a visualizam.
+
+```markdown
+![Evolução mensal das vendas](figuras/vendas-mensais.png)
+```
+
+O arquivo da figura deve existir no caminho informado. Em projetos da
+disciplina, organize as imagens em uma pasta identificável, como `figuras/`,
+em vez de espalhá-las pela pasta principal.
+
+Use `>` para destacar uma citação curta ou uma observação reproduzida.
+
+```markdown
+> A documentação deve permitir que outra pessoa compreenda o percurso do trabalho.
+```
+
+## 4. Tabelas e fórmulas simples
+
+Uma tabela pequena pode ser escrita diretamente em Markdown.
+
+```markdown
+| Indicador | 2025 | 2026 |
+|:----------|-----:|-----:|
+| Receita   | 120  | 145  |
+| Custos    | 80   | 92   |
+```
+
+Os dois-pontos na segunda linha controlam o alinhamento: à esquerda em
+`|:---|` e à direita em `|---:|`. Para tabelas extensas ou produzidas a partir
+de dados, serão usadas ferramentas mais apropriadas nas atividades da
+disciplina.
+
+Fórmulas usam a sintaxe LaTeX. Coloque uma fórmula curta entre um par de
+cifrões e uma fórmula destacada entre dois pares.
+
+```markdown
+A taxa de crescimento é $g = (x_t / x_{t-1}) - 1$.
+
+$$
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i
+$$
+```
+
+## 5. Um pequeno exemplo completo
+
+O trecho abaixo reúne os elementos mais usados. Você pode usá-lo para ampliar
+o arquivo `primeiro-documento.qmd` criado no tutorial anterior e renderizá-lo
+novamente.
+
+```markdown
+## Desempenho trimestral
+
+Este relatório resume os **resultados financeiros** do segundo trimestre.
+
+### Principais achados
+
+- A receita cresceu 12%.
+- Os custos permaneceram sob controle.
+- A margem operacional aumentou.
+
+| Indicador | Valor |
+|:----------|------:|
+| Receita   | 145   |
+| Custos    | 92    |
+
+Para o método de cálculo, consulte a
+[documentação do projeto](https://quarto.org/docs/).
+```
+
+O texto-fonte continua legível antes da renderização. Isso ajuda na revisão,
+no controle de versão com Git e na colaboração.
+
+## 6. O que será acrescentado pelo Quarto
+
+Markdown é o ponto de partida. Um arquivo Quarto (`.qmd`) também pode conter:
+
+- um cabeçalho YAML com título, autor e formato de saída;
+- blocos de código R e seus resultados;
+- citações bibliográficas a partir de um arquivo `.bib`;
+- referências cruzadas para seções, tabelas, figuras e equações.
+
+Não é preciso memorizar esses recursos agora. Eles se somam ao Markdown, sem
+substituir a escrita estruturada.
+
+## Checklist antes de continuar
+
+- Consigo separar parágrafos com uma linha em branco.
+- Uso títulos para organizar ideias, e não para escolher tamanhos de fonte.
+- Sei criar listas, links e uma tabela curta.
+- Sei indicar uma imagem com texto alternativo e caminho de arquivo.
+- Reconheço que um `.qmd` combinará Markdown com recursos próprios do Quarto.
+
+Para consulta, veja a página oficial sobre
+[Markdown no Quarto](https://quarto.org/docs/authoring/markdown-basics.html){target="_blank"}.
