@@ -7,27 +7,6 @@ author: "Prof. Dr. Washington S. da Silva"
 
 
 
-## Organização dos artefatos e comunicação
-
-O site reúne o programa, o cronograma, as rubricas, as atividades, o
-repositório-template, o cadastro de repositórios e perguntas frequentes.
-Comunicados por outros meios apenas indicam onde encontrar essas informações.
-
-Cada estudante será responsável por seu repositório individual público. A
-organização dos arquivos e as instruções de entrega serão definidas na página
-**Avaliações** do site da disciplina. O repositório deve conter
-somente materiais próprios, arquivos didáticos fornecidos pela disciplina ou
-conteúdos com licença compatível. É vedado inserir dados confidenciais,
-pessoais, identificáveis ou sujeitos a sigilo organizacional. Os exemplos e
-avaliações utilizarão dados públicos, anonimizados ou didáticos.
-
-O miniartigo em LaTeX é uma exceção: por reconstruir tecnicamente partes de
-artigo publicado, seu projeto Overleaf, fonte, PDF e elementos reproduzidos
-permanecerão privados e não serão enviados ao repositório GitHub público nem
-compartilhados por link público.
-
-
-
 ## Objetivo Geral
 
 Capacitar o mestrando a produzir documentos técnicos, científicos e 

@@ -10,6 +10,10 @@ Esta disciplina prepara os mestrandos para produzir documentos técnicos,
 científicos e profissionais reprodutíveis, integrando texto, código, dados,
 resultados, referências e formatação.
 
+Antes da primeira aula, acesse a página
+[Ambiente computacional](instrucoes.qmd) para criar as contas necessárias,
+instalar e configurar os programas necessários em seu computador.
+
 
 ## Informações gerais
 
@@ -21,8 +25,13 @@ resultados, referências e formatação.
 
 ## Conteúdo
 
-Consulte o [Programa da Disciplina](programa.qmd) para objetivos, ementa,
-bibliografia e avaliações.
+Use este site como guia da disciplina:
 
-O [Cronograma](cronograma.qmd) reúne os materiais de cada aula, como slides,
-dados e leituras.
+- [Ambiente computacional](instrucoes.qmd): contas, programas e configurações
+  necessárias antes da primeira aula.
+- [Programa da Disciplina](programa.qmd): objetivos, ementa, bibliografia e
+  planejamento completo.
+- [Tutoriais](tutorials/index.qmd): primeiros passos com Git/GitHub, Overleaf,
+  Quarto/RStudio e Markdown.
+- [Cronograma](cronograma.qmd): aulas, slides, dados e leituras.
+- [Avaliações](avaliacoes.qmd): atividades, entregas, critérios e rubricas.

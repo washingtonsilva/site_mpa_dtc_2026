@@ -221,7 +221,7 @@
     "href": "instrucoes.html",
     "title": "Preparação do ambiente computacional",
     "section": "",
-    "text": "Conclua este roteiro antes da primeira aula. Ele prepara o computador para as atividades da disciplina.\n\n\n\n\n\n\nNotaPlataforma adotada\n\n\n\nAs etapas detalhadas desta página foram preparadas para Windows. Usuários de macOS ou Linux devem utilizar os instaladores disponíveis nas páginas oficiais indicadas nas seções de R, RStudio, Quarto e Git.\n\n\n\nCrie uma conta gratuita no Overleaf e uma conta no GitHub.\nInstale R, RStudio, Quarto, TinyTeX e Git.\nConfigure sua identidade no Git e verifique o Git Bash como terminal do RStudio.\nFaça a verificação do ambiente.\nLeia o tutorial Overleaf: primeiros passos e o tutorial prático de Git e GitHub para conhecer os fluxos de trabalho da disciplina.\nQuando forem publicados, crie seu repositório individual a partir do repositório-template e registre sua URL no cadastro de repositórios. O artigo de referência e o enunciado do miniartigo no Overleaf serão disponibilizados apenas na atividade correspondente.\n\nNão há pré-requisito formal, mas as atividades serão registradas no GitHub desde a primeira aula. Quem ainda não conhece Git e GitHub deve estudar por conta própria com Happy Git and GitHub for the useR e com este roteiro. Não haverá um bloco de nivelamento durante as aulas.",
+    "text": "Conclua este roteiro de instalação, configuração e criação de contas antes da primeira aula. Ele prepara o computador para as atividades da disciplina.\n\n\n\n\n\n\nNotaPlataforma adotada\n\n\n\nAs etapas detalhadas desta página foram preparadas para Windows. Usuários de macOS ou Linux devem utilizar os instaladores disponíveis nas páginas oficiais indicadas nas seções de R, RStudio, Quarto e Git.\n\n\n\n\n\n\n\n\nImportanteJá tem os programas instalados?\n\n\n\nSe você usa R 4.5.1 ou 4.5.2, instale o R 4.6.1 indicado nesta página. Atualize também RStudio, Quarto e Git para a versão estável mais recente disponível nas páginas oficiais. Faça isso com antecedência: a atualização pode exigir reiniciar o computador ou verificar novamente o terminal do RStudio.\nOs pacotes instalados no R 4.5 não estarão disponíveis automaticamente no R 4.6. Não é necessário reinstalá-los agora: a disciplina indicará os pacotes a instalar quando eles forem usados.\n\n\n\nCrie uma conta gratuita no Overleaf e uma conta no GitHub.\nInstale R 4.6.1 e atualize RStudio, Quarto, TinyTeX e Git.\nConfigure sua identidade no Git e verifique o Git Bash como terminal do RStudio.\nFaça a verificação do ambiente.\nLeia o tutorial Overleaf: primeiros passos e o tutorial prático de Git e GitHub para conhecer os fluxos de trabalho da disciplina.\nQuando forem publicados, crie seu repositório individual a partir do repositório-template e registre sua URL no cadastro de repositórios. O artigo de referência e o enunciado do miniartigo no Overleaf serão disponibilizados apenas na atividade correspondente.\n\nNão há pré-requisito formal, mas Git e GitHub serão usados desde a primeira aula. Conclua o tutorial prático de Git e GitHub desta disciplina antes do início das aulas. Para revisar conceitos ou consultar explicações adicionais, veja também o tutorial de Git e GitHub do professor e, como aprofundamento opcional, o Happy Git and GitHub for the useR. Os comandos da disciplina serão executados no Git Bash, pelo Terminal do RStudio. Não haverá um bloco de nivelamento durante as aulas.",
     "crumbs": [
       "Ambiente computacional"
     ]
@@ -231,7 +231,7 @@
     "href": "instrucoes.html#sec-preparacao",
     "title": "Preparação do ambiente computacional",
     "section": "",
-    "text": "Conclua este roteiro antes da primeira aula. Ele prepara o computador para as atividades da disciplina.\n\n\n\n\n\n\nNotaPlataforma adotada\n\n\n\nAs etapas detalhadas desta página foram preparadas para Windows. Usuários de macOS ou Linux devem utilizar os instaladores disponíveis nas páginas oficiais indicadas nas seções de R, RStudio, Quarto e Git.\n\n\n\nCrie uma conta gratuita no Overleaf e uma conta no GitHub.\nInstale R, RStudio, Quarto, TinyTeX e Git.\nConfigure sua identidade no Git e verifique o Git Bash como terminal do RStudio.\nFaça a verificação do ambiente.\nLeia o tutorial Overleaf: primeiros passos e o tutorial prático de Git e GitHub para conhecer os fluxos de trabalho da disciplina.\nQuando forem publicados, crie seu repositório individual a partir do repositório-template e registre sua URL no cadastro de repositórios. O artigo de referência e o enunciado do miniartigo no Overleaf serão disponibilizados apenas na atividade correspondente.\n\nNão há pré-requisito formal, mas as atividades serão registradas no GitHub desde a primeira aula. Quem ainda não conhece Git e GitHub deve estudar por conta própria com Happy Git and GitHub for the useR e com este roteiro. Não haverá um bloco de nivelamento durante as aulas.",
+    "text": "Conclua este roteiro de instalação, configuração e criação de contas antes da primeira aula. Ele prepara o computador para as atividades da disciplina.\n\n\n\n\n\n\nNotaPlataforma adotada\n\n\n\nAs etapas detalhadas desta página foram preparadas para Windows. Usuários de macOS ou Linux devem utilizar os instaladores disponíveis nas páginas oficiais indicadas nas seções de R, RStudio, Quarto e Git.\n\n\n\n\n\n\n\n\nImportanteJá tem os programas instalados?\n\n\n\nSe você usa R 4.5.1 ou 4.5.2, instale o R 4.6.1 indicado nesta página. Atualize também RStudio, Quarto e Git para a versão estável mais recente disponível nas páginas oficiais. Faça isso com antecedência: a atualização pode exigir reiniciar o computador ou verificar novamente o terminal do RStudio.\nOs pacotes instalados no R 4.5 não estarão disponíveis automaticamente no R 4.6. Não é necessário reinstalá-los agora: a disciplina indicará os pacotes a instalar quando eles forem usados.\n\n\n\nCrie uma conta gratuita no Overleaf e uma conta no GitHub.\nInstale R 4.6.1 e atualize RStudio, Quarto, TinyTeX e Git.\nConfigure sua identidade no Git e verifique o Git Bash como terminal do RStudio.\nFaça a verificação do ambiente.\nLeia o tutorial Overleaf: primeiros passos e o tutorial prático de Git e GitHub para conhecer os fluxos de trabalho da disciplina.\nQuando forem publicados, crie seu repositório individual a partir do repositório-template e registre sua URL no cadastro de repositórios. O artigo de referência e o enunciado do miniartigo no Overleaf serão disponibilizados apenas na atividade correspondente.\n\nNão há pré-requisito formal, mas Git e GitHub serão usados desde a primeira aula. Conclua o tutorial prático de Git e GitHub desta disciplina antes do início das aulas. Para revisar conceitos ou consultar explicações adicionais, veja também o tutorial de Git e GitHub do professor e, como aprofundamento opcional, o Happy Git and GitHub for the useR. Os comandos da disciplina serão executados no Git Bash, pelo Terminal do RStudio. Não haverá um bloco de nivelamento durante as aulas.",
     "crumbs": [
       "Ambiente computacional"
     ]
@@ -241,7 +241,7 @@
     "href": "instrucoes.html#instalação-dos-programas",
     "title": "Preparação do ambiente computacional",
     "section": "Instalação dos programas",
-    "text": "Instalação dos programas\n\nLinguagem R\n\n\n\n\n\n\nDicaInstalar R 4.6.1\n\n\n\n\nAcesse CRAN.\nClique em Download R for Windows e, na página seguinte, em base.\nClique em Download R-4.6.1 for Windows.\nApós o download, execute o instalador e aceite as opções padrão até a instalação ser concluída.\n\n\n\n\n\nRStudio\n\n\n\n\n\n\nDicaInstalar o RStudio Desktop\n\n\n\n\nAcesse a página de download do RStudio.\nNa seção 2: Install RStudio, clique em Download RStudio Desktop for Windows.\nApós o download, execute o instalador e avance até a instalação ser concluída.\n\n\n\n\n\nSistema Quarto\n\n\n\n\n\n\nDicaInstalar o Quarto CLI\n\n\n\n\nAcesse a página de download do Quarto.\nBaixe o instalador de Quarto CLI para Windows.\nExecute o instalador e avance até a instalação ser concluída.\n\n\n\n\n\nTinyTeX\n\n\n\n\n\n\nImportanteInstalar o TinyTeX com antecedência\n\n\n\nTinyTeX é a distribuição LaTeX recomendada para gerar PDF a partir de documentos Quarto. Faça a instalação depois de instalar o Quarto.\nA instalação pode demorar, dependendo da conexão de internet e do computador. Execute-a com antecedência e aguarde sua conclusão antes da primeira aula.\nNo RStudio, abra a aba Terminal e execute:\nquarto install tinytex\nSe for necessário atualizar a distribuição posteriormente, execute:\nquarto update tinytex\n\n\n\n\nGit\n\n\n\n\n\n\nDicaInstalar o Git for Windows\n\n\n\n\nAcesse git-scm.com e clique em Download for Windows.\nApós o download, execute o instalador.\nMantenha as configurações padrão sugeridas. Na janela Adjusting the name of the initial branch, marque Override the default branch name for new repositories e informe main.\nClique em Next nas janelas restantes e conclua a instalação.",
+    "text": "Instalação dos programas\n\nLinguagem R\n\n\n\n\n\n\nDicaInstalar R 4.6.1\n\n\n\n\nAcesse CRAN.\nClique em Download R for Windows e, na página seguinte, em base.\nClique em Download R-4.6.1 for Windows.\nApós o download, execute o instalador e aceite as opções padrão até a instalação ser concluída. Mesmo que você já use uma versão anterior de R, instale o R 4.6.1.\n\n\n\n\n\nRStudio\n\n\n\n\n\n\nDicaInstalar ou atualizar o RStudio Desktop\n\n\n\n\nAcesse a página de download do RStudio.\nNa seção 2: Install RStudio, clique em Download RStudio Desktop for Windows.\nApós o download, execute o instalador e avance até a instalação ser concluída. Se o RStudio já estiver instalado, esse procedimento o atualizará.\n\n\n\n\n\nSistema Quarto\n\n\n\n\n\n\nDicaInstalar ou atualizar o Quarto CLI\n\n\n\n\nAcesse a página de download do Quarto.\nBaixe o instalador de Quarto CLI para Windows.\nExecute o instalador e avance até a instalação ser concluída. Se o Quarto já estiver instalado, esse procedimento o atualizará.\n\n\n\n\n\nTinyTeX\n\n\n\n\n\n\nImportanteInstalar o TinyTeX com antecedência\n\n\n\nTinyTeX é a distribuição LaTeX recomendada para gerar PDF a partir de documentos Quarto. Instale-o depois de instalar o Quarto.\nA instalação pode demorar, dependendo da conexão de internet e do computador. Execute-a com antecedência e aguarde sua conclusão antes da primeira aula.\nSe ainda não tiver o TinyTeX, abra a aba Terminal do RStudio e execute:\nquarto install tinytex\nSe já tiver o TinyTeX, atualize a distribuição com:\nquarto update tinytex\n\n\n\n\nGit\n\n\n\n\n\n\nDicaJá tem Git for Windows?\n\n\n\nAbra o Git Bash e execute:\ngit update-git-for-windows\nSiga as instruções exibidas. Ao terminar, abra um novo terminal e confirme a atualização com:\ngit --version\nSe o comando não funcionar, baixe e execute o instalador da seção seguinte. Isso pode ocorrer em instalações portáteis ou personalizadas.\n\n\n\n\n\n\n\n\nDicaInstalar o Git for Windows\n\n\n\n\nAcesse git-scm.com e clique em Download for Windows.\nApós o download, execute o instalador.\nMantenha as configurações padrão sugeridas. Na janela Adjusting the name of the initial branch, marque Override the default branch name for new repositories e informe main.\nClique em Next nas janelas restantes e conclua a instalação. Este instalador também pode ser usado para atualizar o Git quando o comando da seção anterior não funcionar.",
     "crumbs": [
       "Ambiente computacional"
     ]
@@ -282,16 +282,6 @@
     "title": "Preparação do ambiente computacional",
     "section": "Verificação do ambiente",
     "text": "Verificação do ambiente\nAntes da primeira aula, confirme que você consegue:\n\nAbrir R e RStudio.\nAbrir o terminal do RStudio e executar:\nquarto --version\ngit --version\nConfirmar que seu nome e e-mail do Git estão configurados conforme a seção anterior.\nQuando o repositório-template estiver disponível, criar seu repositório individual a partir dele, abri-lo como Projeto RStudio, confirmar que o Terminal usa Git Bash, editar um arquivo e usar git status, git add, git commit e git push para enviá-lo ao GitHub.\nRegistrar a URL do seu repositório no cadastro da disciplina quando o formulário for publicado.",
-    "crumbs": [
-      "Ambiente computacional"
-    ]
-  },
-  {
-    "objectID": "instrucoes.html#sec-recursos-pendentes",
-    "href": "instrucoes.html#sec-recursos-pendentes",
-    "title": "Preparação do ambiente computacional",
-    "section": "Recursos em preparação",
-    "text": "Recursos em preparação\n\n\n\n\n\n\nNotaRepositório-template, miniartigo e cadastro\n\n\n\nO repositório-template, o formulário de cadastro e o enunciado do miniartigo ainda serão publicados. No miniartigo, cada mestrando criará um projeto a partir do template RBFin e reconstruirá apenas as partes indicadas de um artigo de referência.\nAté lá, conclua as instalações, configure o Git e verifique o ambiente. Você também pode ler os tutoriais Overleaf: primeiros passos e Git e GitHub. Alguns passos dependem da publicação do repositório-template ou do enunciado da atividade.",
     "crumbs": [
       "Ambiente computacional"
     ]
@@ -371,7 +361,7 @@
     "href": "index.html",
     "title": "Documentos Técnicos e Científicos com Quarto e LaTeX - 2026/2",
     "section": "",
-    "text": "Esta disciplina prepara os mestrandos para produzir documentos técnicos, científicos e profissionais reprodutíveis, integrando texto, código, dados, resultados, referências e formatação.",
+    "text": "Esta disciplina prepara os mestrandos para produzir documentos técnicos, científicos e profissionais reprodutíveis, integrando texto, código, dados, resultados, referências e formatação.\nAntes da primeira aula, acesse a página Ambiente computacional para criar as contas necessárias, instalar e configurar os programas necessários em seu computador.",
     "crumbs": [
       "Início"
     ]
@@ -381,7 +371,7 @@
     "href": "index.html#bem-vindo-à-disciplina",
     "title": "Documentos Técnicos e Científicos com Quarto e LaTeX - 2026/2",
     "section": "",
-    "text": "Esta disciplina prepara os mestrandos para produzir documentos técnicos, científicos e profissionais reprodutíveis, integrando texto, código, dados, resultados, referências e formatação.",
+    "text": "Esta disciplina prepara os mestrandos para produzir documentos técnicos, científicos e profissionais reprodutíveis, integrando texto, código, dados, resultados, referências e formatação.\nAntes da primeira aula, acesse a página Ambiente computacional para criar as contas necessárias, instalar e configurar os programas necessários em seu computador.",
     "crumbs": [
       "Início"
     ]
@@ -401,7 +391,7 @@
     "href": "index.html#conteúdo",
     "title": "Documentos Técnicos e Científicos com Quarto e LaTeX - 2026/2",
     "section": "Conteúdo",
-    "text": "Conteúdo\nConsulte o Programa da Disciplina para objetivos, ementa, bibliografia e avaliações.\nO Cronograma reúne os materiais de cada aula, como slides, dados e leituras.",
+    "text": "Conteúdo\nUse este site como guia da disciplina:\n\nAmbiente computacional: contas, programas e configurações necessárias antes da primeira aula.\nPrograma da Disciplina: objetivos, ementa, bibliografia e planejamento completo.\nTutoriais: primeiros passos com Git/GitHub, Overleaf, Quarto/RStudio e Markdown.\nCronograma: aulas, slides, dados e leituras.\nAvaliações: atividades, entregas, critérios e rubricas.",
     "crumbs": [
       "Início"
     ]
@@ -411,17 +401,7 @@
     "href": "programa.html",
     "title": "Programa da Disciplina",
     "section": "",
-    "text": "O site reúne o programa, o cronograma, as rubricas, as atividades, o repositório-template, o cadastro de repositórios e perguntas frequentes. Comunicados por outros meios apenas indicam onde encontrar essas informações.\nCada estudante será responsável por seu repositório individual público. A organização dos arquivos e as instruções de entrega serão definidas na página Avaliações do site da disciplina. O repositório deve conter somente materiais próprios, arquivos didáticos fornecidos pela disciplina ou conteúdos com licença compatível. É vedado inserir dados confidenciais, pessoais, identificáveis ou sujeitos a sigilo organizacional. Os exemplos e avaliações utilizarão dados públicos, anonimizados ou didáticos.\nO miniartigo em LaTeX é uma exceção: por reconstruir tecnicamente partes de artigo publicado, seu projeto Overleaf, fonte, PDF e elementos reproduzidos permanecerão privados e não serão enviados ao repositório GitHub público nem compartilhados por link público.",
-    "crumbs": [
-      "Programa da Disciplina"
-    ]
-  },
-  {
-    "objectID": "programa.html#organização-dos-artefatos-e-comunicação",
-    "href": "programa.html#organização-dos-artefatos-e-comunicação",
-    "title": "Programa da Disciplina",
-    "section": "",
-    "text": "O site reúne o programa, o cronograma, as rubricas, as atividades, o repositório-template, o cadastro de repositórios e perguntas frequentes. Comunicados por outros meios apenas indicam onde encontrar essas informações.\nCada estudante será responsável por seu repositório individual público. A organização dos arquivos e as instruções de entrega serão definidas na página Avaliações do site da disciplina. O repositório deve conter somente materiais próprios, arquivos didáticos fornecidos pela disciplina ou conteúdos com licença compatível. É vedado inserir dados confidenciais, pessoais, identificáveis ou sujeitos a sigilo organizacional. Os exemplos e avaliações utilizarão dados públicos, anonimizados ou didáticos.\nO miniartigo em LaTeX é uma exceção: por reconstruir tecnicamente partes de artigo publicado, seu projeto Overleaf, fonte, PDF e elementos reproduzidos permanecerão privados e não serão enviados ao repositório GitHub público nem compartilhados por link público.",
+    "text": "Capacitar o mestrando a produzir documentos técnicos, científicos e profissionais reprodutíveis com Quarto, integrando texto, código, resultados computacionais, referências e elementos de formatação, com apoio de LaTeX, Git/GitHub e boas práticas de organização, documentação e comunicação de resultados.",
     "crumbs": [
       "Programa da Disciplina"
     ]
@@ -430,8 +410,8 @@
     "objectID": "programa.html#objetivo-geral",
     "href": "programa.html#objetivo-geral",
     "title": "Programa da Disciplina",
-    "section": "Objetivo Geral",
-    "text": "Objetivo Geral\nCapacitar o mestrando a produzir documentos técnicos, científicos e profissionais reprodutíveis com Quarto, integrando texto, código, resultados computacionais, referências e elementos de formatação, com apoio de LaTeX, Git/GitHub e boas práticas de organização, documentação e comunicação de resultados.",
+    "section": "",
+    "text": "Capacitar o mestrando a produzir documentos técnicos, científicos e profissionais reprodutíveis com Quarto, integrando texto, código, resultados computacionais, referências e elementos de formatação, com apoio de LaTeX, Git/GitHub e boas práticas de organização, documentação e comunicação de resultados.",
     "crumbs": [
       "Programa da Disciplina"
     ]

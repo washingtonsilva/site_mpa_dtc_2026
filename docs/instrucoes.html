@@ -177,14 +177,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./avaliacoes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Avaliações</span></a>
+  <a href="./tutorials/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutoriais</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tutorials/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tutoriais</span></a>
+  <a href="./avaliacoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avaliações</span></a>
   </div>
 </li>
     </ul>
@@ -210,7 +210,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#sec-configurar-git" id="toc-sec-configurar-git" class="nav-link" data-scroll-target="#sec-configurar-git">Configurar o Git</a></li>
   <li><a href="#sec-git-bash" id="toc-sec-git-bash" class="nav-link" data-scroll-target="#sec-git-bash">Git Bash como terminal do RStudio</a></li>
   <li><a href="#sec-validacao" id="toc-sec-validacao" class="nav-link" data-scroll-target="#sec-validacao">Verificação do ambiente</a></li>
-  <li><a href="#sec-recursos-pendentes" id="toc-sec-recursos-pendentes" class="nav-link" data-scroll-target="#sec-recursos-pendentes">Recursos em preparação</a></li>
   </ul>
 </nav>
     </div>
@@ -239,7 +238,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="sec-preparacao" class="level2">
 <h2 class="anchored" data-anchor-id="sec-preparacao">Roteiro de preparação</h2>
-<p>Conclua este roteiro antes da primeira aula. Ele prepara o computador para as atividades da disciplina.</p>
+<p>Conclua este roteiro de instalação, configuração e criação de contas antes da primeira aula. Ele prepara o computador para as atividades da disciplina.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -253,15 +252,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>As etapas detalhadas desta página foram preparadas para <strong>Windows</strong>. Usuários de macOS ou Linux devem utilizar os instaladores disponíveis nas páginas oficiais indicadas nas seções de <a href="#sec-r">R</a>, <a href="#sec-rstudio">RStudio</a>, <a href="#sec-quarto">Quarto</a> e <a href="#sec-git">Git</a>.</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-important no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Já tem os programas instalados?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Se você usa R 4.5.1 ou 4.5.2, instale o <strong>R 4.6.1</strong> indicado nesta página. Atualize também RStudio, Quarto e Git para a versão estável mais recente disponível nas páginas oficiais. Faça isso com antecedência: a atualização pode exigir reiniciar o computador ou verificar novamente o terminal do RStudio.</p>
+<p>Os pacotes instalados no R 4.5 não estarão disponíveis automaticamente no R 4.6. Não é necessário reinstalá-los agora: a disciplina indicará os pacotes a instalar quando eles forem usados.</p>
+</div>
+</div>
 <ol type="1">
-<li>Crie uma conta gratuita no <a href="https://www.overleaf.com" target="_blank">Overleaf</a> e uma conta no <a href="#sec-github">GitHub</a>.</li>
-<li>Instale <a href="#sec-r">R</a>, <a href="#sec-rstudio">RStudio</a>, <a href="#sec-quarto">Quarto</a>, <a href="#sec-tinytex">TinyTeX</a> e <a href="#sec-git">Git</a>.</li>
-<li>Configure sua identidade no <a href="#sec-configurar-git">Git</a> e verifique o <a href="#sec-git-bash">Git Bash como terminal do RStudio</a>.</li>
-<li>Faça a <a href="#sec-validacao">verificação do ambiente</a>.</li>
-<li>Leia o tutorial <a href="./tutorials/overleaf.html">Overleaf: primeiros passos</a> e o <a href="./tutorials/git-github.html">tutorial prático de Git e GitHub</a> para conhecer os fluxos de trabalho da disciplina.</li>
-<li>Quando forem publicados, crie seu repositório individual a partir do <a href="#sec-recursos-pendentes">repositório-template</a> e registre sua URL no <a href="#sec-recursos-pendentes">cadastro de repositórios</a>. O artigo de referência e o enunciado do miniartigo no Overleaf serão disponibilizados apenas na atividade correspondente.</li>
+<li><p>Crie uma conta gratuita no <a href="https://www.overleaf.com" target="_blank">Overleaf</a> e uma conta no <a href="#sec-github">GitHub</a>.</p></li>
+<li><p>Instale <a href="#sec-r">R 4.6.1</a> e atualize <a href="#sec-rstudio">RStudio</a>, <a href="#sec-quarto">Quarto</a>, <a href="#sec-tinytex">TinyTeX</a> e <a href="#sec-git">Git</a>.</p></li>
+<li><p>Configure sua identidade no <a href="#sec-configurar-git">Git</a> e verifique o <a href="#sec-git-bash">Git Bash como terminal do RStudio</a>.</p></li>
+<li><p>Faça a <a href="#sec-validacao">verificação do ambiente</a>.</p></li>
+<li><p>Leia o tutorial <a href="./tutorials/overleaf.html">Overleaf: primeiros passos</a> e o <a href="./tutorials/git-github.html">tutorial prático de Git e GitHub</a> para conhecer os fluxos de trabalho da disciplina.</p></li>
+<li><p>Quando forem publicados, crie seu repositório individual a partir do <a href="#sec-recursos-pendentes">repositório-template</a> e registre sua URL no <a href="#sec-recursos-pendentes">cadastro de repositórios</a>. O artigo de referência e o enunciado do miniartigo no Overleaf serão disponibilizados apenas na atividade correspondente.</p></li>
 </ol>
-<p>Não há pré-requisito formal, mas as atividades serão registradas no GitHub desde a primeira aula. Quem ainda não conhece Git e GitHub deve estudar por conta própria com <a href="https://happygitwithr.com/" target="_blank"><em>Happy Git and GitHub for the useR</em></a> e com este roteiro. Não haverá um bloco de nivelamento durante as aulas.</p>
+<p>Não há pré-requisito formal, mas Git e GitHub serão usados desde a primeira aula. Conclua o <a href="./tutorials/git-github.html">tutorial prático de Git e GitHub</a> desta disciplina antes do início das aulas. Para revisar conceitos ou consultar explicações adicionais, veja também o <a href="https://washingtonsilva.github.io/tutorials/git/" target="_blank">tutorial de Git e GitHub do professor</a> e, como aprofundamento opcional, o <a href="https://happygitwithr.com/" target="_blank"><em>Happy Git and GitHub for the useR</em></a>. Os comandos da disciplina serão executados no Git Bash, pelo Terminal do RStudio. Não haverá um bloco de nivelamento durante as aulas.</p>
 </section>
 <section id="instalação-dos-programas" class="level2">
 <h2 class="anchored" data-anchor-id="instalação-dos-programas">Instalação dos programas</h2>
@@ -281,7 +294,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Acesse <a href="https://cloud.r-project.org/" target="_blank">CRAN</a>.</li>
 <li>Clique em <strong>Download R for Windows</strong> e, na página seguinte, em <strong>base</strong>.</li>
 <li>Clique em <strong>Download R-4.6.1 for Windows</strong>.</li>
-<li>Após o download, execute o instalador e aceite as opções padrão até a instalação ser concluída.</li>
+<li>Após o download, execute o instalador e aceite as opções padrão até a instalação ser concluída. Mesmo que você já use uma versão anterior de R, instale o R 4.6.1.</li>
 </ol>
 </div>
 </div>
@@ -294,14 +307,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Dica</span>Instalar o RStudio Desktop
+<span class="screen-reader-only">Dica</span>Instalar ou atualizar o RStudio Desktop
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li>Acesse a <a href="https://posit.co/download/rstudio-desktop/" target="_blank">página de download do RStudio</a>.</li>
 <li>Na seção <code>2: Install RStudio</code>, clique em <strong>Download RStudio Desktop for Windows</strong>.</li>
-<li>Após o download, execute o instalador e avance até a instalação ser concluída.</li>
+<li>Após o download, execute o instalador e avance até a instalação ser concluída. Se o RStudio já estiver instalado, esse procedimento o atualizará.</li>
 </ol>
 </div>
 </div>
@@ -314,14 +327,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Dica</span>Instalar o Quarto CLI
+<span class="screen-reader-only">Dica</span>Instalar ou atualizar o Quarto CLI
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li>Acesse a <a href="https://quarto.org/docs/download/" target="_blank">página de download do Quarto</a>.</li>
 <li>Baixe o instalador de <strong>Quarto CLI</strong> para Windows.</li>
-<li>Execute o instalador e avance até a instalação ser concluída.</li>
+<li>Execute o instalador e avance até a instalação ser concluída. Se o Quarto já estiver instalado, esse procedimento o atualizará.</li>
 </ol>
 </div>
 </div>
@@ -338,17 +351,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><a href="https://quarto.org/docs/output-formats/pdf-engine.html" target="_blank">TinyTeX</a> é a distribuição LaTeX recomendada para gerar PDF a partir de documentos Quarto. Faça a instalação depois de instalar o Quarto.</p>
+<p><a href="https://quarto.org/docs/output-formats/pdf-engine.html" target="_blank">TinyTeX</a> é a distribuição LaTeX recomendada para gerar PDF a partir de documentos Quarto. Instale-o depois de instalar o Quarto.</p>
 <p>A instalação pode demorar, dependendo da conexão de internet e do computador. Execute-a com antecedência e aguarde sua conclusão antes da primeira aula.</p>
-<p>No RStudio, abra a aba <strong>Terminal</strong> e execute:</p>
+<p>Se ainda não tiver o TinyTeX, abra a aba <strong>Terminal</strong> do RStudio e execute:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install tinytex</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Se for necessário atualizar a distribuição posteriormente, execute:</p>
+<p>Se já tiver o TinyTeX, atualize a distribuição com:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> update tinytex</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </section>
 <section id="sec-git" class="level3">
 <h3 class="anchored" data-anchor-id="sec-git">Git</h3>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Já tem Git for Windows?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Abra o <strong>Git Bash</strong> e execute:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> update-git-for-windows</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Siga as instruções exibidas. Ao terminar, abra um novo terminal e confirme a atualização com:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Se o comando não funcionar, baixe e execute o instalador da seção seguinte. Isso pode ocorrer em instalações portáteis ou personalizadas.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -363,7 +393,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Acesse <a href="https://git-scm.com" target="_blank">git-scm.com</a> e clique em <strong>Download for Windows</strong>.</li>
 <li>Após o download, execute o instalador.</li>
 <li>Mantenha as configurações padrão sugeridas. Na janela <strong>Adjusting the name of the initial branch</strong>, marque <strong>Override the default branch name for new repositories</strong> e informe <strong>main</strong>.</li>
-<li>Clique em <strong>Next</strong> nas janelas restantes e conclua a instalação.</li>
+<li>Clique em <strong>Next</strong> nas janelas restantes e conclua a instalação. Este instalador também pode ser usado para atualizar o Git quando o comando da seção anterior não funcionar.</li>
 </ol>
 </div>
 </div>
@@ -376,11 +406,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="sec-configurar-git" class="level2">
 <h2 class="anchored" data-anchor-id="sec-configurar-git">Configurar o Git</h2>
 <p>Abra o <strong>Git Bash</strong>, disponível no menu Iniciar após a instalação do Git, e configure o nome e o e-mail que devem aparecer no histórico de seus <em>commits</em>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Seu Nome"</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"seuemail@exemplo.com"</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Seu Nome"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"seuemail@exemplo.com"</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Use um e-mail associado à sua conta do GitHub. Para conferir as duas configurações, execute:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--get</span> user.name</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--get</span> user.email</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--get</span> user.name</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--get</span> user.email</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="sec-git-bash" class="level2">
 <h2 class="anchored" data-anchor-id="sec-git-bash">Git Bash como terminal do RStudio</h2>
@@ -399,29 +429,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li><p>Abrir R e RStudio.</p></li>
 <li><p>Abrir o terminal do RStudio e executar:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> <span class="at">--version</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> <span class="at">--version</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>Confirmar que seu nome e e-mail do Git estão configurados conforme a seção anterior.</p></li>
 <li><p>Quando o repositório-template estiver disponível, criar seu repositório individual a partir dele, abri-lo como Projeto RStudio, confirmar que o Terminal usa Git Bash, editar um arquivo e usar <code>git status</code>, <code>git add</code>, <code>git commit</code> e <code>git push</code> para enviá-lo ao GitHub.</p></li>
 <li><p>Registrar a URL do seu repositório no cadastro da disciplina quando o formulário for publicado.</p></li>
 </ol>
-</section>
-<section id="sec-recursos-pendentes" class="level2">
-<h2 class="anchored" data-anchor-id="sec-recursos-pendentes">Recursos em preparação</h2>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Repositório-template, miniartigo e cadastro
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>O repositório-template, o formulário de cadastro e o enunciado do miniartigo ainda serão publicados. No miniartigo, cada mestrando criará um projeto a partir do template RBFin e reconstruirá apenas as partes indicadas de um artigo de referência.</p>
-<p>Até lá, conclua as instalações, configure o Git e verifique o ambiente. Você também pode ler os tutoriais <a href="./tutorials/overleaf.html">Overleaf: primeiros passos</a> e <a href="./tutorials/git-github.html">Git e GitHub</a>. Alguns passos dependem da publicação do repositório-template ou do enunciado da atividade.</p>
-</div>
-</div>
 
 
 </section>

@@ -31,10 +31,10 @@ website:
           - cronograma.qmd
           - text: "Ambiente computacional"
             href: instrucoes.qmd
-          - text: "Avaliações"
-            href: avaliacoes.qmd
           - text: "Tutoriais"
             href: tutorials/index.qmd
+          - text: "Avaliações"
+            href: avaliacoes.qmd
 
 format:
   html:

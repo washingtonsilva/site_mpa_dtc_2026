@@ -6,8 +6,8 @@ subtitle: "Windows: contas, instalação, configuração e validação antes da 
 
 ## Roteiro de preparação {#sec-preparacao}
 
-Conclua este roteiro antes da primeira aula. Ele prepara o computador para as
-atividades da disciplina.
+Conclua este roteiro de instalação, configuração e criação de contas antes da
+primeira aula. Ele prepara o computador para as atividades da disciplina.
 
 ::: {.callout-note icon="false"}
 ## Plataforma adotada
@@ -18,27 +18,52 @@ páginas oficiais indicadas nas seções de [R](#sec-r),
 [RStudio](#sec-rstudio), [Quarto](#sec-quarto) e [Git](#sec-git).
 :::
 
+::: {.callout-important icon="false"}
+## Já tem os programas instalados?
+
+Se você usa R 4.5.1 ou 4.5.2, instale o **R 4.6.1** indicado nesta página.
+Atualize também RStudio, Quarto e Git para a versão estável mais recente
+disponível nas páginas oficiais. Faça isso com antecedência: a atualização pode
+exigir reiniciar o computador ou verificar novamente o terminal do RStudio.
+
+Os pacotes instalados no R 4.5 não estarão disponíveis automaticamente no R
+4.6. Não é necessário reinstalá-los agora: a disciplina indicará os pacotes a
+instalar quando eles forem usados.
+:::
+
 1. Crie uma conta gratuita no [Overleaf](https://www.overleaf.com){target="_blank"}
    e uma conta no [GitHub](#sec-github).
-2. Instale [R](#sec-r), [RStudio](#sec-rstudio), [Quarto](#sec-quarto),
+
+2. Instale [R 4.6.1](#sec-r) e atualize [RStudio](#sec-rstudio), [Quarto](#sec-quarto),
    [TinyTeX](#sec-tinytex) e [Git](#sec-git).
+
 3. Configure sua identidade no [Git](#sec-configurar-git) e verifique o
    [Git Bash como terminal do RStudio](#sec-git-bash).
+
 4. Faça a [verificação do ambiente](#sec-validacao).
+
 5. Leia o tutorial [Overleaf: primeiros passos](tutorials/overleaf.qmd) e o
    [tutorial prático de Git e GitHub](tutorials/git-github.qmd) para conhecer
    os fluxos de trabalho da disciplina.
+   
 6. Quando forem publicados, crie seu repositório individual a partir do
    [repositório-template](#sec-recursos-pendentes) e registre sua URL no
    [cadastro de repositórios](#sec-recursos-pendentes). O artigo de referência
    e o enunciado do miniartigo no Overleaf serão disponibilizados apenas na
    atividade correspondente.
 
-Não há pré-requisito formal, mas as atividades serão registradas no GitHub
-desde a primeira aula. Quem ainda não conhece Git e GitHub deve estudar por
-conta própria com
-[*Happy Git and GitHub for the useR*](https://happygitwithr.com/){target="_blank"}
-e com este roteiro. Não haverá um bloco de nivelamento durante as aulas.
+Não há pré-requisito formal, mas Git e GitHub serão usados desde a primeira
+aula. Conclua o [tutorial prático de Git e GitHub](tutorials/git-github.qmd)
+desta disciplina antes do início das aulas. Para revisar conceitos ou consultar
+explicações adicionais, veja também o
+[tutorial de Git e GitHub do professor](https://washingtonsilva.github.io/tutorials/git/){target="_blank"}
+e, como aprofundamento opcional, o
+[*Happy Git and GitHub for the useR*](https://happygitwithr.com/){target="_blank"}.
+Os comandos da disciplina serão executados no Git Bash, pelo Terminal do
+RStudio. Não haverá um bloco de nivelamento durante as aulas.
+
+
+
 
 ## Instalação dos programas
 
@@ -51,30 +76,39 @@ e com este roteiro. Não haverá um bloco de nivelamento durante as aulas.
 2. Clique em **Download R for Windows** e, na página seguinte, em **base**.
 3. Clique em **Download R-4.6.1 for Windows**.
 4. Após o download, execute o instalador e aceite as opções padrão até a
-   instalação ser concluída.
+   instalação ser concluída. Mesmo que você já use uma versão anterior de R,
+   instale o R 4.6.1.
 :::
+
+
 
 ### RStudio {#sec-rstudio}
 
 ::: {.callout-tip icon="false"}
-## Instalar o RStudio Desktop
+## Instalar ou atualizar o RStudio Desktop
 
 1. Acesse a [página de download do RStudio](https://posit.co/download/rstudio-desktop/){target="_blank"}.
 2. Na seção `2: Install RStudio`, clique em **Download RStudio Desktop for
    Windows**.
 3. Após o download, execute o instalador e avance até a instalação ser
-   concluída.
+   concluída. Se o RStudio já estiver instalado, esse procedimento o
+   atualizará.
 :::
+
+
 
 ### Sistema Quarto {#sec-quarto}
 
 ::: {.callout-tip icon="false"}
-## Instalar o Quarto CLI
+## Instalar ou atualizar o Quarto CLI
 
 1. Acesse a [página de download do Quarto](https://quarto.org/docs/download/){target="_blank"}.
 2. Baixe o instalador de **Quarto CLI** para Windows.
-3. Execute o instalador e avance até a instalação ser concluída.
+3. Execute o instalador e avance até a instalação ser concluída. Se o Quarto
+   já estiver instalado, esse procedimento o atualizará.
 :::
+
+
 
 ### TinyTeX {#sec-tinytex}
 
@@ -83,26 +117,48 @@ e com este roteiro. Não haverá um bloco de nivelamento durante as aulas.
 
 [TinyTeX](https://quarto.org/docs/output-formats/pdf-engine.html){target="_blank"}
 é a distribuição LaTeX recomendada para gerar PDF a partir de documentos
-Quarto. Faça a instalação depois de instalar o Quarto.
+Quarto. Instale-o depois de instalar o Quarto.
 
 A instalação pode demorar, dependendo da conexão de internet e do
 computador. Execute-a com antecedência e aguarde sua conclusão antes da
 primeira aula.
 
-No RStudio, abra a aba **Terminal** e execute:
+Se ainda não tiver o TinyTeX, abra a aba **Terminal** do RStudio e execute:
 
 ```bash
 quarto install tinytex
 ```
 
-Se for necessário atualizar a distribuição posteriormente, execute:
+Se já tiver o TinyTeX, atualize a distribuição com:
 
 ```bash
 quarto update tinytex
 ```
 :::
 
+
+
 ### Git {#sec-git}
+
+::: {.callout-tip icon="false"}
+## Já tem Git for Windows?
+
+Abra o **Git Bash** e execute:
+
+```bash
+git update-git-for-windows
+```
+
+Siga as instruções exibidas. Ao terminar, abra um novo terminal e confirme a
+atualização com:
+
+```bash
+git --version
+```
+
+Se o comando não funcionar, baixe e execute o instalador da seção seguinte.
+Isso pode ocorrer em instalações portáteis ou personalizadas.
+:::
 
 ::: {.callout-tip icon="false"}
 ## Instalar o Git for Windows
@@ -113,14 +169,20 @@ quarto update tinytex
 3. Mantenha as configurações padrão sugeridas. Na janela **Adjusting the
    name of the initial branch**, marque **Override the default branch name
    for new repositories** e informe **main**.
-4. Clique em **Next** nas janelas restantes e conclua a instalação.
+4. Clique em **Next** nas janelas restantes e conclua a instalação. Este
+   instalador também pode ser usado para atualizar o Git quando o comando da
+   seção anterior não funcionar.
 :::
+
+
 
 ## Conta GitHub {#sec-github}
 
 Caso ainda não tenha uma conta, acesse [github.com](https://github.com){target="_blank"},
 clique em **Sign up**, conclua o cadastro e confirme seu e-mail. Use uma conta
 individual que você possa manter durante toda a disciplina.
+
+
 
 ## Configurar o Git {#sec-configurar-git}
 
@@ -140,6 +202,8 @@ git config --global --get user.name
 git config --global --get user.email
 ```
 
+
+
 ## Git Bash como terminal do RStudio {#sec-git-bash}
 
 Os comandos Git desta disciplina serão executados no **Terminal** do RStudio
@@ -157,6 +221,8 @@ Se Git Bash não aparecer na lista, reinstale o Git for Windows mantendo as
 opções padrão e tente novamente. O Git Bash padroniza os comandos com macOS e
 Linux. Ele oferece comandos no estilo Unix, mas não transforma o Windows em
 outro sistema operacional.
+
+
 
 ## Verificação do ambiente {#sec-validacao}
 
@@ -178,20 +244,3 @@ Antes da primeira aula, confirme que você consegue:
    `git commit` e `git push` para enviá-lo ao GitHub.
 5. Registrar a URL do seu repositório no cadastro da disciplina quando o
    formulário for publicado.
-
-## Recursos em preparação {#sec-recursos-pendentes}
-
-::: {.callout-note icon="false"}
-## Repositório-template, miniartigo e cadastro
-
-O repositório-template, o formulário de cadastro e o enunciado do miniartigo
-ainda serão publicados. No miniartigo, cada mestrando criará um projeto a
-partir do template RBFin e reconstruirá apenas as partes indicadas de um
-artigo de referência.
-
-Até lá, conclua as instalações, configure o Git e verifique o ambiente. Você
-também pode ler os tutoriais
-[Overleaf: primeiros passos](tutorials/overleaf.qmd) e
-[Git e GitHub](tutorials/git-github.qmd). Alguns passos dependem da publicação
-do repositório-template ou do enunciado da atividade.
-:::
