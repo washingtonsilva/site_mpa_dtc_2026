@@ -106,6 +106,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -197,12 +226,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#títulos-e-parágrafos" id="toc-títulos-e-parágrafos" class="nav-link active" data-scroll-target="#títulos-e-parágrafos">1. Títulos e parágrafos</a></li>
+  <li><a href="#como-ler-os-exemplos" id="toc-como-ler-os-exemplos" class="nav-link active" data-scroll-target="#como-ler-os-exemplos">Como ler os exemplos</a></li>
+  <li><a href="#títulos-e-parágrafos" id="toc-títulos-e-parágrafos" class="nav-link" data-scroll-target="#títulos-e-parágrafos">1. Títulos e parágrafos</a></li>
   <li><a href="#ênfase-código-e-listas" id="toc-ênfase-código-e-listas" class="nav-link" data-scroll-target="#ênfase-código-e-listas">2. Ênfase, código e listas</a></li>
   <li><a href="#links-imagens-e-citações-em-bloco" id="toc-links-imagens-e-citações-em-bloco" class="nav-link" data-scroll-target="#links-imagens-e-citações-em-bloco">3. Links, imagens e citações em bloco</a></li>
   <li><a href="#tabelas-e-fórmulas-simples" id="toc-tabelas-e-fórmulas-simples" class="nav-link" data-scroll-target="#tabelas-e-fórmulas-simples">4. Tabelas e fórmulas simples</a></li>
   <li><a href="#um-pequeno-exemplo-completo" id="toc-um-pequeno-exemplo-completo" class="nav-link" data-scroll-target="#um-pequeno-exemplo-completo">5. Um pequeno exemplo completo</a></li>
-  <li><a href="#o-que-será-acrescentado-pelo-quarto" id="toc-o-que-será-acrescentado-pelo-quarto" class="nav-link" data-scroll-target="#o-que-será-acrescentado-pelo-quarto">6. O que será acrescentado pelo Quarto</a></li>
+  <li><a href="#um-recurso-próprio-do-quarto-chamadas" id="toc-um-recurso-próprio-do-quarto-chamadas" class="nav-link" data-scroll-target="#um-recurso-próprio-do-quarto-chamadas">6. Um recurso próprio do Quarto: chamadas</a></li>
   <li><a href="#checklist-antes-de-continuar" id="toc-checklist-antes-de-continuar" class="nav-link" data-scroll-target="#checklist-antes-de-continuar">Checklist antes de continuar</a></li>
   </ul>
 </nav>
@@ -213,7 +243,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Markdown para documentos Quarto</h1>
-<p class="subtitle lead">Aprofunde a escrita do corpo do documento</p>
+<p class="subtitle lead">Escreva a sintaxe e reconheça o resultado renderizado</p>
 </div>
 
 
@@ -230,8 +260,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Markdown é uma forma simples de escrever documentos com texto legível e marcações curtas. No Quarto, essas marcações indicam a <strong>estrutura</strong> do documento — títulos, listas, links, tabelas e fórmulas — e não a aparência manual de cada elemento.</p>
-<p>Este tutorial aprofunda a escrita do corpo de arquivos <code>.qmd</code>. Antes de começar, conclua <a href="../tutorials/quarto-rstudio.html">Quarto e RStudio: primeiro documento</a>: você usará o arquivo criado ali para praticar estas marcações.</p>
+<p>Markdown permite escrever documentos em texto simples e estruturá-los com marcações curtas. No Quarto, essas marcações se tornam títulos, listas, links, tabelas e fórmulas quando o documento é renderizado.</p>
+<p>Antes de começar, conclua <a href="../tutorials/quarto-rstudio.html">Quarto e RStudio: primeiro documento</a>. Você usará o arquivo criado ali para praticar os exemplos deste tutorial.</p>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -242,12 +272,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Escreva primeiro um texto bem estruturado. O Quarto aplicará a formatação adequada quando gerar HTML, PDF ou outro formato de saída.</p>
+<p>Escreva a estrutura do documento, não sua aparência manual. O Quarto aplica a formatação adequada ao gerar HTML, PDF ou outro formato de saída.</p>
 </div>
 </div>
+<section id="como-ler-os-exemplos" class="level2">
+<h2 class="anchored" data-anchor-id="como-ler-os-exemplos">Como ler os exemplos</h2>
+<p>Cada exemplo apresenta a <strong>Sintaxe</strong>, que é escrita no arquivo <code>.qmd</code>, e o <strong>Resultado</strong>, que aparece depois da renderização. Os blocos de sintaxe exibem apenas o conteúdo que você pode copiar para seu documento.</p>
+</section>
 <section id="títulos-e-parágrafos" class="level2">
 <h2 class="anchored" data-anchor-id="títulos-e-parágrafos">1. Títulos e parágrafos</h2>
 <p>Use <code>#</code> para indicar níveis de título. Uma linha em branco separa parágrafos.</p>
+<p><strong>Sintaxe</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resultados</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Esta seção apresenta os principais resultados da análise.</span>
@@ -255,89 +290,242 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">### Desempenho no período</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Os indicadores melhoraram no segundo trimestre.</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Nesta página, o título do documento já foi definido no cabeçalho do arquivo; por isso, o conteúdo começa em <code>##</code>. Em documentos cujo título já esteja no cabeçalho, preserve essa hierarquia. Não escolha <code>#</code>, <code>##</code> ou <code>###</code> para alterar apenas o tamanho visual do texto.</p>
+<p><strong>Resultado</strong></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="Resultado no documento">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Resultado no documento
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Resultados</strong></p>
+<p>Esta seção apresenta os principais resultados da análise.</p>
+<p><strong><em>Desempenho no período</em></strong></p>
+<p>Os indicadores melhoraram no segundo trimestre.</p>
+</div>
+</div>
+<p>Em documentos cujo título já está no cabeçalho YAML, como o arquivo criado no tutorial anterior, o conteúdo começa em <code>##</code>. Não escolha <code>#</code>, <code>##</code> ou <code>###</code> apenas para alterar o tamanho visual do texto.</p>
 </section>
 <section id="ênfase-código-e-listas" class="level2">
 <h2 class="anchored" data-anchor-id="ênfase-código-e-listas">2. Ênfase, código e listas</h2>
-<p>Use asteriscos para dar ênfase e crases para nomes de arquivos, comandos ou trechos curtos de código.</p>
+<p>Use asteriscos para dar ênfase e crases para nomes de arquivos, comandos ou trechos curtos de código. Mantenha uma linha em branco antes e depois de uma lista.</p>
+<p><strong>Sintaxe</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>O arquivo **relatorio.qmd** reúne os resultados da *análise exploratória*.</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Execute <span class="in">`quarto render`</span> para gerar o documento.</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Listas são úteis quando os itens têm ou não têm uma ordem necessária.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Organize os dados.</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Descreva o método.</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Apresente os resultados.</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Crie o arquivo.</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Escreva o conteúdo.</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Renderize o documento.</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Mantenha uma linha em branco antes e depois de uma lista. Isso torna o arquivo-fonte mais fácil de ler e evita ambiguidades na renderização.</p>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Execute <span class="in">`quarto render`</span> para gerar o documento.</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Organize os dados.</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Descreva o método.</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Apresente os resultados.</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Crie o arquivo.</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Escreva o conteúdo.</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Renderize o documento.</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Resultado</strong></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="Resultado no documento">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Resultado no documento
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O arquivo <strong>relatorio.qmd</strong> reúne os resultados da <em>análise exploratória</em>. Execute <code>quarto render</code> para gerar o documento.</p>
+<ul>
+<li>Organize os dados.</li>
+<li>Descreva o método.</li>
+<li>Apresente os resultados.</li>
+</ul>
+<ol type="1">
+<li>Crie o arquivo.</li>
+<li>Escreva o conteúdo.</li>
+<li>Renderize o documento.</li>
+</ol>
+</div>
+</div>
 </section>
 <section id="links-imagens-e-citações-em-bloco" class="level2">
 <h2 class="anchored" data-anchor-id="links-imagens-e-citações-em-bloco">3. Links, imagens e citações em bloco</h2>
-<p>Um link associa um texto descritivo a um endereço. Evite exibir URLs longas no corpo do documento quando um texto claro é mais informativo.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Consulte a <span class="co">[</span><span class="ot">documentação do Quarto</span><span class="co">](https://quarto.org/docs/)</span>.</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Para inserir uma imagem, indique um texto alternativo e o caminho do arquivo. O texto alternativo descreve a imagem para leitores que não a visualizam.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Evolução mensal das vendas](figuras/vendas-mensais.png)</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>O arquivo da figura deve existir no caminho informado. Em projetos da disciplina, organize as imagens em uma pasta identificável, como <code>figuras/</code>, em vez de espalhá-las pela pasta principal.</p>
-<p>Use <code>&gt;</code> para destacar uma citação curta ou uma observação reproduzida.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; A documentação deve permitir que outra pessoa compreenda o percurso do trabalho.</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Um link associa um texto descritivo a um endereço. Para inserir uma imagem, indique texto alternativo e o caminho do arquivo. Use <code>&gt;</code> para uma citação curta ou observação reproduzida.</p>
+<p><strong>Sintaxe</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Consulte a <span class="co">[</span><span class="ot">documentação do Quarto</span><span class="co">](https://quarto.org/docs/)</span>.</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="al">![Evolução mensal das vendas](figuras/vendas-mensais.png)</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; A documentação deve permitir que outra pessoa compreenda o percurso do trabalho.</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Resultado</strong></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="Resultado no documento">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Resultado no documento
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Consulte a <a href="https://quarto.org/docs/">documentação do Quarto</a>.</p>
+<blockquote class="blockquote">
+<p>A documentação deve permitir que outra pessoa compreenda o percurso do trabalho.</p>
+</blockquote>
+</div>
+</div>
+<p>O resultado da imagem não é exibido nesta página porque o arquivo usado no exemplo não faz parte do site. No seu projeto, a imagem só aparecerá se existir no caminho informado. Organize imagens em uma pasta identificável, como <code>figuras/</code>.</p>
 </section>
 <section id="tabelas-e-fórmulas-simples" class="level2">
 <h2 class="anchored" data-anchor-id="tabelas-e-fórmulas-simples">4. Tabelas e fórmulas simples</h2>
-<p>Uma tabela pequena pode ser escrita diretamente em Markdown.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Indicador <span class="pp">|</span> 2025 <span class="pp">|</span> 2026 <span class="pp">|</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="pp">|:----------|-----:|-----:|</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Receita   <span class="pp">|</span> 120  <span class="pp">|</span> 145  <span class="pp">|</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Custos    <span class="pp">|</span> 80   <span class="pp">|</span> 92   <span class="pp">|</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Os dois-pontos na segunda linha controlam o alinhamento: à esquerda em <code>|:---|</code> e à direita em <code>|---:|</code>. Para tabelas extensas ou produzidas a partir de dados, serão usadas ferramentas mais apropriadas nas atividades da disciplina.</p>
-<p>Fórmulas usam a sintaxe LaTeX. Coloque uma fórmula curta entre um par de cifrões e uma fórmula destacada entre dois pares.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>A taxa de crescimento é $g = (x_t / x_{t-1}) - 1$.</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>$$</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Uma tabela pequena pode ser escrita diretamente em Markdown. Fórmulas usam a sintaxe LaTeX: uma fórmula curta fica entre um par de cifrões; uma fórmula em destaque, entre dois pares.</p>
+<p><strong>Sintaxe</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Indicador <span class="pp">|</span> 2025 <span class="pp">|</span> 2026 <span class="pp">|</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="pp">|:----------|-----:|-----:|</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Receita   <span class="pp">|</span> 120  <span class="pp">|</span> 145  <span class="pp">|</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Custos    <span class="pp">|</span> 80   <span class="pp">|</span> 92   <span class="pp">|</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>A taxa de crescimento é $g = (x_t / x_{t-1}) - 1$.</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>$$</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Resultado</strong></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="Resultado no documento">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Resultado no documento
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Indicador</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Receita</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">145</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Custos</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">92</td>
+</tr>
+</tbody>
+</table>
+<p>A taxa de crescimento é <span class="math inline">\(g = (x_t / x_{t-1}) - 1\)</span>.</p>
+<p><span class="math display">\[
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i
+\]</span></p>
+</div>
+</div>
+<p>Os dois-pontos na segunda linha da tabela controlam o alinhamento. Para tabelas extensas ou produzidas a partir de dados, serão usadas ferramentas específicas nas atividades da disciplina.</p>
 </section>
 <section id="um-pequeno-exemplo-completo" class="level2">
 <h2 class="anchored" data-anchor-id="um-pequeno-exemplo-completo">5. Um pequeno exemplo completo</h2>
-<p>O trecho abaixo reúne os elementos mais usados. Você pode usá-lo para ampliar o arquivo <code>primeiro-documento.qmd</code> criado no tutorial anterior e renderizá-lo novamente.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Desempenho trimestral</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>Este relatório resume os **resultados financeiros** do segundo trimestre.</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">### Principais achados</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A receita cresceu 12%.</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Os custos permaneceram sob controle.</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A margem operacional aumentou.</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Indicador <span class="pp">|</span> Valor <span class="pp">|</span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="pp">|:----------|------:|</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Receita   <span class="pp">|</span> 145   <span class="pp">|</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Custos    <span class="pp">|</span> 92    <span class="pp">|</span></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>Para o método de cálculo, consulte a</span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">documentação do projeto</span><span class="co">](https://quarto.org/docs/)</span>.</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>O texto-fonte continua legível antes da renderização. Isso ajuda na revisão, no controle de versão com Git e na colaboração.</p>
-</section>
-<section id="o-que-será-acrescentado-pelo-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="o-que-será-acrescentado-pelo-quarto">6. O que será acrescentado pelo Quarto</h2>
-<p>Markdown é o ponto de partida. Um arquivo Quarto (<code>.qmd</code>) também pode conter:</p>
+<p>O trecho abaixo reúne os elementos mais usados. Escreva o conteúdo interno no arquivo <code>primeiro-documento.qmd</code> criado no tutorial anterior e renderize-o.</p>
+<p><strong>Sintaxe</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Desempenho trimestral</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>Este relatório resume os **resultados financeiros** do segundo trimestre.</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">### Principais achados</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A receita cresceu 12%.</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Os custos permaneceram sob controle.</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A margem operacional aumentou.</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Indicador <span class="pp">|</span> Valor <span class="pp">|</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="pp">|:----------|------:|</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Receita   <span class="pp">|</span> 145   <span class="pp">|</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Custos    <span class="pp">|</span> 92    <span class="pp">|</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>Para o método de cálculo, consulte a</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">documentação do projeto</span><span class="co">](https://quarto.org/docs/)</span>.</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Resultado</strong></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="Resultado no documento">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Resultado no documento
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Desempenho trimestral</strong></p>
+<p>Este relatório resume os <strong>resultados financeiros</strong> do segundo trimestre.</p>
+<p><strong><em>Principais achados</em></strong></p>
 <ul>
-<li>um cabeçalho YAML com título, autor e formato de saída;</li>
-<li>blocos de código R e seus resultados;</li>
-<li>citações bibliográficas a partir de um arquivo <code>.bib</code>;</li>
-<li>referências cruzadas para seções, tabelas, figuras e equações.</li>
+<li>A receita cresceu 12%.</li>
+<li>Os custos permaneceram sob controle.</li>
+<li>A margem operacional aumentou.</li>
 </ul>
-<p>Não é preciso memorizar esses recursos agora. Eles se somam ao Markdown, sem substituir a escrita estruturada.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Indicador</th>
+<th style="text-align: right;">Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Receita</td>
+<td style="text-align: right;">145</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Custos</td>
+<td style="text-align: right;">92</td>
+</tr>
+</tbody>
+</table>
+<p>Para o método de cálculo, consulte a <a href="https://quarto.org/docs/">documentação do projeto</a>.</p>
+</div>
+</div>
+<p>O texto-fonte continua legível antes da renderização. Isso facilita revisão, controle de versão com Git e colaboração.</p>
+</section>
+<section id="um-recurso-próprio-do-quarto-chamadas" class="level2">
+<h2 class="anchored" data-anchor-id="um-recurso-próprio-do-quarto-chamadas">6. Um recurso próprio do Quarto: chamadas</h2>
+<p>Além do Markdown, um arquivo <code>.qmd</code> pode usar recursos próprios do Quarto. Uma chamada destaca uma observação sem depender de formatação manual.</p>
+<p><strong>Sintaxe</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## Observação</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>Verifique os caminhos dos arquivos antes de renderizar o documento.</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Resultado</strong></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Observação
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Verifique os caminhos dos arquivos antes de renderizar o documento.</p>
+</div>
+</div>
+<p>Outros recursos do Quarto incluem cabeçalho YAML, blocos de código R, citações bibliográficas e referências cruzadas. Eles serão introduzidos gradualmente.</p>
 </section>
 <section id="checklist-antes-de-continuar" class="level2">
 <h2 class="anchored" data-anchor-id="checklist-antes-de-continuar">Checklist antes de continuar</h2>
 <ul>
 <li>Consigo separar parágrafos com uma linha em branco.</li>
 <li>Uso títulos para organizar ideias, e não para escolher tamanhos de fonte.</li>
-<li>Sei criar listas, links e uma tabela curta.</li>
+<li>Sei criar listas, links, uma tabela curta e uma fórmula simples.</li>
 <li>Sei indicar uma imagem com texto alternativo e caminho de arquivo.</li>
-<li>Reconheço que um <code>.qmd</code> combinará Markdown com recursos próprios do Quarto.</li>
+<li>Reconheço a diferença entre a sintaxe escrita no <code>.qmd</code> e o resultado renderizado pelo Quarto.</li>
 </ul>
 <p>Para consulta, veja a página oficial sobre <a href="https://quarto.org/docs/authoring/markdown-basics.html" target="_blank">Markdown no Quarto</a>.</p>
 

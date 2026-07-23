@@ -172,9 +172,10 @@ aberto no diretório do projeto, não é necessário usar `cd`.
    exibido na aba **Files** é `.gitignore`, e não `.gitignore.txt`.
 4. Cole o conteúdo abaixo no arquivo `.gitignore` e salve-o.
 
-   ```gitignore
-   # Sistema operacional
-   .DS_Store
+   ```bash
+   # Windows
+   Thumbs.db
+   Desktop.ini
 
    # R e RStudio
    .Rhistory
@@ -185,7 +186,6 @@ aberto no diretório do projeto, não é necessário usar `cd`.
    # Quarto
    .quarto/
    *_cache/
-   *_files/
    *.quarto_ipynb
 
    # Arquivos auxiliares do LaTeX
@@ -214,6 +214,10 @@ aberto no diretório do projeto, não é necessário usar `cd`.
    dados/privados/
    dados/restritos/
    ```
+
+O `.gitignore` ignora apenas arquivos que ainda não foram registrados pelo
+Git. Nunca use-o como forma de proteger um arquivo que já foi enviado ao
+GitHub.
 
 5. Retorne ao **Terminal** e execute:
 

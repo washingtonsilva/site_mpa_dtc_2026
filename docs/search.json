@@ -67,56 +67,63 @@
     "href": "tutorials/markdown.html",
     "title": "Markdown para documentos Quarto",
     "section": "",
-    "text": "Markdown é uma forma simples de escrever documentos com texto legível e marcações curtas. No Quarto, essas marcações indicam a estrutura do documento — títulos, listas, links, tabelas e fórmulas — e não a aparência manual de cada elemento.\nEste tutorial aprofunda a escrita do corpo de arquivos .qmd. Antes de começar, conclua Quarto e RStudio: primeiro documento: você usará o arquivo criado ali para praticar estas marcações."
+    "text": "Markdown permite escrever documentos em texto simples e estruturá-los com marcações curtas. No Quarto, essas marcações se tornam títulos, listas, links, tabelas e fórmulas quando o documento é renderizado.\nAntes de começar, conclua Quarto e RStudio: primeiro documento. Você usará o arquivo criado ali para praticar os exemplos deste tutorial."
+  },
+  {
+    "objectID": "tutorials/markdown.html#como-ler-os-exemplos",
+    "href": "tutorials/markdown.html#como-ler-os-exemplos",
+    "title": "Markdown para documentos Quarto",
+    "section": "Como ler os exemplos",
+    "text": "Como ler os exemplos\nCada exemplo apresenta a Sintaxe, que é escrita no arquivo .qmd, e o Resultado, que aparece depois da renderização. Os blocos de sintaxe exibem apenas o conteúdo que você pode copiar para seu documento."
   },
   {
     "objectID": "tutorials/markdown.html#títulos-e-parágrafos",
     "href": "tutorials/markdown.html#títulos-e-parágrafos",
     "title": "Markdown para documentos Quarto",
     "section": "1. Títulos e parágrafos",
-    "text": "1. Títulos e parágrafos\nUse # para indicar níveis de título. Uma linha em branco separa parágrafos.\n## Resultados\n\nEsta seção apresenta os principais resultados da análise.\n\n### Desempenho no período\n\nOs indicadores melhoraram no segundo trimestre.\nNesta página, o título do documento já foi definido no cabeçalho do arquivo; por isso, o conteúdo começa em ##. Em documentos cujo título já esteja no cabeçalho, preserve essa hierarquia. Não escolha #, ## ou ### para alterar apenas o tamanho visual do texto."
+    "text": "1. Títulos e parágrafos\nUse # para indicar níveis de título. Uma linha em branco separa parágrafos.\nSintaxe\n## Resultados\n\nEsta seção apresenta os principais resultados da análise.\n\n### Desempenho no período\n\nOs indicadores melhoraram no segundo trimestre.\nResultado\n\n\n\n\n\n\nNotaResultado no documento\n\n\n\nResultados\nEsta seção apresenta os principais resultados da análise.\nDesempenho no período\nOs indicadores melhoraram no segundo trimestre.\n\n\nEm documentos cujo título já está no cabeçalho YAML, como o arquivo criado no tutorial anterior, o conteúdo começa em ##. Não escolha #, ## ou ### apenas para alterar o tamanho visual do texto."
   },
   {
     "objectID": "tutorials/markdown.html#ênfase-código-e-listas",
     "href": "tutorials/markdown.html#ênfase-código-e-listas",
     "title": "Markdown para documentos Quarto",
     "section": "2. Ênfase, código e listas",
-    "text": "2. Ênfase, código e listas\nUse asteriscos para dar ênfase e crases para nomes de arquivos, comandos ou trechos curtos de código.\nO arquivo **relatorio.qmd** reúne os resultados da *análise exploratória*.\nExecute `quarto render` para gerar o documento.\nListas são úteis quando os itens têm ou não têm uma ordem necessária.\n- Organize os dados.\n- Descreva o método.\n- Apresente os resultados.\n\n1. Crie o arquivo.\n2. Escreva o conteúdo.\n3. Renderize o documento.\nMantenha uma linha em branco antes e depois de uma lista. Isso torna o arquivo-fonte mais fácil de ler e evita ambiguidades na renderização."
+    "text": "2. Ênfase, código e listas\nUse asteriscos para dar ênfase e crases para nomes de arquivos, comandos ou trechos curtos de código. Mantenha uma linha em branco antes e depois de uma lista.\nSintaxe\nO arquivo **relatorio.qmd** reúne os resultados da *análise exploratória*.\nExecute `quarto render` para gerar o documento.\n\n- Organize os dados.\n- Descreva o método.\n- Apresente os resultados.\n\n1. Crie o arquivo.\n2. Escreva o conteúdo.\n3. Renderize o documento.\nResultado\n\n\n\n\n\n\nNotaResultado no documento\n\n\n\nO arquivo relatorio.qmd reúne os resultados da análise exploratória. Execute quarto render para gerar o documento.\n\nOrganize os dados.\nDescreva o método.\nApresente os resultados.\n\n\nCrie o arquivo.\nEscreva o conteúdo.\nRenderize o documento."
   },
   {
     "objectID": "tutorials/markdown.html#links-imagens-e-citações-em-bloco",
     "href": "tutorials/markdown.html#links-imagens-e-citações-em-bloco",
     "title": "Markdown para documentos Quarto",
     "section": "3. Links, imagens e citações em bloco",
-    "text": "3. Links, imagens e citações em bloco\nUm link associa um texto descritivo a um endereço. Evite exibir URLs longas no corpo do documento quando um texto claro é mais informativo.\nConsulte a [documentação do Quarto](https://quarto.org/docs/).\nPara inserir uma imagem, indique um texto alternativo e o caminho do arquivo. O texto alternativo descreve a imagem para leitores que não a visualizam.\n![Evolução mensal das vendas](figuras/vendas-mensais.png)\nO arquivo da figura deve existir no caminho informado. Em projetos da disciplina, organize as imagens em uma pasta identificável, como figuras/, em vez de espalhá-las pela pasta principal.\nUse &gt; para destacar uma citação curta ou uma observação reproduzida.\n&gt; A documentação deve permitir que outra pessoa compreenda o percurso do trabalho."
+    "text": "3. Links, imagens e citações em bloco\nUm link associa um texto descritivo a um endereço. Para inserir uma imagem, indique texto alternativo e o caminho do arquivo. Use &gt; para uma citação curta ou observação reproduzida.\nSintaxe\nConsulte a [documentação do Quarto](https://quarto.org/docs/).\n\n![Evolução mensal das vendas](figuras/vendas-mensais.png)\n\n&gt; A documentação deve permitir que outra pessoa compreenda o percurso do trabalho.\nResultado\n\n\n\n\n\n\nNotaResultado no documento\n\n\n\nConsulte a documentação do Quarto.\n\nA documentação deve permitir que outra pessoa compreenda o percurso do trabalho.\n\n\n\nO resultado da imagem não é exibido nesta página porque o arquivo usado no exemplo não faz parte do site. No seu projeto, a imagem só aparecerá se existir no caminho informado. Organize imagens em uma pasta identificável, como figuras/."
   },
   {
     "objectID": "tutorials/markdown.html#tabelas-e-fórmulas-simples",
     "href": "tutorials/markdown.html#tabelas-e-fórmulas-simples",
     "title": "Markdown para documentos Quarto",
     "section": "4. Tabelas e fórmulas simples",
-    "text": "4. Tabelas e fórmulas simples\nUma tabela pequena pode ser escrita diretamente em Markdown.\n| Indicador | 2025 | 2026 |\n|:----------|-----:|-----:|\n| Receita   | 120  | 145  |\n| Custos    | 80   | 92   |\nOs dois-pontos na segunda linha controlam o alinhamento: à esquerda em |:---| e à direita em |---:|. Para tabelas extensas ou produzidas a partir de dados, serão usadas ferramentas mais apropriadas nas atividades da disciplina.\nFórmulas usam a sintaxe LaTeX. Coloque uma fórmula curta entre um par de cifrões e uma fórmula destacada entre dois pares.\nA taxa de crescimento é $g = (x_t / x_{t-1}) - 1$.\n\n$$\n\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n}x_i\n$$"
+    "text": "4. Tabelas e fórmulas simples\nUma tabela pequena pode ser escrita diretamente em Markdown. Fórmulas usam a sintaxe LaTeX: uma fórmula curta fica entre um par de cifrões; uma fórmula em destaque, entre dois pares.\nSintaxe\n| Indicador | 2025 | 2026 |\n|:----------|-----:|-----:|\n| Receita   | 120  | 145  |\n| Custos    | 80   | 92   |\n\nA taxa de crescimento é $g = (x_t / x_{t-1}) - 1$.\n\n$$\n\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n}x_i\n$$\nResultado\n\n\n\n\n\n\nNotaResultado no documento\n\n\n\n\n\n\nIndicador\n2025\n2026\n\n\n\n\nReceita\n120\n145\n\n\nCustos\n80\n92\n\n\n\nA taxa de crescimento é \\(g = (x_t / x_{t-1}) - 1\\).\n\\[\n\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n}x_i\n\\]\n\n\nOs dois-pontos na segunda linha da tabela controlam o alinhamento. Para tabelas extensas ou produzidas a partir de dados, serão usadas ferramentas específicas nas atividades da disciplina."
   },
   {
     "objectID": "tutorials/markdown.html#um-pequeno-exemplo-completo",
     "href": "tutorials/markdown.html#um-pequeno-exemplo-completo",
     "title": "Markdown para documentos Quarto",
     "section": "5. Um pequeno exemplo completo",
-    "text": "5. Um pequeno exemplo completo\nO trecho abaixo reúne os elementos mais usados. Você pode usá-lo para ampliar o arquivo primeiro-documento.qmd criado no tutorial anterior e renderizá-lo novamente.\n## Desempenho trimestral\n\nEste relatório resume os **resultados financeiros** do segundo trimestre.\n\n### Principais achados\n\n- A receita cresceu 12%.\n- Os custos permaneceram sob controle.\n- A margem operacional aumentou.\n\n| Indicador | Valor |\n|:----------|------:|\n| Receita   | 145   |\n| Custos    | 92    |\n\nPara o método de cálculo, consulte a\n[documentação do projeto](https://quarto.org/docs/).\nO texto-fonte continua legível antes da renderização. Isso ajuda na revisão, no controle de versão com Git e na colaboração."
+    "text": "5. Um pequeno exemplo completo\nO trecho abaixo reúne os elementos mais usados. Escreva o conteúdo interno no arquivo primeiro-documento.qmd criado no tutorial anterior e renderize-o.\nSintaxe\n## Desempenho trimestral\n\nEste relatório resume os **resultados financeiros** do segundo trimestre.\n\n### Principais achados\n\n- A receita cresceu 12%.\n- Os custos permaneceram sob controle.\n- A margem operacional aumentou.\n\n| Indicador | Valor |\n|:----------|------:|\n| Receita   | 145   |\n| Custos    | 92    |\n\nPara o método de cálculo, consulte a\n[documentação do projeto](https://quarto.org/docs/).\nResultado\n\n\n\n\n\n\nNotaResultado no documento\n\n\n\nDesempenho trimestral\nEste relatório resume os resultados financeiros do segundo trimestre.\nPrincipais achados\n\nA receita cresceu 12%.\nOs custos permaneceram sob controle.\nA margem operacional aumentou.\n\n\n\n\nIndicador\nValor\n\n\n\n\nReceita\n145\n\n\nCustos\n92\n\n\n\nPara o método de cálculo, consulte a documentação do projeto.\n\n\nO texto-fonte continua legível antes da renderização. Isso facilita revisão, controle de versão com Git e colaboração."
   },
   {
-    "objectID": "tutorials/markdown.html#o-que-será-acrescentado-pelo-quarto",
-    "href": "tutorials/markdown.html#o-que-será-acrescentado-pelo-quarto",
+    "objectID": "tutorials/markdown.html#um-recurso-próprio-do-quarto-chamadas",
+    "href": "tutorials/markdown.html#um-recurso-próprio-do-quarto-chamadas",
     "title": "Markdown para documentos Quarto",
-    "section": "6. O que será acrescentado pelo Quarto",
-    "text": "6. O que será acrescentado pelo Quarto\nMarkdown é o ponto de partida. Um arquivo Quarto (.qmd) também pode conter:\n\num cabeçalho YAML com título, autor e formato de saída;\nblocos de código R e seus resultados;\ncitações bibliográficas a partir de um arquivo .bib;\nreferências cruzadas para seções, tabelas, figuras e equações.\n\nNão é preciso memorizar esses recursos agora. Eles se somam ao Markdown, sem substituir a escrita estruturada."
+    "section": "6. Um recurso próprio do Quarto: chamadas",
+    "text": "6. Um recurso próprio do Quarto: chamadas\nAlém do Markdown, um arquivo .qmd pode usar recursos próprios do Quarto. Uma chamada destaca uma observação sem depender de formatação manual.\nSintaxe\n::: {.callout-note}\n## Observação\n\nVerifique os caminhos dos arquivos antes de renderizar o documento.\n:::\nResultado\n\n\n\n\n\n\nNotaObservação\n\n\n\nVerifique os caminhos dos arquivos antes de renderizar o documento.\n\n\nOutros recursos do Quarto incluem cabeçalho YAML, blocos de código R, citações bibliográficas e referências cruzadas. Eles serão introduzidos gradualmente."
   },
   {
     "objectID": "tutorials/markdown.html#checklist-antes-de-continuar",
     "href": "tutorials/markdown.html#checklist-antes-de-continuar",
     "title": "Markdown para documentos Quarto",
     "section": "Checklist antes de continuar",
-    "text": "Checklist antes de continuar\n\nConsigo separar parágrafos com uma linha em branco.\nUso títulos para organizar ideias, e não para escolher tamanhos de fonte.\nSei criar listas, links e uma tabela curta.\nSei indicar uma imagem com texto alternativo e caminho de arquivo.\nReconheço que um .qmd combinará Markdown com recursos próprios do Quarto.\n\nPara consulta, veja a página oficial sobre Markdown no Quarto."
+    "text": "Checklist antes de continuar\n\nConsigo separar parágrafos com uma linha em branco.\nUso títulos para organizar ideias, e não para escolher tamanhos de fonte.\nSei criar listas, links, uma tabela curta e uma fórmula simples.\nSei indicar uma imagem com texto alternativo e caminho de arquivo.\nReconheço a diferença entre a sintaxe escrita no .qmd e o resultado renderizado pelo Quarto.\n\nPara consulta, veja a página oficial sobre Markdown no Quarto."
   },
   {
     "objectID": "tutorials/git-github.html",
@@ -172,7 +179,7 @@
     "href": "tutorials/git-github.html#fazer-a-configuração-inicial",
     "title": "Git e GitHub: primeiro fluxo de trabalho",
     "section": "5. Fazer a configuração inicial",
-    "text": "5. Fazer a configuração inicial\n\nNa aba Files, abra o arquivo README.md.\nSubstitua todo o conteúdo pelo texto abaixo, trocando Seu nome completo pelo seu nome, e salve o arquivo.\n# Documentos Técnicos e Científicos com Quarto e LaTeX\n\n**Estudante:** Seu nome completo\nEscolha File → New File → Text File. Salve o arquivo na pasta-raiz do projeto com o nome exato .gitignore. Confirme que o nome exibido na aba Files é .gitignore, e não .gitignore.txt.\nCole o conteúdo abaixo no arquivo .gitignore e salve-o.\n# Sistema operacional\n.DS_Store\n\n# R e RStudio\n.Rhistory\n.RData\n.Ruserdata\n.Rproj.user/\n\n# Quarto\n.quarto/\n*_cache/\n*_files/\n*.quarto_ipynb\n\n# Arquivos auxiliares do LaTeX\n*.aux\n*.bbl\n*.bcf\n*.blg\n*.fdb_latexmk\n*.fls\n*.log\n*.lof\n*.lot\n*.nav\n*.out\n*.run.xml\n*.snm\n*.synctex.gz\n*.toc\n*.vrb\n\n# Credenciais e dados não publicáveis\n.Renviron\n.env\n.env.*\n!.env.example\ndados/privados/\ndados/restritos/\nRetorne ao Terminal e execute:\ngit status\n\nO README.md deve aparecer como arquivo modificado. O .gitignore e o arquivo nome-do-repositorio.Rproj, criado pelo RStudio, devem aparecer como arquivos novos. Eles serão incluídos no primeiro commit."
+    "text": "5. Fazer a configuração inicial\n\nNa aba Files, abra o arquivo README.md.\nSubstitua todo o conteúdo pelo texto abaixo, trocando Seu nome completo pelo seu nome, e salve o arquivo.\n# Documentos Técnicos e Científicos com Quarto e LaTeX\n\n**Estudante:** Seu nome completo\nEscolha File → New File → Text File. Salve o arquivo na pasta-raiz do projeto com o nome exato .gitignore. Confirme que o nome exibido na aba Files é .gitignore, e não .gitignore.txt.\nCole o conteúdo abaixo no arquivo .gitignore e salve-o.\n# Windows\nThumbs.db\nDesktop.ini\n\n# R e RStudio\n.Rhistory\n.RData\n.Ruserdata\n.Rproj.user/\n\n# Quarto\n.quarto/\n*_cache/\n*.quarto_ipynb\n\n# Arquivos auxiliares do LaTeX\n*.aux\n*.bbl\n*.bcf\n*.blg\n*.fdb_latexmk\n*.fls\n*.log\n*.lof\n*.lot\n*.nav\n*.out\n*.run.xml\n*.snm\n*.synctex.gz\n*.toc\n*.vrb\n\n# Credenciais e dados não publicáveis\n.Renviron\n.env\n.env.*\n!.env.example\ndados/privados/\ndados/restritos/\n\nO .gitignore ignora apenas arquivos que ainda não foram registrados pelo Git. Nunca use-o como forma de proteger um arquivo que já foi enviado ao GitHub.\n\nRetorne ao Terminal e execute:\ngit status\n\nO README.md deve aparecer como arquivo modificado. O .gitignore e o arquivo nome-do-repositorio.Rproj, criado pelo RStudio, devem aparecer como arquivos novos. Eles serão incluídos no primeiro commit."
   },
   {
     "objectID": "tutorials/git-github.html#registrar-a-alteração-com-git",
