@@ -284,8 +284,10 @@ Entre os recursos didáticos utilizados na disciplina estão:
   - R, RStudio, Quarto CLI e Git nas máquinas dos alunos para o módulo 
     de Quarto.
 
-  - Site da disciplina e repositório-template para acesso aos materiais,
-    às instruções e aos arquivos iniciais.
+  - Site da disciplina para acesso aos materiais e às instruções.
+
+  - Repositório GitHub individual público, criado pelo mestrando, para
+    organização, registro e entrega dos artefatos avaliativos.
 
   - Repositório GitHub individual público para registro e entrega dos
     artefatos avaliativos.

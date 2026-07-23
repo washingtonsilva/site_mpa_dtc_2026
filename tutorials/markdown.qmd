@@ -35,8 +35,8 @@ Os indicadores melhoraram no segundo trimestre.
 ```
 
 Nesta página, o título do documento já foi definido no cabeçalho do arquivo;
-por isso, o conteúdo começa em `##`. Em um template da disciplina, preserve a
-hierarquia de títulos que ele já oferecer. Não escolha `#`, `##` ou `###` para
+por isso, o conteúdo começa em `##`. Em documentos cujo título já esteja no
+cabeçalho, preserve essa hierarquia. Não escolha `#`, `##` ou `###` para
 alterar apenas o tamanho visual do texto.
 
 ## 2. Ênfase, código e listas

@@ -46,11 +46,11 @@ instalar quando eles forem usados.
    [tutorial prático de Git e GitHub](tutorials/git-github.qmd) para conhecer
    os fluxos de trabalho da disciplina.
    
-6. Quando forem publicados, crie seu repositório individual a partir do
-   [repositório-template](#sec-recursos-pendentes) e registre sua URL no
-   [cadastro de repositórios](#sec-recursos-pendentes). O artigo de referência
-   e o enunciado do miniartigo no Overleaf serão disponibilizados apenas na
-   atividade correspondente.
+6. Crie seu repositório individual público no GitHub, seguindo o
+   [tutorial prático de Git e GitHub](tutorials/git-github.qmd), e preserve sua
+   URL para registrá-la no cadastro da disciplina quando ele for publicado. O
+   artigo de referência e o enunciado do miniartigo no Overleaf serão
+   disponibilizados apenas na atividade correspondente.
 
 Não há pré-requisito formal, mas Git e GitHub serão usados desde a primeira
 aula. Conclua o [tutorial prático de Git e GitHub](tutorials/git-github.qmd)
@@ -238,9 +238,9 @@ Antes da primeira aula, confirme que você consegue:
 
 3. Confirmar que seu nome e e-mail do Git estão configurados conforme a
    seção anterior.
-4. Quando o repositório-template estiver disponível, criar seu repositório
-   individual a partir dele, abri-lo como Projeto RStudio, confirmar que o
-   Terminal usa Git Bash, editar um arquivo e usar `git status`, `git add`,
-   `git commit` e `git push` para enviá-lo ao GitHub.
+4. Criar seu repositório individual público no GitHub, abri-lo como Projeto
+   RStudio, confirmar que o Terminal usa Git Bash, editar arquivos e usar
+   `git status`, `git add`, `git commit` e `git push` para enviá-los ao
+   GitHub.
 5. Registrar a URL do seu repositório no cadastro da disciplina quando o
    formulário for publicado.

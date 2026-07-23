@@ -202,11 +202,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#antes-de-começar" id="toc-antes-de-começar" class="nav-link active" data-scroll-target="#antes-de-começar">Antes de começar</a></li>
   <li><a href="#o-fluxo-em-uma-imagem" id="toc-o-fluxo-em-uma-imagem" class="nav-link" data-scroll-target="#o-fluxo-em-uma-imagem">O fluxo em uma imagem</a></li>
-  <li><a href="#criar-seu-repositório-a-partir-do-template" id="toc-criar-seu-repositório-a-partir-do-template" class="nav-link" data-scroll-target="#criar-seu-repositório-a-partir-do-template">1. Criar seu repositório a partir do template</a></li>
+  <li><a href="#criar-seu-repositório-individual" id="toc-criar-seu-repositório-individual" class="nav-link" data-scroll-target="#criar-seu-repositório-individual">1. Criar seu repositório individual</a></li>
   <li><a href="#copiar-o-endereço-do-repositório" id="toc-copiar-o-endereço-do-repositório" class="nav-link" data-scroll-target="#copiar-o-endereço-do-repositório">2. Copiar o endereço do repositório</a></li>
   <li><a href="#criar-o-projeto-rstudio-a-partir-do-repositório" id="toc-criar-o-projeto-rstudio-a-partir-do-repositório" class="nav-link" data-scroll-target="#criar-o-projeto-rstudio-a-partir-do-repositório">3. Criar o Projeto RStudio a partir do repositório</a></li>
   <li><a href="#abrir-e-verificar-o-terminal-do-rstudio" id="toc-abrir-e-verificar-o-terminal-do-rstudio" class="nav-link" data-scroll-target="#abrir-e-verificar-o-terminal-do-rstudio">4. Abrir e verificar o Terminal do RStudio</a></li>
-  <li><a href="#fazer-uma-primeira-alteração" id="toc-fazer-uma-primeira-alteração" class="nav-link" data-scroll-target="#fazer-uma-primeira-alteração">5. Fazer uma primeira alteração</a></li>
+  <li><a href="#fazer-a-configuração-inicial" id="toc-fazer-a-configuração-inicial" class="nav-link" data-scroll-target="#fazer-a-configuração-inicial">5. Fazer a configuração inicial</a></li>
   <li><a href="#registrar-a-alteração-com-git" id="toc-registrar-a-alteração-com-git" class="nav-link" data-scroll-target="#registrar-a-alteração-com-git">6. Registrar a alteração com Git</a></li>
   <li><a href="#enviar-o-commit-ao-github" id="toc-enviar-o-commit-ao-github" class="nav-link" data-scroll-target="#enviar-o-commit-ao-github">7. Enviar o commit ao GitHub</a></li>
   <li><a href="#confirmar-no-github" id="toc-confirmar-no-github" class="nav-link" data-scroll-target="#confirmar-no-github">8. Confirmar no GitHub</a></li>
@@ -222,7 +222,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Git e GitHub: primeiro fluxo de trabalho</h1>
-<p class="subtitle lead">Do repositório-template ao primeiro commit no RStudio</p>
+<p class="subtitle lead">Do repositório individual ao primeiro commit no RStudio</p>
 </div>
 
 
@@ -239,7 +239,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Este tutorial é para quem está começando com Git e GitHub. Ao final, você terá um repositório individual público, criado a partir do template da disciplina, aberto como <strong>Projeto RStudio</strong>, com uma alteração registrada no Terminal e enviada ao GitHub.</p>
+<p>Este tutorial é para quem está começando com Git e GitHub. Ao final, você terá um repositório individual público, criado por você no GitHub, aberto como <strong>Projeto RStudio</strong>, com uma alteração registrada no Terminal e enviada ao GitHub.</p>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -261,7 +261,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>instalar e verificar Git e RStudio;</li>
 <li>configurar seu nome e e-mail no Git.</li>
 </ul>
-<p>O repositório-template e o cadastro de repositórios ainda serão publicados. Quando o template estiver disponível, volte a esta página e execute o fluxo abaixo. <strong>Não crie um repositório vazio por conta própria:</strong> o template fornecerá a estrutura comum necessária para as atividades da disciplina.</p>
+<p>Você criará seu próprio repositório no GitHub. Use o nome <code>mpa-dtc-2026-nome-sobrenome</code>, substituindo <code>nome-sobrenome</code> pelo seu primeiro nome e último sobrenome, em letras minúsculas e sem acentos. Por exemplo: <code>mpa-dtc-2026-ana-souza</code>.</p>
+<p>O cadastro de repositórios será publicado separadamente. Preserve a URL do seu repositório para registrá-la quando solicitado.</p>
 </section>
 <section id="o-fluxo-em-uma-imagem" class="level2">
 <h2 class="anchored" data-anchor-id="o-fluxo-em-uma-imagem">O fluxo em uma imagem</h2>
@@ -271,9 +272,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
-    A["Template da disciplina"] --&gt;|"Use this template"| B["Repositório individual no GitHub"]
-    B --&gt;|"New Project → Version Control → Git"| C["Projeto RStudio no computador"]
-    C --&gt;|"Git Bash: commit + push"| B
+    A["Novo repositório individual no GitHub"] --&gt;|"New Project → Version Control → Git"| B["Projeto RStudio no computador"]
+    B --&gt;|"Git Bash: commit + push"| A
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -281,22 +281,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <ul>
-<li><strong>GitHub</strong> hospeda o template e o repositório individual que será consultado pelo professor.</li>
+<li><strong>GitHub</strong> hospeda o repositório individual que será consultado pelo professor.</li>
 <li>O <strong>Projeto RStudio</strong> mantém, em uma única pasta, os arquivos Quarto e os demais materiais da atividade.</li>
 <li>O <strong>Terminal</strong> do RStudio será usado com Git Bash para registrar alterações e enviá-las ao GitHub.</li>
 </ul>
 <p>Não é preciso decorar esses termos agora. Eles farão sentido à medida que você repetir esse ciclo.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Projetos do Overleaf seguem outro fluxo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Este tutorial se aplica ao repositório individual público e às atividades que o professor pedir para registrar no GitHub. Um projeto criado no Overleaf não é enviado automaticamente ao GitHub e o histórico do Overleaf não substitui os <em>commits</em> feitos com Git.</p>
+<p>O miniartigo científico é uma exceção deliberada: ele será produzido em um projeto privado no Overleaf, sem copiar o arquivo-fonte ou o PDF para este repositório público. Entenda essa distinção no tutorial <a href="../tutorials/overleaf.html#sec-overleaf-git-github">Overleaf: primeiros passos</a>.</p>
+</div>
+</div>
 </section>
-<section id="criar-seu-repositório-a-partir-do-template" class="level2">
-<h2 class="anchored" data-anchor-id="criar-seu-repositório-a-partir-do-template">1. Criar seu repositório a partir do template</h2>
+<section id="criar-seu-repositório-individual" class="level2">
+<h2 class="anchored" data-anchor-id="criar-seu-repositório-individual">1. Criar seu repositório individual</h2>
 <ol type="1">
-<li>Acesse o link do repositório-template que será publicado na página de <a href="../instrucoes.html#sec-recursos-pendentes">Preparação do ambiente computacional</a>.</li>
-<li>No GitHub, clique em <strong>Use this template</strong> e escolha <strong>Create a new repository</strong>.</li>
+<li>Entre na sua conta do GitHub.</li>
+<li>Clique no sinal de <strong>+</strong>, no canto superior direito, e escolha <strong>New repository</strong>.</li>
 <li>Confirme que o proprietário (<em>Owner</em>) é a sua conta individual do GitHub.</li>
-<li>Use o nome de repositório indicado no template da disciplina e selecione a visibilidade <strong>Public</strong>.</li>
-<li>Clique em <strong>Create repository from template</strong>.</li>
+<li>Em <strong>Repository name</strong>, use o padrão <code>mpa-dtc-2026-nome-sobrenome</code>. Por exemplo: <code>mpa-dtc-2026-ana-souza</code>.</li>
+<li>Selecione a visibilidade <strong>Public</strong>.</li>
+<li>Marque <strong>Add a README file</strong>. Essa opção cria o primeiro <em>commit</em> e o branch <code>main</code>, necessários para o próximo passo.</li>
+<li>Não selecione licença nem arquivo <code>.gitignore</code> nesta etapa: você criará o <code>.gitignore</code> no RStudio.</li>
+<li>Clique em <strong>Create repository</strong>.</li>
 </ol>
-<p>Um repositório criado a partir de template recebe os arquivos e a estrutura inicial definidos pelo professor; ele não é um <em>fork</em>. <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template" target="_blank">Veja a documentação do GitHub</a>.</p>
+<p>Veja a <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository" target="_blank">documentação oficial do GitHub para criar um repositório</a>.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -307,7 +324,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Na página do novo repositório, confirme que os arquivos do template aparecem no navegador. O template incluirá um arquivo <code>README.md</code> com uma linha de identificação que será alterada no passo 5 e um <code>.gitignore</code> já preparado para as atividades. Ele não incluirá um arquivo <code>.Rproj</code>: o RStudio criará esse arquivo localmente no passo seguinte.</p>
+<p>Na página do novo repositório, confirme que o arquivo <code>README.md</code> aparece no navegador. Ele foi criado pelo GitHub e será alterado no passo 5. O RStudio criará o arquivo <code>.Rproj</code> localmente no passo seguinte.</p>
 </div>
 </div>
 </section>
@@ -345,7 +362,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Antes de editar qualquer arquivo, confirme três sinais no RStudio:</p>
 <ol type="1">
 <li>o nome do seu repositório aparece no canto superior direito;</li>
-<li>a aba <strong>Files</strong> mostra os arquivos que vieram do template;</li>
+<li>a aba <strong>Files</strong> mostra o arquivo <code>README.md</code>;</li>
 <li>o arquivo <code>nome-do-repositorio.Rproj</code> aparece na pasta do projeto.</li>
 </ol>
 <p>A aba Git pode aparecer na interface porque o projeto contém um repositório, mas ela não será usada neste tutorial.</p>
@@ -361,32 +378,78 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
-<p>O primeiro comando confirma que o Git está disponível. O segundo deve informar que você está no branch <code>main</code> e que não há alterações pendentes. Como o terminal é aberto no diretório do projeto, não é necessário usar <code>cd</code>.</p>
+<p>O primeiro comando confirma que o Git está disponível. O segundo deve informar que você está no branch <code>main</code> e listar o arquivo <code>.Rproj</code> como não rastreado. Isso é esperado: o RStudio acabou de criar esse arquivo. Como o terminal é aberto no diretório do projeto, não é necessário usar <code>cd</code>.</p>
 </section>
-<section id="fazer-uma-primeira-alteração" class="level2">
-<h2 class="anchored" data-anchor-id="fazer-uma-primeira-alteração">5. Fazer uma primeira alteração</h2>
+<section id="fazer-a-configuração-inicial" class="level2">
+<h2 class="anchored" data-anchor-id="fazer-a-configuração-inicial">5. Fazer a configuração inicial</h2>
 <ol type="1">
 <li><p>Na aba <strong>Files</strong>, abra o arquivo <code>README.md</code>.</p></li>
-<li><p>Substitua a linha de identificação marcada no template pelo seu nome e salve o arquivo.</p></li>
+<li><p>Substitua todo o conteúdo pelo texto abaixo, trocando <code>Seu nome completo</code> pelo seu nome, e salve o arquivo.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Documentos Técnicos e Científicos com Quarto e LaTeX</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>**Estudante:** Seu nome completo</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Escolha <strong>File</strong> → <strong>New File</strong> → <strong>Text File</strong>. Salve o arquivo na pasta-raiz do projeto com o nome exato <code>.gitignore</code>. Confirme que o nome exibido na aba <strong>Files</strong> é <code>.gitignore</code>, e não <code>.gitignore.txt</code>.</p></li>
+<li><p>Cole o conteúdo abaixo no arquivo <code>.gitignore</code> e salve-o.</p>
+<pre class="gitignore"><code># Sistema operacional
+.DS_Store
+
+# R e RStudio
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Quarto
+.quarto/
+*_cache/
+*_files/
+*.quarto_ipynb
+
+# Arquivos auxiliares do LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.lof
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+
+# Credenciais e dados não publicáveis
+.Renviron
+.env
+.env.*
+!.env.example
+dados/privados/
+dados/restritos/</code></pre></li>
 <li><p>Retorne ao <strong>Terminal</strong> e execute:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
-<p>O <code>README.md</code> deve aparecer como arquivo modificado. O arquivo <code>nome-do-repositorio.Rproj</code>, criado pelo RStudio, também deve aparecer como arquivo novo. Ele registra as opções do projeto e será incluído no primeiro <em>commit</em>.</p>
+<p>O <code>README.md</code> deve aparecer como arquivo modificado. O <code>.gitignore</code> e o arquivo <code>nome-do-repositorio.Rproj</code>, criado pelo RStudio, devem aparecer como arquivos novos. Eles serão incluídos no primeiro <em>commit</em>.</p>
 </section>
 <section id="registrar-a-alteração-com-git" class="level2">
 <h2 class="anchored" data-anchor-id="registrar-a-alteração-com-git">6. Registrar a alteração com Git</h2>
 <p>No Terminal, execute os comandos abaixo, um de cada vez:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add README.md</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add nome-do-repositorio.Rproj</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Configura projeto e identificação inicial"</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Substitua <code>nome-do-repositorio.Rproj</code> pelo nome real do seu arquivo <code>.Rproj</code>. O <code>git status</code> deve listar os dois arquivos na seção de alterações prontas para o <em>commit</em> antes que você execute o último comando.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add README.md</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .gitignore</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add nome-do-repositorio.Rproj</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Configura projeto e identificação inicial"</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Substitua <code>nome-do-repositorio.Rproj</code> pelo nome real do seu arquivo <code>.Rproj</code>. O <code>git status</code> deve listar os três arquivos na seção de alterações prontas para o <em>commit</em> antes que você execute o último comando.</p>
 <p>Um <em>commit</em> registra um conjunto intencional de alterações. Conferir os arquivos antes de confirmá-lo é uma prática importante: não use <code>git add .</code> enquanto estiver aprendendo.</p>
 </section>
 <section id="enviar-o-commit-ao-github" class="level2">
 <h2 class="anchored" data-anchor-id="enviar-o-commit-ao-github">7. Enviar o commit ao GitHub</h2>
 <p>No mesmo Terminal, execute:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Na primeira vez, o Git Credential Manager pode abrir uma janela do navegador para você entrar na sua conta do GitHub e autorizar o acesso. Conclua a autenticação e retorne ao RStudio.</p>
 <p>Não informe sua senha do GitHub diretamente no terminal. O Git for Windows inclui o Git Credential Manager, que permite autenticar via navegador e armazenar as credenciais de forma segura para operações HTTPS. <a href="https://docs.github.com/en/get-started/git-basics/caching-your-github-credentials-in-git?platform=windows" target="_blank">Veja a orientação oficial do GitHub</a>.</p>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
@@ -409,9 +472,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Retorne à página do seu repositório no navegador.</li>
 <li>Atualize a página.</li>
 <li>Abra o arquivo <code>README.md</code> e confirme sua identificação.</li>
+<li>Confirme que o arquivo <code>.gitignore</code> também aparece na lista de arquivos.</li>
 <li>Abra a lista de <em>commits</em> e confirme a mensagem <strong>Configura projeto e identificação inicial</strong>.</li>
 </ol>
-<p>Se essas duas verificações forem bem-sucedidas, você concluiu o primeiro fluxo de trabalho.</p>
+<p>Se essas verificações forem bem-sucedidas, você concluiu o primeiro fluxo de trabalho.</p>
 </section>
 <section id="registrar-o-repositório" class="level2">
 <h2 class="anchored" data-anchor-id="registrar-o-repositório">9. Registrar o repositório</h2>
@@ -420,10 +484,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="o-ciclo-que-você-repetirá-nas-aulas" class="level2">
 <h2 class="anchored" data-anchor-id="o-ciclo-que-você-repetirá-nas-aulas">O ciclo que você repetirá nas aulas</h2>
 <p>No Terminal do RStudio, o ciclo básico será:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add nome-do-arquivo</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Descreve a alteração realizada"</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add nome-do-arquivo</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Descreve a alteração realizada"</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Você estudará esses comandos gradualmente. O RStudio será usado para criar e abrir o projeto; o Git Bash, no Terminal do RStudio, será usado para operar o Git. A aba Git pode aparecer na interface, mas não faz parte deste tutorial.</p>
 <p>Branches, conflitos, recuperação de versões e colaboração avançada serão tratados somente quando forem necessários. Neste momento, domine o ciclo acima e confirme cada envio no GitHub.</p>
 </section>
@@ -431,10 +495,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="checklist-de-conclusão">Checklist de conclusão</h2>
 <ul class="task-list">
 <li><label><input type="checkbox">Tenho uma conta GitHub e Git instalado/configurado.</label></li>
-<li><label><input type="checkbox">Criei meu repositório individual a partir do template da disciplina.</label></li>
+<li><label><input type="checkbox">Criei meu repositório individual público no GitHub.</label></li>
 <li><label><input type="checkbox">Criei e abri o Projeto RStudio a partir desse repositório.</label></li>
-<li><label><input type="checkbox">Confirmei os arquivos do template e o Terminal Git Bash no RStudio.</label></li>
-<li><label><input type="checkbox">Editei e salvei o <code>README.md</code>.</label></li>
+<li><label><input type="checkbox">Confirmei o <code>README.md</code> e o Terminal Git Bash no RStudio.</label></li>
+<li><label><input type="checkbox">Editei e salvei o <code>README.md</code> e o <code>.gitignore</code>.</label></li>
 <li><label><input type="checkbox">Fiz um commit e um <em>push</em> pelo Terminal do RStudio.</label></li>
 <li><label><input type="checkbox">Confirmei a alteração no GitHub.</label></li>
 <li><label><input type="checkbox">Registrei a URL no cadastro da disciplina, quando ele estiver disponível.</label></li>

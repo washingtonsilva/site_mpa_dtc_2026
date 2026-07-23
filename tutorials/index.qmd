@@ -9,8 +9,8 @@ tutoriais disponíveis na ordem indicada.
 
 ## Git e GitHub
 
-Crie seu repositório individual a partir do template, abra-o como Projeto
-RStudio e registre sua primeira alteração usando Git Bash no Terminal.
+Crie seu repositório individual no GitHub, abra-o como Projeto RStudio e
+registre sua primeira alteração usando Git Bash no Terminal.
 
 [Abrir tutorial](git-github.qmd)
 
