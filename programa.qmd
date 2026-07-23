@@ -57,10 +57,11 @@ seguinte forma:
 1. **Atividades práticas em aula = 50 pontos**: sete atividades individuais,
    realizadas durante as Aulas 1 a 7, com supervisão do professor, e
    registradas no repositório GitHub individual do aluno. A versão avaliada
-   será a do último *commit* enviado ao GitHub antes do encerramento da aula;
+   será a do último *commit* enviado ao GitHub até o horário indicado no
+   enunciado;
    não haverá envio duplicado por e-mail, formulário ou plataforma externa.
-   A progressão e os valores são: Aula 1 = 4 pontos; Aula 2 = 6 pontos;
-   Aula 3 = 7 pontos; Aula 4 = 9 pontos; Aulas 5, 6 e 7 = 8 pontos cada.
+   Todas as atividades têm o mesmo peso: cada uma recebe nota de 0 a 10, e a
+   nota deste componente é a média das sete notas multiplicada por 5.
    A página **Avaliações** reúne os enunciados, entregáveis, critérios,
    arquivos de apoio e checklist de submissão.
 
