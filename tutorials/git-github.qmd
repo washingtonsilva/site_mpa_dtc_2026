@@ -250,8 +250,13 @@ enquanto estiver aprendendo.
 No mesmo Terminal, execute:
 
 ```bash
-git push
+git push origin main
 ```
+
+Nesse comando, `origin` é o nome local do repositório remoto no GitHub,
+configurado quando você o clonou; `main` é a ramificação que contém seu
+*commit*. Execute este comando somente depois de confirmar, com `git status`,
+que você está na ramificação `main`.
 
 Na primeira vez, o Git Credential Manager pode abrir uma janela do navegador
 para você entrar na sua conta do GitHub e autorizar o acesso. Conclua a
@@ -296,7 +301,7 @@ No Terminal do RStudio, o ciclo básico será:
 git status
 git add nome-do-arquivo
 git commit -m "Descreve a alteração realizada"
-git push
+git push origin main
 ```
 
 Você estudará esses comandos gradualmente. O RStudio será usado para criar e

@@ -449,7 +449,8 @@ dados/restritos/</code></pre></li>
 <section id="enviar-o-commit-ao-github" class="level2">
 <h2 class="anchored" data-anchor-id="enviar-o-commit-ao-github">7. Enviar o commit ao GitHub</h2>
 <p>No mesmo Terminal, execute:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Nesse comando, <code>origin</code> é o nome local do repositório remoto no GitHub, configurado quando você o clonou; <code>main</code> é a ramificação que contém seu <em>commit</em>. Execute este comando somente depois de confirmar, com <code>git status</code>, que você está na ramificação <code>main</code>.</p>
 <p>Na primeira vez, o Git Credential Manager pode abrir uma janela do navegador para você entrar na sua conta do GitHub e autorizar o acesso. Conclua a autenticação e retorne ao RStudio.</p>
 <p>Não informe sua senha do GitHub diretamente no terminal. O Git for Windows inclui o Git Credential Manager, que permite autenticar via navegador e armazenar as credenciais de forma segura para operações HTTPS. <a href="https://docs.github.com/en/get-started/git-basics/caching-your-github-credentials-in-git?platform=windows" target="_blank">Veja a orientação oficial do GitHub</a>.</p>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
@@ -487,7 +488,7 @@ dados/restritos/</code></pre></li>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add nome-do-arquivo</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Descreve a alteração realizada"</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Você estudará esses comandos gradualmente. O RStudio será usado para criar e abrir o projeto; o Git Bash, no Terminal do RStudio, será usado para operar o Git. A aba Git pode aparecer na interface, mas não faz parte deste tutorial.</p>
 <p>Branches, conflitos, recuperação de versões e colaboração avançada serão tratados somente quando forem necessários. Neste momento, domine o ciclo acima e confirme cada envio no GitHub.</p>
 </section>
