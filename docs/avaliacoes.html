@@ -164,9 +164,14 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#visão-geral" id="toc-visão-geral" class="nav-link active" data-scroll-target="#visão-geral">Visão geral</a></li>
   <li><a href="#regras-gerais" id="toc-regras-gerais" class="nav-link" data-scroll-target="#regras-gerais">Regras gerais</a></li>
-  <li><a href="#atividades-práticas-em-aula" id="toc-atividades-práticas-em-aula" class="nav-link" data-scroll-target="#atividades-práticas-em-aula">Atividades práticas em aula</a></li>
-  <li><a href="#sec-miniartigo" id="toc-sec-miniartigo" class="nav-link" data-scroll-target="#sec-miniartigo">Miniartigo científico em LaTeX</a></li>
-  <li><a href="#sec-blog" id="toc-sec-blog" class="nav-link" data-scroll-target="#sec-blog">Blog Quarto</a></li>
+  <li><a href="#sec-atividades" id="toc-sec-atividades" class="nav-link" data-scroll-target="#sec-atividades">Avaliação 1 — Atividades práticas em aula</a></li>
+  <li><a href="#sec-miniartigo" id="toc-sec-miniartigo" class="nav-link" data-scroll-target="#sec-miniartigo">Avaliação 2 — Miniartigo científico em LaTeX</a>
+  <ul class="collapse">
+  <li><a href="#resultado-esperado" id="toc-resultado-esperado" class="nav-link" data-scroll-target="#resultado-esperado">Resultado esperado</a></li>
+  <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências</a></li>
+  <li><a href="#entrega-e-rubrica-do-miniartigo" id="toc-entrega-e-rubrica-do-miniartigo" class="nav-link" data-scroll-target="#entrega-e-rubrica-do-miniartigo">Entrega e rubrica do miniartigo</a></li>
+  </ul></li>
+  <li><a href="#sec-blog" id="toc-sec-blog" class="nav-link" data-scroll-target="#sec-blog">Avaliação 3 — Blog Quarto</a></li>
   </ul>
 </nav>
     </div>
@@ -193,30 +198,30 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Esta página reúne as informações necessárias sobre avaliações, entregas e atualizações. Os pesos gerais constam também no <a href="./programa.html">Programa da Disciplina</a>.</p>
+<p>Esta página apresenta as três avaliações da disciplina. Os pesos gerais também constam no <a href="./programa.html">Programa da Disciplina</a>.</p>
 <section id="visão-geral" class="level2">
 <h2 class="anchored" data-anchor-id="visão-geral">Visão geral</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th style="text-align: left;">Componente</th>
+<th style="text-align: left;">Avaliação</th>
 <th style="text-align: right;">Pontos</th>
 <th style="text-align: left;">Registro ou entrega</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Atividades práticas em aula</td>
+<td style="text-align: left;"><a href="#sec-atividades">1. Atividades práticas em aula</a></td>
 <td style="text-align: right;">50</td>
-<td style="text-align: left;">Repositório GitHub individual</td>
+<td style="text-align: left;">Conforme a atividade: GitHub ou Overleaf</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="#sec-miniartigo">Miniartigo científico em LaTeX</a></td>
+<td style="text-align: left;"><a href="#sec-miniartigo">2. Miniartigo científico em LaTeX</a></td>
 <td style="text-align: right;">20</td>
 <td style="text-align: left;">Projeto privado no Overleaf</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="#sec-blog">Blog Quarto</a></td>
+<td style="text-align: left;"><a href="#sec-blog">3. Blog Quarto</a></td>
 <td style="text-align: right;">30</td>
 <td style="text-align: left;">Repositório público do blog e GitHub Pages</td>
 </tr>
@@ -231,18 +236,18 @@ ul.task-list li input[type="checkbox"] {
 <li>As atividades práticas devem ser registradas no repositório GitHub individual público. O blog será publicado em seu próprio repositório público.</li>
 <li>Não inclua dados confidenciais, pessoais, identificáveis ou sujeitos a sigilo organizacional. Use dados públicos, anonimizados ou didáticos e identifique fontes e licenças quando aplicável.</li>
 <li>O miniartigo é a exceção à publicação em repositório público: seu projeto e seus elementos reproduzidos permanecem privados, conforme a seção correspondente.</li>
-<li>Esta é a fonte oficial de enunciados, prazos, rubricas e atualizações.</li>
+<li>Esta página reúne as regras gerais e os requisitos das avaliações 2 e 3. Cada atividade prática será apresentada no material da aula correspondente.</li>
 </ul>
 </section>
-<section id="atividades-práticas-em-aula" class="level2">
-<h2 class="anchored" data-anchor-id="atividades-práticas-em-aula">Atividades práticas em aula</h2>
-<p>Serão realizadas sete atividades individuais, uma em cada aula de 1 a 7, predominantemente durante o encontro síncrono. Todas têm o mesmo peso: cada uma recebe nota de 0 a 10, e a nota deste componente é a média das sete notas multiplicada por 5, totalizando 50 pontos.</p>
-<p>O enunciado de cada atividade será publicado nesta página antes da respectiva aula. Ele informará apenas objetivo, entrega, horário-limite do <em>commit</em> e checklist de verificação. A versão avaliada será o último <em>commit</em> enviado ao repositório individual até o horário indicado.</p>
-<p>A correção seguirá o checklist divulgado. Questões recorrentes serão tratadas coletivamente na aula seguinte; comentários individuais serão feitos apenas quando necessários para concluir a avaliação.</p>
+<section id="sec-atividades" class="level2">
+<h2 class="anchored" data-anchor-id="sec-atividades">Avaliação 1 — Atividades práticas em aula</h2>
+<p><strong>Valor: 50 pontos.</strong> Estão previstas sete atividades individuais, uma em cada aula de 1 a 7, realizadas predominantemente durante o encontro síncrono. Cada atividade receberá nota de 0 a 10. A média das sete notas será multiplicada por 5, totalizando 50 pontos.</p>
+<p>As atividades serão apresentadas nos slides e nos materiais da aula. Cada uma informará o objetivo, a forma de entrega e os critérios usados na correção. Em regra, o trabalho será registrado no repositório individual no GitHub. Quando a atividade exigir que os arquivos permaneçam privados, ela será realizada e entregue no Overleaf.</p>
+<p>As questões comuns serão tratadas coletivamente na aula seguinte. Comentários individuais serão feitos apenas quando necessários para concluir a correção.</p>
 </section>
 <section id="sec-miniartigo" class="level2">
-<h2 class="anchored" data-anchor-id="sec-miniartigo">Miniartigo científico em LaTeX</h2>
-<p><strong>Valor: 20 pontos.</strong> Você reconstruirá, no Overleaf e em LaTeX, partes delimitadas de um artigo curto publicado. A atividade avalia a composição e a estrutura do documento; não exige artigo original nem avalia autoria científica.</p>
+<h2 class="anchored" data-anchor-id="sec-miniartigo">Avaliação 2 — Miniartigo científico em LaTeX</h2>
+<p><strong>Valor: 20 pontos.</strong> Você usará o Overleaf e o LaTeX para montar partes definidas de um artigo curto publicado. A avaliação verifica se você sabe preparar um artigo para submissão; não exige um artigo original nem avalia autoria científica.</p>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -253,14 +258,65 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>O projeto Overleaf, o arquivo-fonte, o PDF produzido e todos os elementos reproduzidos para esta atividade devem permanecer <strong>privados</strong>. Não os publique no GitHub, não gere link público e não os reutilize fora da disciplina.</p>
+<p>O projeto no Overleaf, os arquivos <code>.tex</code>, o PDF produzido e todos os elementos reproduzidos para esta atividade devem permanecer <strong>privados</strong>. Não os publique no GitHub, não gere link público e não os reutilize fora da disciplina.</p>
 </div>
 </div>
-<p>Cada mestrando criará seu projeto a partir do <a href="https://www.overleaf.com/latex/templates/brazilian-review-of-finance-a-template/hzwtyhsyrbhs" target="_blank">template da Revista Brasileira de Finanças no Overleaf</a>. O enunciado, publicado antes do início da atividade, definirá o artigo-fonte, sua licença, o escopo da reconstrução, o prazo, a rubrica e a forma privada de entrega. Reconstrua apenas os elementos indicados e identifique sempre a fonte do artigo.</p>
-<p>Serão avaliados a organização do projeto, a compilação, a estrutura do documento, figuras, tabelas, equações, citações, arquivo <code>.bib</code>, referências cruzadas e qualidade tipográfica. Antes de iniciar, conclua o tutorial <a href="./tutorials/overleaf.html">Overleaf: primeiros passos</a>.</p>
+<p>Cada estudante criará seu próprio projeto a partir do <a href="https://www.overleaf.com/latex/templates/elsevier-article-template-with-different-bibliography-styles/npwqmwvhvvrk" target="_blank">modelo oficial Elsevier <code>elsarticle</code> no Overleaf</a>. O artigo-fonte é Silva et al.&nbsp;(2024), “Portfolio optimization based on the pre-selection of stocks by the Support Vector Machine model”, <em>Finance Research Letters</em>, 61, 105014, DOI <a href="https://doi.org/10.1016/j.frl.2024.105014">10.1016/j.frl.2024.105014</a>. Monte os elementos indicados abaixo, deixe claro que é um exercício didático baseado no artigo e não se apresente como autor do estudo publicado.</p>
+<p>Esta avaliação verifica a organização do projeto, a geração do PDF, figuras, tabelas, a equação do índice de Sharpe e sua explicação, citações, arquivo <code>.bib</code>, menções no texto e a apresentação do documento. O resultado é um exercício em <code>elsarticle</code>, não uma reprodução do PDF final editado pela Elsevier. Não serão avaliados domínio de SVM, reprodução de dados, código ou estimações. Antes de iniciar, conclua o tutorial <a href="./tutorials/overleaf.html">Overleaf: primeiros passos</a>.</p>
+<section id="resultado-esperado" class="level3">
+<h3 class="anchored" data-anchor-id="resultado-esperado">Resultado esperado</h3>
+<p>O artigo final deve incluir as <strong>três figuras</strong> e as <strong>duas tabelas</strong> do artigo-fonte, todas com legenda, rótulo e menção no texto. Inclua também a equação do índice de Sharpe, a explicação de seus símbolos, citações e uma lista de referências que apareça corretamente no PDF.</p>
+</section>
+<section id="referências" class="level3">
+<h3 class="anchored" data-anchor-id="referências">Referências</h3>
+<p>Não será fornecida uma referência BibTeX pronta. Crie o arquivo <code>.bib</code> e confira os dados da referência no artigo publicado ou na página oficial. Você pode usar uma ferramenta de IA generativa, como o ChatGPT, ou o Zotero para produzir uma primeira versão.</p>
+<p>Se usar o Zotero, inclua o artigo-fonte e apenas outras obras que você realmente cite no texto. Remova do <code>.bib</code> informações que não serão usadas, como o campo <code>abstract</code> (resumo). A avaliação considera se as referências e citações estão corretas, não a ferramenta escolhida.</p>
+</section>
+<section id="entrega-e-rubrica-do-miniartigo" class="level3">
+<h3 class="anchored" data-anchor-id="entrega-e-rubrica-do-miniartigo">Entrega e rubrica do miniartigo</h3>
+<p>A entrega final será um projeto privado no Overleaf, compartilhado com o professor com permissão de leitura. O prazo será informado antes da entrega. Os 20 pontos serão atribuídos conforme os critérios abaixo.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Critério</th>
+<th style="text-align: right;">Pontos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Arquivos organizados, <code>elsarticle</code> configurado e PDF gerado corretamente</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bloco inicial identificado como exercício didático e seções organizadas</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Três figuras e duas tabelas legíveis, com legendas, rótulos e menções no texto</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Equação de Sharpe identificada, mencionada no texto e explicada</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Citações, arquivo <code>.bib</code> conferido e lista de referências exibida corretamente</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Revisão final: PDF legível, sem erros e projeto mantido privado</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="sec-blog" class="level2">
-<h2 class="anchored" data-anchor-id="sec-blog">Blog Quarto</h2>
+<h2 class="anchored" data-anchor-id="sec-blog">Avaliação 3 — Blog Quarto</h2>
 <p><strong>Valor: 30 pontos.</strong> Você criará e publicará um blog individual com Quarto e GitHub Pages. Ele poderá servir de base para um produto técnico ou tecnológico.</p>
 <p>O blog deverá:</p>
 <ul>

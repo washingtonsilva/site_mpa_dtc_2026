@@ -28,9 +28,8 @@ Ao final da disciplina, espera-se que o mestrando seja capaz de:
 - Editar e compor um miniartigo científico em LaTeX no ambiente Overleaf,
   incluindo estrutura do documento, equações, figuras, tabelas, referências
   cruzadas e gestão de referências bibliográficas com arquivo `.bib` e
-  BibTeX, utilizando o template da Revista Brasileira de Finanças e
-  reconhecendo a classe `elsarticle` da Elsevier como referência editorial
-  comparativa.
+  BibTeX, utilizando o modelo Elsevier `elsarticle` para preparar um exercício
+  de artigo para submissão.
 
 - Criar documentos Quarto que integrem texto, código R, dados e resultados
   computacionais, gerando saídas em HTML, PDF e Word conforme a finalidade
@@ -57,38 +56,38 @@ seguinte forma:
 
 1. **Atividades práticas em aula = 50 pontos**: sete atividades individuais,
    realizadas durante as Aulas 1 a 7, com supervisão do professor. Salvo
-   quando o enunciado indicar entrega privada no Overleaf, serão registradas
+   quando o material da aula indicar entrega privada no Overleaf, serão registradas
    no repositório GitHub individual do aluno; a versão avaliada será a do
-   último *commit* enviado ao GitHub até o horário indicado no enunciado.
+   último *commit* enviado ao GitHub até o horário indicado nesse material.
    Não haverá envio duplicado por e-mail, formulário ou plataforma externa.
    Todas as atividades têm o mesmo peso: cada uma recebe nota de 0 a 10, e a
    nota deste componente é a média das sete notas multiplicada por 5.
-   A página **Avaliações** reúne os enunciados, entregáveis, critérios,
-   arquivos de apoio e checklist de submissão.
+   Cada atividade será apresentada no material da aula correspondente. A página
+   **Avaliações** reúne as regras gerais e os requisitos das avaliações finais.
 
-2. **Miniartigo científico em LaTeX = 20 pontos**: edição técnica
-   individual, no Overleaf, por meio da reconstrução técnica de um artigo
-   curto de referência selecionado pelo professor. Todos os estudantes
-   criarão seus próprios projetos a partir do template oficial da Revista
-   Brasileira de Finanças, com a orientação de configuração publicada no site.
-   O professor indicará o artigo curto de referência, sua fonte, licença e as
-   partes exatas a reconstruir. A configuração do projeto, a organização dos
-   arquivos, a criação do `.bib`, a recriação dos elementos e a compilação
-   fazem parte da prática supervisionada. A avaliação concentra-se nas
-   competências de composição e estruturação em LaTeX, e não na maturidade
-   prévia do projeto de dissertação do mestrando.
+2. **Miniartigo científico em LaTeX = 20 pontos**: exercício individual no
+   Overleaf, que consiste em montar, em LaTeX, partes definidas de um artigo
+   curto selecionado pelo professor. Todos os estudantes criarão seu próprio
+   projeto com o modelo Elsevier `elsarticle`, seguindo as instruções do site.
+   O artigo de referência será Silva et al. (2024), “Portfolio optimization
+   based on the pre-selection of stocks by the Support Vector Machine model”,
+   *Finance Research Letters*, 61, 105014, DOI 10.1016/j.frl.2024.105014.
+   Criar o projeto, organizar os arquivos, criar o `.bib`, inserir os elementos
+   pedidos e gerar o PDF fazem parte do exercício. A avaliação verifica
+   o uso de LaTeX para preparar o documento, não o estágio do projeto de
+   dissertação do estudante.
 
-   Serão avaliados a organização dos arquivos, a
-   estrutura semântica do documento, a compilação, o uso de figuras e
-   tabelas, as equações, as citações, o arquivo `.bib`, as referências
-   cruzadas e a qualidade tipográfica do resultado. O artigo-fonte terá sua
-   autoria intelectual, referência completa e licença identificadas de modo
-   explícito; o exercício não avalia autoria científica nem reproduz o
-   artigo integralmente. A reconstrução é restrita à disciplina: o projeto
-   Overleaf, o fonte, o PDF e os elementos reproduzidos devem permanecer
-   privados, sem publicação no GitHub ou por link público. A entrega será feita
-   por compartilhamento direto com o professor no Overleaf ou por procedimento
-   privado indicado no enunciado.
+   Serão avaliados a organização dos arquivos, a organização do texto, a
+   geração do PDF, as figuras e tabelas, a equação do índice de Sharpe e sua
+   explicação, as citações, o arquivo `.bib`, as menções a figuras, tabelas e
+   equação no texto e a apresentação do PDF. O exercício não avalia autoria
+   científica, domínio de SVM ou reprodução de dados, código e estimações. O
+   resultado será um exercício de artigo em `elsarticle`, não uma cópia do PDF
+   final editado pela Elsevier. O projeto no Overleaf, os arquivos `.tex`, o
+   PDF e os elementos reproduzidos devem permanecer privados, sem publicação
+   no GitHub ou por link público. A entrega será feita por compartilhamento
+   direto com o professor no Overleaf ou por procedimento privado indicado no
+   material da aula.
 
 3. **Blog Quarto = 30 pontos**: construção e publicação de um blog
    individual com Quarto e GitHub Pages, contendo ao menos
@@ -175,9 +174,11 @@ Boca Raton: CRC Press, 2020. Disponível em:
 
 - [Overleaf Learn: Articles](https://www.overleaf.com/learn/latex/Articles){target="_blank"}: consulta para a estrutura e os elementos do miniartigo.
 
-- [Template da Revista Brasileira de Finanças no Overleaf](https://www.overleaf.com/latex/templates/brazilian-review-of-finance-a-template/hzwtyhsyrbhs){target="_blank"}: template externo que cada mestrando usará para criar seu projeto individual de miniartigo.
+- [Modelo oficial Elsevier `elsarticle` no Overleaf](https://www.overleaf.com/latex/templates/elsevier-article-template-with-different-bibliography-styles/npwqmwvhvvrk){target="_blank"}: ponto de partida para o projeto individual do miniartigo.
 
-- [Instruções LaTeX da Elsevier (classe `elsarticle`)](https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions){target="_blank"}: comparação de convenções editoriais e de preparação de arquivos de submissão.
+- [Instruções LaTeX da Elsevier (classe `elsarticle`)](https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions){target="_blank"}: orientação complementar para preparar os arquivos de submissão.
+
+- [Template da Revista Brasileira de Finanças no Overleaf](https://www.overleaf.com/latex/templates/brazilian-review-of-finance-a-template/hzwtyhsyrbhs){target="_blank"}: exemplo comparativo de convenções editoriais nacionais.
 
 ### Quarto
 
@@ -236,9 +237,9 @@ repertório dos mestrandos, mas não exigem domínio operacional autônomo.
   estrutura semântica, figuras, tabelas, referências cruzadas, notas de
   rodapé, BibTeX, arquivos `.bib`, estilos de citação (`natbib`) e revisão
   tipográfica.
-- Template da Revista Brasileira de Finanças como padrão didático para que cada
-  mestrando configure seu projeto individual; classe `elsarticle` apenas como
-  comparação demonstrativa de convenções editoriais.
+- Modelo Elsevier `elsarticle` como padrão para que cada estudante configure
+  seu projeto individual; template da Revista Brasileira de Finanças como
+  exemplo comparativo de convenções editoriais.
 
 ### 2. Sistema de publicação Quarto
 
@@ -279,9 +280,9 @@ Entre os recursos didáticos utilizados na disciplina estão:
   
   - Arquivos quarto (*reports*) demonstrativos (.qmd).
 
-  - Link para o template RBFin, roteiro de configuração do projeto individual
-    e enunciado do miniartigo, com artigo de referência, escopo de reconstrução
-    e critérios da atividade avaliativa.
+  - Link para o modelo Elsevier `elsarticle`, roteiro de configuração do
+    projeto individual e enunciado do miniartigo, com artigo de referência,
+    escopo de reconstrução e critérios da atividade avaliativa.
 
 - **Ambiente e Ferramentas**:
 
@@ -321,22 +322,23 @@ Todos os materiais da disciplina serão produzidos com as próprias
 ferramentas ensinadas (Quarto e LaTeX), servindo simultaneamente como 
 conteúdo e como exemplo de aplicação. A comunicação, a distribuição de 
 materiais e a referência às submissões ocorrerão por meio do site da
-disciplina, dos repositórios GitHub individuais e, nos casos indicados nos
-enunciados, de projetos privados no Overleaf. Não será utilizado GitHub
+disciplina, dos repositórios GitHub individuais e, nos casos indicados no
+material da aula, de projetos privados no Overleaf. Não será utilizado GitHub
 Classroom.
 
 Na Aula 1, cada estudante criará um projeto Overleaf simples para a prática
-inicial. Na atividade do miniartigo, cada mestrando abrirá o template oficial
-RBFin como projeto próprio e reconstruirá as partes delimitadas do artigo de
-referência selecionado. Não haverá projeto-base montado previamente pelo
-professor; a configuração do projeto, dos arquivos, da bibliografia e dos
-elementos do artigo fará parte da prática supervisionada. O trabalho
-permanecerá privado no Overleaf e seguirá o procedimento de entrega definido
-no enunciado.
+inicial. Na atividade do miniartigo, cada mestrando abrirá o modelo oficial
+Elsevier `elsarticle` como projeto próprio e montará as partes definidas do
+artigo de referência. O resultado será um exercício de artigo para submissão,
+não uma cópia do PDF final editado pela Elsevier. Não haverá
+projeto-base montado previamente pelo professor; a configuração do projeto,
+dos arquivos, da bibliografia e dos elementos do artigo fará parte da prática
+supervisionada. O trabalho permanecerá privado no Overleaf e seguirá o
+procedimento de entrega definido no material da aula.
 
 As atividades práticas das Aulas 1 e 2 poderão preparar componentes do
-miniartigo em LaTeX. Quando o enunciado as identificar como privadas, serão
-realizadas e entregues no Overleaf. A pontuação das atividades em aula
+miniartigo em LaTeX. Quando o material da aula as identificar como privadas,
+serão realizadas e entregues no Overleaf. A pontuação das atividades em aula
 avaliará a execução guiada e os objetivos específicos de cada encontro; a
 avaliação do miniartigo incidirá sobre a integração final, a revisão e a
 qualidade técnica do documento completo, evitando dupla contagem do mesmo
@@ -358,7 +360,7 @@ divulgados. A aula 8 terá duração de 2 horas; as demais, de 4 horas.
 | Aula | Data | Tópicos planejados | Artefato prático e atividade | Nota da atividade |
 |:----:|:----:|:-------------------|:------------------------------|:------:|
 | 1 | 03/08/26 | Apresentação da disciplina. Distinção inicial entre composição tipográfica e programação literada. LaTeX no Overleaf: criação de projeto simples, estrutura do documento, texto, seções, listas e equações. | Documento LaTeX compilável em projeto individual simples, com título, seções, lista e equação. | 0–10 |
-| 2 | 10/08/26 | Miniartigo científico em LaTeX: configuração de projeto individual a partir do RBFin; reconstrução técnica de elementos delimitados de artigo de referência; figuras, tabelas, referências cruzadas e BibTeX. `elsarticle` como comparação demonstrativa. | Componente privado do miniartigo com figura, tabela, citação, `.bib` e referência cruzada funcionais. | 0–10 |
+| 2 | 10/08/26 | Miniartigo científico em LaTeX: criação de projeto individual com o modelo Elsevier `elsarticle`; montagem de elementos definidos de artigo de referência; figuras, tabelas, equação, menções no texto e BibTeX. RBFin como exemplo comparativo. | Preparação privada do miniartigo com uma figura, uma tabela, equação explicada no texto, citação, `.bib` e menções no texto que funcionem no PDF. | 0–10 |
 | 3 | 17/08/26 | Introdução ao Quarto: anatomia do `.qmd`, YAML, Markdown, código R e renderização em HTML. Comparação entre HTML, PDF e Word; uso do ambiente previamente validado. | Primeiro `.qmd` renderizado em HTML, com texto, código R e resultado computacional. | 0–10 |
 | 4 | 24/08/26 | Relatórios técnicos reprodutíveis: organização de projeto, dados, caminhos relativos, `README`, tabelas, gráficos, citações, referências cruzadas e `_brand.yml`. | Relatório técnico reproduzível para um problema de Administração ou Finanças. | 0–10 |
 | 5 | 31/08/26 | Relatórios parametrizados e automação simples para públicos, cenários ou períodos distintos. | Duas versões parametrizadas do relatório da Aula 4, com nomes de arquivo adequados. | 0–10 |

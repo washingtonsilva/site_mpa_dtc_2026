@@ -150,9 +150,10 @@ momento, a meta é reconhecer a relação entre fonte, recompilação e PDF.
 ## Projeto do miniartigo
 
 O miniartigo avaliativo não começará neste projeto simples. Na atividade
-correspondente, cada mestrando criará seu próprio projeto a partir do template
-oficial da Revista Brasileira de Finanças e reconstruirá tecnicamente as partes
-delimitadas de um artigo de referência.
+correspondente, cada mestrando criará seu próprio projeto a partir do modelo
+oficial Elsevier `elsarticle` e montará as partes definidas de um artigo de
+referência. O resultado será um exercício de preparação de artigo para
+submissão, não uma cópia do PDF final publicado pela editora.
 
 Consulte a seção [Miniartigo científico em LaTeX](../avaliacoes.qmd#sec-miniartigo)
 na página Avaliações no momento indicado pelo professor. Não será necessário
