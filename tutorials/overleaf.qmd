@@ -84,16 +84,21 @@ Este é meu primeiro documento em \LaTeX.
 
 \section{Uma equação}
 
-\[
+A relação entre energia e massa aparece na Equação~\ref{eq:energia}.
+
+\begin{equation}
   E = mc^2
-\]
+  \label{eq:energia}
+\end{equation}
 
 \end{document}
 ```
 
 Não é necessário compreender cada comando antes de compilar. Por enquanto,
 observe apenas que o texto entre `\begin{document}` e `\end{document}` é o
-conteúdo que aparecerá no PDF.
+conteúdo que aparecerá no PDF. O ambiente `equation` numera a equação,
+`\label{eq:energia}` dá a ela um identificador e `\ref{eq:energia}` insere
+esse número no texto.
 
 ## 4. Recompilar e verificar o PDF
 
