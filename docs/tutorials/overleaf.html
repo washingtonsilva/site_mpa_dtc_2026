@@ -198,13 +198,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#antes-de-começar" id="toc-antes-de-começar" class="nav-link active" data-scroll-target="#antes-de-começar">Antes de começar</a></li>
-  <li><a href="#sec-overleaf-git-github" id="toc-sec-overleaf-git-github" class="nav-link" data-scroll-target="#sec-overleaf-git-github">Projetos do Overleaf, Git e GitHub</a></li>
   <li><a href="#criar-um-projeto-simples" id="toc-criar-um-projeto-simples" class="nav-link" data-scroll-target="#criar-um-projeto-simples">1. Criar um projeto simples</a></li>
   <li><a href="#reconhecer-a-interface-de-trabalho" id="toc-reconhecer-a-interface-de-trabalho" class="nav-link" data-scroll-target="#reconhecer-a-interface-de-trabalho">2. Reconhecer a interface de trabalho</a></li>
   <li><a href="#inserir-o-documento-inicial" id="toc-inserir-o-documento-inicial" class="nav-link" data-scroll-target="#inserir-o-documento-inicial">3. Inserir o documento inicial</a></li>
   <li><a href="#recompilar-e-verificar-o-pdf" id="toc-recompilar-e-verificar-o-pdf" class="nav-link" data-scroll-target="#recompilar-e-verificar-o-pdf">4. Recompilar e verificar o PDF</a></li>
   <li><a href="#se-ocorrer-um-erro-de-compilação" id="toc-se-ocorrer-um-erro-de-compilação" class="nav-link" data-scroll-target="#se-ocorrer-um-erro-de-compilação">5. Se ocorrer um erro de compilação</a></li>
-  <li><a href="#projeto-do-miniartigo" id="toc-projeto-do-miniartigo" class="nav-link" data-scroll-target="#projeto-do-miniartigo">Projeto do miniartigo</a></li>
   <li><a href="#ajuda-complementar" id="toc-ajuda-complementar" class="nav-link" data-scroll-target="#ajuda-complementar">Ajuda complementar</a></li>
   <li><a href="#checklist-de-conclusão" id="toc-checklist-de-conclusão" class="nav-link" data-scroll-target="#checklist-de-conclusão">Checklist de conclusão</a></li>
   </ul>
@@ -233,7 +231,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Neste tutorial, você criará um projeto simples no Overleaf, identificará o arquivo-fonte e o PDF e fará sua primeira compilação. Os comandos e a estrutura do documento serão estudados nas aulas.</p>
+<p>Neste tutorial, você criará um projeto simples no Overleaf, identificará onde o código é escrito e onde o PDF aparece e fará sua primeira compilação. Não é necessário instalar LaTeX no computador para acompanhar estes passos.</p>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -244,51 +242,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Ao terminar, você terá um projeto individual no Overleaf contendo um documento LaTeX compilável com título, seções, uma lista e uma equação.</p>
+<p>Ao terminar, você terá um projeto no Overleaf contendo um documento LaTeX compilável com título, seções, uma lista e uma equação.</p>
 </div>
 </div>
 <section id="antes-de-começar" class="level2">
 <h2 class="anchored" data-anchor-id="antes-de-começar">Antes de começar</h2>
 <p>Você precisa apenas de uma conta gratuita no <a href="https://www.overleaf.com" target="_blank">Overleaf</a>. Crie ou acesse sua conta antes da primeira aula, conforme a <a href="../instrucoes.html">Preparação do ambiente computacional</a>.</p>
-</section>
-<section id="sec-overleaf-git-github" class="level2">
-<h2 class="anchored" data-anchor-id="sec-overleaf-git-github">Projetos do Overleaf, Git e GitHub</h2>
-<p>Um projeto criado no Overleaf fica salvo na sua conta do <strong>Overleaf</strong>. Por padrão, ele não é uma pasta no seu computador, não é um repositório Git e não é enviado ao GitHub.</p>
-<p>O Overleaf possui um histórico próprio, útil para consultar, comparar e recuperar versões do projeto. Esse histórico não substitui o Git: ele não cria <em>commits</em> no repositório individual da disciplina nem registra arquivos no GitHub.</p>
-<p>Nesta disciplina, use cada ambiente para a finalidade indicada:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Artefato</th>
-<th>Onde trabalhar</th>
-<th>Como será acompanhado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Atividades práticas indicadas pelo professor</td>
-<td>Repositório individual no GitHub</td>
-<td><em>Commits</em> enviados com Git</td>
-</tr>
-<tr class="even">
-<td>Miniartigo científico em LaTeX</td>
-<td>Projeto privado no Overleaf</td>
-<td>Projeto, versão final e compartilhamento conforme o enunciado</td>
-</tr>
-<tr class="odd">
-<td>Blog Quarto</td>
-<td>Repositório próprio no GitHub</td>
-<td><em>Commits</em>, publicação e GitHub Pages</td>
-</tr>
-</tbody>
-</table>
-<p>Portanto, não copie o arquivo <code>.tex</code> nem o PDF do miniartigo para o repositório público de atividades. O miniartigo será acompanhado no projeto privado do Overleaf; as atividades que pedirem Git/GitHub terão instruções e artefatos próprios no repositório individual.</p>
-<p>O Overleaf oferece uma integração opcional com GitHub, mas ela exige acesso a recursos premium e não faz parte do fluxo obrigatório da disciplina. Você não precisa configurá-la para realizar este tutorial, as atividades iniciais ou o miniartigo. Consulte as <a href="https://docs.overleaf.com/writing-and-editing/history-and-versioning" target="_blank">orientações oficiais sobre histórico do Overleaf</a> se precisar recuperar uma versão do projeto.</p>
 </section>
 <section id="criar-um-projeto-simples" class="level2">
 <h2 class="anchored" data-anchor-id="criar-um-projeto-simples">1. Criar um projeto simples</h2>
@@ -298,36 +257,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Use um nome claro, como <code>aula-01-latex-seu-nome</code>.</li>
 <li>Clique em <strong>Create</strong>.</li>
 </ol>
-<p>O Overleaf abrirá um projeto individual com um arquivo LaTeX inicial. Este é o projeto de prática da primeira aula, não o miniartigo avaliativo. <a href="https://docs.overleaf.com/getting-started/your-first-project" target="_blank">Veja como criar um projeto em branco</a>.</p>
+<p>O Overleaf abrirá o editor com um arquivo inicial chamado <code>main.tex</code>. O arquivo já contém um exemplo que pode ser substituído nos próximos passos. <a href="https://docs.overleaf.com/getting-started/your-first-project" target="_blank">Veja as instruções oficiais para criar um projeto em branco</a>.</p>
 </section>
 <section id="reconhecer-a-interface-de-trabalho" class="level2">
 <h2 class="anchored" data-anchor-id="reconhecer-a-interface-de-trabalho">2. Reconhecer a interface de trabalho</h2>
-<p>Ao abrir o projeto, localize estes três elementos:</p>
+<p>Ao abrir o projeto, localize estes quatro elementos:</p>
 <ul>
 <li>a lista de <strong>arquivos</strong> do projeto;</li>
-<li>o <strong>Code Editor</strong>, onde está o arquivo-fonte LaTeX, normalmente com extensão <code>.tex</code>;</li>
+<li>o botão <strong>Code Editor</strong>, acima da área de edição;</li>
+<li>a área de edição, onde está o arquivo-fonte LaTeX, normalmente com extensão <code>.tex</code>;</li>
 <li>a prévia do <strong>PDF</strong>, que mostra o resultado compilado.</li>
 </ul>
-<p>Nesta disciplina, use o <strong>Code Editor</strong>. Ele permite ver e editar diretamente o código LaTeX. O Visual Editor não será usado: o objetivo é compreender e editar o código LaTeX.</p>
+<p>Selecione <strong>Code Editor</strong> caso o Overleaf abra o Visual Editor. O Code Editor é o modo em que você vê e edita diretamente o código LaTeX.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Dica</span>Fonte e resultado não são o mesmo arquivo
+<span class="screen-reader-only">Dica</span>Código e PDF não são o mesmo arquivo
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>O arquivo <code>.tex</code> contém o texto e os comandos LaTeX. O PDF é o resultado gerado a partir desse fonte. Edite o <code>.tex</code>; não tente editar diretamente o PDF mostrado na prévia.</p>
+<p>O arquivo <code>.tex</code> contém o texto e os comandos LaTeX. O PDF é o resultado gerado a partir desse arquivo. Edite o <code>.tex</code>; não tente editar diretamente o PDF mostrado na prévia.</p>
 </div>
 </div>
 </section>
 <section id="inserir-o-documento-inicial" class="level2">
 <h2 class="anchored" data-anchor-id="inserir-o-documento-inicial">3. Inserir o documento inicial</h2>
 <ol type="1">
-<li>Na lista de arquivos, abra <code>main.tex</code>.</li>
-<li>Selecione o conteúdo do arquivo e substitua-o pelo código abaixo.</li>
+<li>Na lista de arquivos, clique em <code>main.tex</code>.</li>
+<li>Clique na área de edição e selecione todo o conteúdo do arquivo.</li>
+<li>Cole o código abaixo no lugar do conteúdo selecionado.</li>
 <li>Troque <code>Seu nome</code> pelo seu nome.</li>
 </ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">\documentclass</span>{<span class="ex">article</span>}</span>
@@ -358,39 +319,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">\]</span></span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Não é necessário compreender cada comando antes de compilar. A primeira aula explicará a estrutura do documento, as seções, listas e equações usadas nesse exemplo.</p>
+<p>Não é necessário compreender cada comando antes de compilar. Por enquanto, observe apenas que o texto entre <code>\begin{document}</code> e <code>\end{document}</code> é o conteúdo que aparecerá no PDF.</p>
 </section>
 <section id="recompilar-e-verificar-o-pdf" class="level2">
 <h2 class="anchored" data-anchor-id="recompilar-e-verificar-o-pdf">4. Recompilar e verificar o PDF</h2>
 <ol type="1">
-<li>Clique em <strong>Recompile</strong>.</li>
+<li>Clique em <strong>Recompile</strong>, acima da prévia do PDF.</li>
 <li>Aguarde a atualização da prévia.</li>
 <li>Confirme no PDF o título, seu nome, as duas seções, a lista e a equação.</li>
 </ol>
-<p>O Overleaf compila o documento em seus servidores; por isso, não é necessário instalar uma distribuição LaTeX no computador para realizar esta etapa.</p>
+<p>O Overleaf transforma o arquivo-fonte em PDF. Seus arquivos são salvos automaticamente no projeto enquanto você trabalha; recompilar é o passo que atualiza o PDF com as alterações do código.</p>
 </section>
 <section id="se-ocorrer-um-erro-de-compilação" class="level2">
 <h2 class="anchored" data-anchor-id="se-ocorrer-um-erro-de-compilação">5. Se ocorrer um erro de compilação</h2>
-<p>Não apague comandos para fazer o PDF reaparecer. Primeiro:</p>
+<p>Um erro de compilação é comum quando se está aprendendo. Não apague trechos ao acaso para fazer o PDF reaparecer. Primeiro:</p>
 <ol type="1">
 <li>leia a primeira mensagem de erro apresentada pelo Overleaf;</li>
 <li>confira a última alteração feita no arquivo-fonte;</li>
 <li>restaure apenas essa alteração se identificar um erro de digitação;</li>
 <li>se o problema persistir, preserve o projeto e peça ajuda, informando a mensagem exibida.</li>
 </ol>
-<p>Erros e sua interpretação serão estudados progressivamente. Neste primeiro momento, a meta é reconhecer a relação entre fonte, recompilação e PDF.</p>
-</section>
-<section id="projeto-do-miniartigo" class="level2">
-<h2 class="anchored" data-anchor-id="projeto-do-miniartigo">Projeto do miniartigo</h2>
-<p>O miniartigo avaliativo não começará neste projeto simples. Na atividade correspondente, cada mestrando criará seu próprio projeto a partir do modelo oficial Elsevier <code>elsarticle</code> e montará as partes definidas de um artigo de referência. O resultado será um exercício de preparação de artigo para submissão, não uma cópia do PDF final publicado pela editora.</p>
-<p>Consulte a seção <a href="../avaliacoes.html#sec-miniartigo">Miniartigo científico em LaTeX</a> na página Avaliações no momento indicado pelo professor. Não será necessário criar um template novo nem receber um projeto montado individualmente pelo professor.</p>
+<p>Neste primeiro momento, a meta é reconhecer a relação entre código, recompilação e PDF. A leitura de mensagens de erro será praticada aos poucos nas aulas.</p>
 </section>
 <section id="ajuda-complementar" class="level2">
 <h2 class="anchored" data-anchor-id="ajuda-complementar">Ajuda complementar</h2>
 <p>Use estes materiais oficiais quando precisar de orientação adicional:</p>
 <ul>
 <li><a href="https://docs.overleaf.com/getting-started/how-do-i-use-overleaf" target="_blank">Como usar o Overleaf</a>, para conhecer a interface;</li>
-<li><a href="https://docs.overleaf.com/getting-started/your-first-project" target="_blank">Seu primeiro projeto</a>, para criar e recompilar projetos;</li>
+<li><a href="https://docs.overleaf.com/getting-started/your-first-project" target="_blank">Seu primeiro projeto</a>, para criar um projeto em branco;</li>
+<li><a href="https://docs.overleaf.com/getting-started/recompiling-your-project" target="_blank">Recompilar seu projeto</a>, para entender a atualização do PDF;</li>
 <li><a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes_" target="_blank">Learn LaTeX in 30 minutes</a>, para uma introdução mais ampla à sintaxe LaTeX.</li>
 </ul>
 <p>Esses materiais complementam o tutorial. Nas atividades, siga o enunciado e as orientações da aula.</p>
@@ -399,7 +356,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="checklist-de-conclusão">Checklist de conclusão</h2>
 <ul class="task-list">
 <li><label><input type="checkbox">Tenho uma conta Overleaf acessível.</label></li>
-<li><label><input type="checkbox">Criei meu projeto individual simples no Overleaf.</label></li>
+<li><label><input type="checkbox">Criei um projeto simples no Overleaf.</label></li>
 <li><label><input type="checkbox">Identifiquei a lista de arquivos, o Code Editor e a prévia do PDF.</label></li>
 <li><label><input type="checkbox">Editei <code>main.tex</code> e informei meu nome.</label></li>
 <li><label><input type="checkbox">Cliquei em <strong>Recompile</strong>.</label></li>

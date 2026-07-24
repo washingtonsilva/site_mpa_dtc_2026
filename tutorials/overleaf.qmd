@@ -4,15 +4,15 @@ title: "Overleaf: primeiros passos"
 subtitle: "Criar e compilar seu primeiro documento LaTeX"
 ---
 
-Neste tutorial, você criará um projeto simples no Overleaf, identificará o
-arquivo-fonte e o PDF e fará sua primeira compilação. Os comandos e a
-estrutura do documento serão estudados nas aulas.
+Neste tutorial, você criará um projeto simples no Overleaf, identificará onde
+o código é escrito e onde o PDF aparece e fará sua primeira compilação. Não é
+necessário instalar LaTeX no computador para acompanhar estes passos.
 
 ::: {.callout-important icon="false"}
 ## Resultado esperado
 
-Ao terminar, você terá um projeto individual no Overleaf contendo um documento
-LaTeX compilável com título, seções, uma lista e uma equação.
+Ao terminar, você terá um projeto no Overleaf contendo um documento LaTeX
+compilável com título, seções, uma lista e uma equação.
 :::
 
 ## Antes de começar
@@ -21,37 +21,6 @@ Você precisa apenas de uma conta gratuita no [Overleaf](https://www.overleaf.co
 Crie ou acesse sua conta antes da primeira aula, conforme a
 [Preparação do ambiente computacional](../instrucoes.qmd).
 
-## Projetos do Overleaf, Git e GitHub {#sec-overleaf-git-github}
-
-Um projeto criado no Overleaf fica salvo na sua conta do **Overleaf**. Por
-padrão, ele não é uma pasta no seu computador, não é um repositório Git e não
-é enviado ao GitHub.
-
-O Overleaf possui um histórico próprio, útil para consultar, comparar e
-recuperar versões do projeto. Esse histórico não substitui o Git: ele não cria
-*commits* no repositório individual da disciplina nem registra arquivos no
-GitHub.
-
-Nesta disciplina, use cada ambiente para a finalidade indicada:
-
-| Artefato | Onde trabalhar | Como será acompanhado |
-|---|---|---|
-| Atividades práticas indicadas pelo professor | Repositório individual no GitHub | *Commits* enviados com Git |
-| Miniartigo científico em LaTeX | Projeto privado no Overleaf | Projeto, versão final e compartilhamento conforme o enunciado |
-| Blog Quarto | Repositório próprio no GitHub | *Commits*, publicação e GitHub Pages |
-
-Portanto, não copie o arquivo `.tex` nem o PDF do miniartigo para o
-repositório público de atividades. O miniartigo será acompanhado no projeto
-privado do Overleaf; as atividades que pedirem Git/GitHub terão instruções e
-artefatos próprios no repositório individual.
-
-O Overleaf oferece uma integração opcional com GitHub, mas ela exige acesso a
-recursos premium e não faz parte do fluxo obrigatório da disciplina. Você não
-precisa configurá-la para realizar este tutorial, as atividades iniciais ou o
-miniartigo. Consulte as [orientações oficiais sobre histórico do
-Overleaf](https://docs.overleaf.com/writing-and-editing/history-and-versioning){target="_blank"}
-se precisar recuperar uma versão do projeto.
-
 ## 1. Criar um projeto simples
 
 1. Entre na sua conta do Overleaf.
@@ -59,36 +28,37 @@ se precisar recuperar uma versão do projeto.
 3. Use um nome claro, como `aula-01-latex-seu-nome`.
 4. Clique em **Create**.
 
-O Overleaf abrirá um projeto individual com um arquivo LaTeX inicial. Este é o
-projeto de prática da primeira aula, não o miniartigo avaliativo.
-[Veja como criar um projeto em branco](https://docs.overleaf.com/getting-started/your-first-project){target="_blank"}.
+O Overleaf abrirá o editor com um arquivo inicial chamado `main.tex`. O arquivo
+já contém um exemplo que pode ser substituído nos próximos passos.
+[Veja as instruções oficiais para criar um projeto em branco](https://docs.overleaf.com/getting-started/your-first-project){target="_blank"}.
 
 ## 2. Reconhecer a interface de trabalho
 
-Ao abrir o projeto, localize estes três elementos:
+Ao abrir o projeto, localize estes quatro elementos:
 
 - a lista de **arquivos** do projeto;
-- o **Code Editor**, onde está o arquivo-fonte LaTeX, normalmente com extensão
+- o botão **Code Editor**, acima da área de edição;
+- a área de edição, onde está o arquivo-fonte LaTeX, normalmente com extensão
   `.tex`;
 - a prévia do **PDF**, que mostra o resultado compilado.
 
-Nesta disciplina, use o **Code Editor**. Ele permite ver e editar diretamente
-o código LaTeX. O Visual Editor não será usado: o objetivo é compreender e
-editar o código LaTeX.
+Selecione **Code Editor** caso o Overleaf abra o Visual Editor. O Code Editor é
+o modo em que você vê e edita diretamente o código LaTeX.
 
 ::: {.callout-tip icon="false"}
-## Fonte e resultado não são o mesmo arquivo
+## Código e PDF não são o mesmo arquivo
 
 O arquivo `.tex` contém o texto e os comandos LaTeX. O PDF é o resultado
-gerado a partir desse fonte. Edite o `.tex`; não tente editar diretamente o
+gerado a partir desse arquivo. Edite o `.tex`; não tente editar diretamente o
 PDF mostrado na prévia.
 :::
 
 ## 3. Inserir o documento inicial
 
-1. Na lista de arquivos, abra `main.tex`.
-2. Selecione o conteúdo do arquivo e substitua-o pelo código abaixo.
-3. Troque `Seu nome` pelo seu nome.
+1. Na lista de arquivos, clique em `main.tex`.
+2. Clique na área de edição e selecione todo o conteúdo do arquivo.
+3. Cole o código abaixo no lugar do conteúdo selecionado.
+4. Troque `Seu nome` pelo seu nome.
 
 ```latex
 \documentclass{article}
@@ -121,22 +91,24 @@ Este é meu primeiro documento em \LaTeX.
 \end{document}
 ```
 
-Não é necessário compreender cada comando antes de compilar. A primeira aula
-explicará a estrutura do documento, as seções, listas e equações usadas nesse
-exemplo.
+Não é necessário compreender cada comando antes de compilar. Por enquanto,
+observe apenas que o texto entre `\begin{document}` e `\end{document}` é o
+conteúdo que aparecerá no PDF.
 
 ## 4. Recompilar e verificar o PDF
 
-1. Clique em **Recompile**.
+1. Clique em **Recompile**, acima da prévia do PDF.
 2. Aguarde a atualização da prévia.
 3. Confirme no PDF o título, seu nome, as duas seções, a lista e a equação.
 
-O Overleaf compila o documento em seus servidores; por isso, não é necessário
-instalar uma distribuição LaTeX no computador para realizar esta etapa.
+O Overleaf transforma o arquivo-fonte em PDF. Seus arquivos são salvos
+automaticamente no projeto enquanto você trabalha; recompilar é o passo que
+atualiza o PDF com as alterações do código.
 
 ## 5. Se ocorrer um erro de compilação
 
-Não apague comandos para fazer o PDF reaparecer. Primeiro:
+Um erro de compilação é comum quando se está aprendendo. Não apague trechos ao
+acaso para fazer o PDF reaparecer. Primeiro:
 
 1. leia a primeira mensagem de erro apresentada pelo Overleaf;
 2. confira a última alteração feita no arquivo-fonte;
@@ -144,37 +116,26 @@ Não apague comandos para fazer o PDF reaparecer. Primeiro:
 4. se o problema persistir, preserve o projeto e peça ajuda, informando a
    mensagem exibida.
 
-Erros e sua interpretação serão estudados progressivamente. Neste primeiro
-momento, a meta é reconhecer a relação entre fonte, recompilação e PDF.
-
-## Projeto do miniartigo
-
-O miniartigo avaliativo não começará neste projeto simples. Na atividade
-correspondente, cada mestrando criará seu próprio projeto a partir do modelo
-oficial Elsevier `elsarticle` e montará as partes definidas de um artigo de
-referência. O resultado será um exercício de preparação de artigo para
-submissão, não uma cópia do PDF final publicado pela editora.
-
-Consulte a seção [Miniartigo científico em LaTeX](../avaliacoes.qmd#sec-miniartigo)
-na página Avaliações no momento indicado pelo professor. Não será necessário
-criar um template novo nem receber um projeto montado individualmente pelo
-professor.
+Neste primeiro momento, a meta é reconhecer a relação entre código,
+recompilação e PDF. A leitura de mensagens de erro será praticada aos poucos
+nas aulas.
 
 ## Ajuda complementar
 
 Use estes materiais oficiais quando precisar de orientação adicional:
 
 - [Como usar o Overleaf](https://docs.overleaf.com/getting-started/how-do-i-use-overleaf){target="_blank"}, para conhecer a interface;
-- [Seu primeiro projeto](https://docs.overleaf.com/getting-started/your-first-project){target="_blank"}, para criar e recompilar projetos;
+- [Seu primeiro projeto](https://docs.overleaf.com/getting-started/your-first-project){target="_blank"}, para criar um projeto em branco;
+- [Recompilar seu projeto](https://docs.overleaf.com/getting-started/recompiling-your-project){target="_blank"}, para entender a atualização do PDF;
 - [Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes_){target="_blank"}, para uma introdução mais ampla à sintaxe LaTeX.
 
-Esses materiais complementam o tutorial. Nas atividades, siga o enunciado e
-as orientações da aula.
+Esses materiais complementam o tutorial. Nas atividades, siga o enunciado e as
+orientações da aula.
 
 ## Checklist de conclusão
 
 - [ ] Tenho uma conta Overleaf acessível.
-- [ ] Criei meu projeto individual simples no Overleaf.
+- [ ] Criei um projeto simples no Overleaf.
 - [ ] Identifiquei a lista de arquivos, o Code Editor e a prévia do PDF.
 - [ ] Editei `main.tex` e informei meu nome.
 - [ ] Cliquei em **Recompile**.
