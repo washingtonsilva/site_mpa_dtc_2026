@@ -388,7 +388,7 @@
     "href": "index.html#informações-gerais",
     "title": "Documentos Técnicos e Científicos com Quarto e LaTeX - 2026/2",
     "section": "Informações gerais",
-    "text": "Informações gerais\n\nProfessor: Prof. Dr. Washington Santos da Silva\nE-mail: washington.silva@ifmg.edu.br\nHorário de aula: Segunda-Feira, 18:30-22:30\nLocal: aulas síncronas via Google Meet",
+    "text": "Informações gerais\n\nProfessor: Prof. Dr. Washington Santos da Silva\nE-mail: washington.silva@ifmg.edu.br\nHorário de aula: Segunda-Feira, 18:30-22:30\nLocal: aulas síncronas via Google Meet e aula presencial",
     "crumbs": [
       "Início"
     ]
@@ -508,7 +508,7 @@
     "href": "programa.html#metodologia-de-ensino",
     "title": "Programa da Disciplina",
     "section": "Metodologia de Ensino",
-    "text": "Metodologia de Ensino\nAs aulas serão síncronas, online, estruturadas em dois momentos: (i) exposição dialogada e demonstração ao vivo (live coding) dos conceitos e ferramentas, de forma breve; e (ii) atividades práticas, que ocupará a maior parte de cada aula, na qual os mestrandos executarão individualmente as atividades avaliativas. Essa ênfase na prática durante o horário de aula é deliberada, visto que considera-se que o domínio das ferramentas tratadas só se desenvolve pelo uso.\nA comunicação, a distribuição de materiais e a referência às submissões ocorrerão por meio do site da disciplina, dos repositórios GitHub individuais e, nos casos indicados no material da aula, de projetos privados no Overleaf.",
+    "text": "Metodologia de Ensino\nAs aulas serão estruturadas em dois momentos: (i) exposição dialogada e demonstração ao vivo (live coding) dos conceitos e ferramentas, de forma breve; e (ii) atividades práticas, que ocupará a maior parte de cada aula, na qual os mestrandos executarão individualmente as atividades avaliativas. Essa ênfase na prática durante o horário de aula é deliberada, visto que considera-se que o domínio das ferramentas tratadas só se desenvolve pelo uso.\nA comunicação, a distribuição de materiais e a referência às submissões ocorrerão por meio do site da disciplina, dos repositórios GitHub individuais e, nos casos indicados no material da aula, de projetos privados no Overleaf.",
     "crumbs": [
       "Programa da Disciplina"
     ]
