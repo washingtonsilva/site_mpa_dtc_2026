@@ -20,7 +20,7 @@ instalar e configurar os programas necessários em seu computador.
 - **Professor:** [Prof. Dr. Washington Santos da Silva](https://washingtonsilva.github.io){target="_blank"}
 - **E-mail:** washington.silva@ifmg.edu.br
 - **Horário de aula:** Segunda-Feira, 18:30-22:30
-- **Local:** aulas síncronas via Google Meet
+- **Local:** aulas síncronas via Google Meet e aula presencial
 
 
 ## Conteúdo

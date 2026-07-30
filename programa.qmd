@@ -268,7 +268,7 @@ recomendada.
 
 ## Metodologia de Ensino
 
-As aulas serão síncronas, online, estruturadas em dois momentos: (i) exposição dialogada e 
+As aulas serão estruturadas em dois momentos: (i) exposição dialogada e 
 demonstração ao vivo (*live coding*) dos conceitos e ferramentas, de forma breve; e 
 (ii) atividades práticas, que ocupará a maior parte de cada aula, na qual os mestrandos 
 executarão individualmente as atividades avaliativas. Essa ênfase na prática durante o horário de 
