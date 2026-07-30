@@ -54,53 +54,15 @@ Ao final da disciplina, espera-se que o mestrando seja capaz de:
 O planejamento da disciplina prevê que os pontos serão distribuídos da 
 seguinte forma:
 
-1. **Atividades práticas em aula = 50 pontos**: sete atividades individuais,
-   realizadas durante as Aulas 1 a 7, com supervisão do professor. Salvo
-   quando o material da aula indicar entrega privada no Overleaf, serão registradas
-   no repositório GitHub individual do aluno; a versão avaliada será a do
-   último *commit* enviado ao GitHub até o horário indicado nesse material.
-   Não haverá envio duplicado por e-mail, formulário ou plataforma externa.
-   Todas as atividades têm o mesmo peso: cada uma recebe nota de 0 a 10, e a
-   nota deste componente é a média das sete notas multiplicada por 5.
-   Cada atividade será apresentada no material da aula correspondente. A página
-   **Avaliações** reúne as regras gerais e os requisitos das avaliações finais.
+1. **Atividades práticas em aula = 50 pontos**: 
 
-2. **Miniartigo científico em LaTeX = 20 pontos**: exercício individual no
-   Overleaf, que consiste em montar, em LaTeX, partes definidas de um artigo
-   curto selecionado pelo professor. Todos os estudantes criarão seu próprio
-   projeto com o modelo Elsevier `elsarticle`, seguindo as instruções do site.
-   O artigo de referência será Silva et al. (2024), “Portfolio optimization
-   based on the pre-selection of stocks by the Support Vector Machine model”,
-   *Finance Research Letters*, 61, 105014, DOI 10.1016/j.frl.2024.105014.
-   Criar o projeto, organizar os arquivos, criar o `.bib`, inserir os elementos
-   pedidos e gerar o PDF fazem parte do exercício. A avaliação verifica
-   o uso de LaTeX para preparar o documento, não o estágio do projeto de
-   dissertação do estudante.
+2. **Miniartigo científico em LaTeX = 20 pontos**: 
 
-   Serão avaliados a organização dos arquivos, a organização do texto, a
-   geração do PDF, as figuras e tabelas, a equação do índice de Sharpe e sua
-   explicação, as citações, o arquivo `.bib`, as menções a figuras, tabelas e
-   equação no texto e a apresentação do PDF. O exercício não avalia autoria
-   científica, domínio de SVM ou reprodução de dados, código e estimações. O
-   resultado será um exercício de artigo em `elsarticle`, não uma cópia do PDF
-   final editado pela Elsevier. O projeto no Overleaf, os arquivos `.tex`, o
-   PDF e os elementos reproduzidos devem permanecer privados, sem publicação
-   no GitHub ou por link público. A entrega será feita por compartilhamento
-   direto com o professor no Overleaf ou por procedimento privado indicado no
-   material da aula.
+3. **Blog Quarto = 30 pontos**: 
 
-3. **Blog Quarto = 30 pontos**: construção e publicação de um blog
-   individual com Quarto e GitHub Pages, contendo ao menos
-   três postagens, sendo obrigatoriamente uma delas um relatório técnico 
-   reprodutível com código, dados e resultados. O blog funciona como 
-   avaliação integradora da disciplina e pode constituir base para o 
-   produto técnico/tecnológico exigido pelo programa.
-
-Para aprovação, são necessários pelo menos 60 pontos. As rubricas dos itens 2
-e 3, o calendário de entregas e as instruções completas estarão na página
-**Avaliações** antes da primeira aula. Não haverá provas formais: a disciplina
-avalia os artefatos produzidos e a prática supervisionada.
-
+A página [Avaliaçoes](https://washingtonsilva.github.io/site_mpa_dtc_2026/avaliacoes.html){target="_blank"} 
+contém mais informações sobre estas atividades. Para aprovação, são necessários pelo 
+menos 60 pontos. Poderão ocorrer alterações neste planejamento. 
 
 
 ## Bibliografia Básica
@@ -218,11 +180,8 @@ pesquisas aplicadas e contextos profissionais.
 ## Conteúdo Planejado
 
 Trata-se apenas de um planejamento e pode ser alterado conforme o andamento 
-da disciplina e rendimento da turma.
+da disciplina e rendimento da turma. 
 
-As competências operacionais serão praticadas e avaliadas nos artefatos da
-disciplina. Referências comparativas e demonstrações complementares ampliam o
-repertório dos mestrandos, mas não exigem domínio operacional autônomo.
 
 ### 1. LaTeX
 
@@ -303,8 +262,7 @@ Entre os recursos didáticos utilizados na disciplina estão:
 **Importante**: Os slides, tutoriais e demais recursos disponibilizados
 no site constituem os materiais primários para estudo e preparação para as
 avaliações, devendo ser utilizados em conjunto com a bibliografia
-recomendada. O ambiente virtual de aprendizagem será utilizado apenas para
-comunicação institucional complementar.
+recomendada. 
 
 
 
@@ -312,50 +270,22 @@ comunicação institucional complementar.
 
 As aulas serão síncronas, online, estruturadas em dois momentos: (i) exposição dialogada e 
 demonstração ao vivo (*live coding*) dos conceitos e ferramentas, de forma breve; e 
-(ii) prática supervisionada, que ocupará a maior parte de cada aula, na qual os mestrandos 
-executarão individualmente as atividades avaliativas com acompanhamento do professor 
-para esclarecimento de dúvidas. Essa ênfase na prática durante o horário de 
+(ii) atividades práticas, que ocupará a maior parte de cada aula, na qual os mestrandos 
+executarão individualmente as atividades avaliativas. Essa ênfase na prática durante o horário de 
 aula é deliberada, visto que considera-se que o domínio das ferramentas tratadas só 
 se desenvolve pelo uso.
 
-Todos os materiais da disciplina serão produzidos com as próprias 
-ferramentas ensinadas (Quarto e LaTeX), servindo simultaneamente como 
-conteúdo e como exemplo de aplicação. A comunicação, a distribuição de 
-materiais e a referência às submissões ocorrerão por meio do site da
-disciplina, dos repositórios GitHub individuais e, nos casos indicados no
-material da aula, de projetos privados no Overleaf. Não será utilizado GitHub
-Classroom.
+A comunicação, a distribuição de  materiais e a referência às submissões ocorrerão 
+por meio do site da disciplina, dos repositórios GitHub individuais e, nos casos indicados no
+material da aula, de projetos privados no Overleaf. 
 
-Na Aula 1, cada estudante criará um projeto Overleaf simples para a prática
-inicial. Na atividade do miniartigo, cada mestrando abrirá o modelo oficial
-Elsevier `elsarticle` como projeto próprio e montará as partes definidas do
-artigo de referência. O resultado será um exercício de artigo para submissão,
-não uma cópia do PDF final editado pela Elsevier. Não haverá
-projeto-base montado previamente pelo professor; a configuração do projeto,
-dos arquivos, da bibliografia e dos elementos do artigo fará parte da prática
-supervisionada. O trabalho permanecerá privado no Overleaf e seguirá o
-procedimento de entrega definido no material da aula.
-
-As atividades práticas das Aulas 1 e 2 poderão preparar componentes do
-miniartigo em LaTeX. Quando o material da aula as identificar como privadas,
-serão realizadas e entregues no Overleaf. A pontuação das atividades em aula
-avaliará a execução guiada e os objetivos específicos de cada encontro; a
-avaliação do miniartigo incidirá sobre a integração final, a revisão e a
-qualidade técnica do documento completo, evitando dupla contagem do mesmo
-desempenho.
-
-Na seção correspondente da página **Avaliações**, estarão a competência, o
-contexto, os entregáveis, o tempo previsto, os materiais de apoio, os critérios
-e o checklist de submissão. A exposição dialogada e o *live coding* serão
-limitados ao necessário para a realização da atividade.
 
 
 
 ## Plano de Aula
 
-Alterações excepcionais no cronograma serão publicadas no site da disciplina
-e não modificarão retroativamente critérios, pontuações ou prazos já
-divulgados. A aula 8 terá duração de 2 horas; as demais, de 4 horas.
+Trata-se apenas de um planejamento e, como todo planejamento, pode ser alterado 
+conforme o andamento da disciplina.
 
 | Aula | Data | Tópicos planejados | Artefato prático e atividade | Nota da atividade |
 |:----:|:----:|:-------------------|:------------------------------|:------:|

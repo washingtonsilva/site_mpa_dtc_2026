@@ -15,9 +15,6 @@ constam no [Programa da Disciplina](programa.qmd).
 | [2. Miniartigo científico em LaTeX](#sec-miniartigo) | 20 | Projeto privado no Overleaf |
 | [3. Blog Quarto](#sec-blog) | 30 | Repositório público do blog e GitHub Pages |
 
-São necessários pelo menos **60 pontos** para aprovação. Não haverá provas
-formais: a avaliação se baseia em artefatos produzidos e na prática
-supervisionada.
 
 ## Regras gerais
 
@@ -37,7 +34,7 @@ supervisionada.
 ## Avaliação 1 — Atividades práticas em aula {#sec-atividades}
 
 **Valor: 50 pontos.** Estão previstas sete atividades individuais, uma em cada
-aula de 1 a 7, realizadas predominantemente durante o encontro síncrono. Cada
+aula de 1 a 7, realizadas predominantemente durante a aula. Cada
 atividade receberá nota de 0 a 10. A média das sete notas será multiplicada por
 5, totalizando 50 pontos.
 
@@ -50,6 +47,8 @@ entregue no Overleaf.
 As questões comuns serão tratadas coletivamente na aula seguinte. Comentários
 individuais serão feitos apenas quando necessários para concluir a correção.
 
+
+
 ## Avaliação 2 — Miniartigo científico em LaTeX {#sec-miniartigo}
 
 **Valor: 20 pontos.** Você usará o Overleaf e o LaTeX para montar partes
@@ -57,7 +56,7 @@ definidas de um artigo curto publicado. A avaliação verifica se você sabe
 preparar um artigo para submissão; não exige um artigo original nem avalia
 autoria científica.
 
-::: {.callout-important icon="false"}
+::: {.callout-note icon=false}
 ## Regra de privacidade
 
 O projeto no Overleaf, os arquivos `.tex`, o PDF produzido e todos os elementos
@@ -72,16 +71,12 @@ O artigo-fonte é Silva et al. (2024), “Portfolio optimization based on the
 pre-selection of stocks by the Support Vector Machine model”, *Finance
 Research Letters*, 61, 105014, DOI
 [10.1016/j.frl.2024.105014](https://doi.org/10.1016/j.frl.2024.105014).
-Monte os elementos indicados abaixo, deixe claro que é um exercício didático
-baseado no artigo e não se apresente como autor do estudo publicado.
 
 Esta avaliação verifica a organização do projeto, a geração do PDF, figuras,
 tabelas, a equação do índice de Sharpe e sua explicação, citações, arquivo
 `.bib`, menções no texto e a apresentação do documento. O resultado é um
 exercício em `elsarticle`, não uma reprodução do PDF final editado pela
-Elsevier. Não serão avaliados domínio de SVM, reprodução de dados, código ou
-estimações. Antes de iniciar, conclua o tutorial [Overleaf: primeiros
-passos](tutorials/overleaf.qmd).
+Elsevier.
 
 ### Resultado esperado
 
@@ -116,6 +111,8 @@ professor com permissão de leitura. O prazo será informado antes da entrega. O
 | Equação de Sharpe identificada, mencionada no texto e explicada | 3 |
 | Citações, arquivo `.bib` conferido e lista de referências exibida corretamente | 3 |
 | Revisão final: PDF legível, sem erros e projeto mantido privado | 3 |
+
+
 
 ## Avaliação 3 — Blog Quarto {#sec-blog}
 
