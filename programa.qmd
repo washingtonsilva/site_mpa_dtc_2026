@@ -69,14 +69,14 @@ menos 60 pontos. Poderão ocorrer alterações neste planejamento.
 
 ALEXANDER, Rohan. **Telling Stories with Data: With Applications in R and 
 Python**. Boca Raton: CRC Press, 2023. Disponível em: 
-<https://tellingstorieswithdata.com/>. Acesso em: 1 maio 2026.
+[https://tellingstorieswithdata.com/](https://tellingstorieswithdata.com/){target="_blank"}. Acesso em: 1 maio 2026.
 
 OETIKER, Tobias; SERWIN, Marcin; PARTL, Hubert; HYNA, Irene; 
 SCHLEGL, Elisabeth. **The Not So Short Introduction to LaTeX**. 
 [S. l.]: [s. n.], 2025. Disponível em: 
-<https://tobi.oetiker.ch/lshort/lshort.pdf>. Acesso em: 20 jul. 2026.
+[https://tobi.oetiker.ch/lshort/lshort.pdf](https://tobi.oetiker.ch/lshort/lshort.pdf){target="_blank"}. Acesso em: 20 jul. 2026.
 
-POSIT. **Quarto Documentation**. Disponível em: <https://quarto.org/docs/>. 
+POSIT. **Quarto Documentation**. Disponível em: [https://quarto.org/docs](https://quarto.org/docs){target="_blank"}. 
 Acesso em: 20 jul. 2026.
 
 
