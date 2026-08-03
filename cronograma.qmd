@@ -27,3 +27,7 @@ Os slides abrem em uma nova aba do navegador.
 
 
 # Aula 1 (03/08/26)
+
+- **Slides:**
+
+  - [Slides Aula 1](slides/01-aula.html){target="_blank"}
