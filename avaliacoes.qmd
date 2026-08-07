@@ -52,8 +52,8 @@ individuais serão feitos apenas quando necessários para concluir a correção.
 ## Avaliação 2 — Miniartigo científico em LaTeX {#sec-miniartigo}
 
 **Valor: 20 pontos.** Você usará o Overleaf e o LaTeX para montar partes
-definidas de um artigo curto publicado. A avaliação verifica se você sabe
-preparar um artigo para submissão; não exige um artigo original nem avalia
+definidas de um artigo curto publicado. O produto é um **manuscrito composto
+na classe do periódico**; a avaliação não exige um artigo original nem avalia
 autoria científica.
 
 ::: {.callout-note icon=false}
@@ -78,12 +78,92 @@ tabelas, a equação do índice de Sharpe e sua explicação, citações, arquiv
 exercício em `elsarticle`, não uma reprodução do PDF final editado pela
 Elsevier.
 
+### Configuração da classe
+
+Declare o documento com as opções abaixo:
+
+```latex
+\documentclass[preprint, authoryear, 12pt]{elsarticle}
+```
+
+A opção `preprint` é o padrão da classe: coluna única, espaço simples. A opção
+`authoryear` seleciona o modo de citação autor-ano, coerente com o estilo
+`elsarticle-harv` e com o formato Harvard que o
+[Guide for Authors da *Finance Research Letters*](https://www.sciencedirect.com/journal/finance-research-letters/publish/guide-for-authors){target="_blank"}
+descreve.
+
+O periódico não impõe espaçamento nem layout. As opções `1p`, `3p` e `5p`
+imitam o layout final da revista, composto pela editora e não pelo autor, e
+`review` produz espaço duplo — nenhuma delas é exigida aqui.
+
+### Identificação dos autores
+
+A *Finance Research Letters* opera revisão **single anonymized** (antes
+chamada *single blind*): o revisor conhece a autoria e o autor não conhece o
+revisor. Por isso, nome, filiação e e-mail
+dos autores vão no **próprio manuscrito**, no bloco `frontmatter`, e não em um
+arquivo separado de página de título. A declaração de conflito de interesses
+também fica no manuscrito.
+
+Esse procedimento muda conforme o periódico. Em revistas com revisão **double
+anonymized**, a Elsevier exige dois arquivos: um *Title Page* com a autoria e
+um *Anonymized Manuscript* sem ela, sem agradecimentos, sem fontes de
+financiamento e com os metadados do arquivo limpos. Antes de submeter a
+qualquer periódico, verifique o modelo de revisão adotado — é a primeira
+decisão que altera a estrutura dos arquivos.
+
+::: {.callout-note icon=false}
+## O que se submete é o projeto, não o PDF
+
+A *Finance Research Letters* exige arquivos-fonte editáveis e afirma que **PDF
+não é um arquivo-fonte aceitável**. Em submissões LaTeX, o que se envia é o
+`.tex`, acompanhado do `.bib`, das figuras e do que mais o projeto precisar
+para compilar.
+
+As figuras sobem como arquivos separados, nomeados `Figure_1`, `Figure_2` e
+assim por diante, com a resolução mínima que o periódico especifica. É por
+isso que a organização do projeto é critério desta avaliação: o projeto é a
+entrega.
+:::
+
+O periódico também limita o manuscrito a **2500 palavras** de texto principal
+— o que inclui citações no texto e notas de rodapé, e exclui resumo,
+referências, tabelas, figuras, legendas, agradecimentos, declarações e
+apêndices. O resumo não deve passar de **250 palavras**, e as palavras-chave
+devem ser entre **1 e 7**.
+
 ### Resultado esperado
 
 O artigo final deve incluir as **três figuras** e as **duas tabelas** do
 artigo-fonte, todas com legenda, rótulo e menção no texto. Inclua também a
 equação do índice de Sharpe, a explicação de seus símbolos, citações e uma lista
 de referências que apareça corretamente no PDF.
+
+Acrescente ainda os **Highlights**, que a *Finance Research Letters* exige na
+submissão e que o PDF publicado não exibe: de três a cinco tópicos, com no
+máximo 85 caracteres cada, incluindo espaços, que capturem os resultados e os
+métodos novos do trabalho. Eles vão em **arquivo separado**, com a palavra
+`highlights` no nome — não dentro do manuscrito.
+
+### Uso de IA generativa
+
+Você pode usar uma ferramenta de IA generativa para rascunhar as entradas
+BibTeX, como indicado adiante. Se o fizer, inclua no manuscrito uma seção
+declarando esse uso, como o periódico exige de qualquer submissão:
+
+```latex
+\section*{Declaration of generative AI use}
+
+During the preparation of this work, the author used a generative AI
+assistant to draft candidate BibTeX entries. All bibliographic fields
+were subsequently verified against the published records. The author
+reviewed and edited the content as needed and takes full
+responsibility for it.
+```
+
+A declaração descreve o que a ferramenta fez e o que você conferiu. Ela não
+transfere responsabilidade: a autoria e a correção continuam sendo suas. Se
+você não usou nenhuma ferramenta, não declare nada.
 
 ### Referências
 
@@ -105,12 +185,14 @@ professor com permissão de leitura. O prazo será informado antes da entrega. O
 
 | Critério | Pontos |
 |:--|--:|
-| Arquivos organizados, `elsarticle` configurado e PDF gerado corretamente | 4 |
-| Bloco inicial identificado como exercício didático e seções organizadas | 3 |
+| Arquivos organizados, `elsarticle` com as opções corretas e PDF gerado | 3 |
+| `frontmatter` completo: título, autoria, filiação, resumo e palavras-chave | 2 |
+| *Highlights* em arquivo separado, dentro dos limites do periódico | 2 |
+| Bloco inicial identificado como exercício didático e seções organizadas | 2 |
 | Três figuras e duas tabelas legíveis, com legendas, rótulos e menções no texto | 4 |
 | Equação de Sharpe identificada, mencionada no texto e explicada | 3 |
-| Citações, arquivo `.bib` conferido e lista de referências exibida corretamente | 3 |
-| Revisão final: PDF legível, sem erros e projeto mantido privado | 3 |
+| Citações, arquivo `.bib` conferido e lista de referências exibida corretamente | 2 |
+| Revisão final: PDF legível, sem erros e projeto mantido privado | 2 |
 
 
 

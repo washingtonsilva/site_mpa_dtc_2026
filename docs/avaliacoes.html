@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -170,7 +205,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sec-atividades" id="toc-sec-atividades" class="nav-link" data-scroll-target="#sec-atividades">Avaliação 1 — Atividades práticas em aula</a></li>
   <li><a href="#sec-miniartigo" id="toc-sec-miniartigo" class="nav-link" data-scroll-target="#sec-miniartigo">Avaliação 2 — Miniartigo científico em LaTeX</a>
   <ul class="collapse">
+  <li><a href="#configuração-da-classe" id="toc-configuração-da-classe" class="nav-link" data-scroll-target="#configuração-da-classe">Configuração da classe</a></li>
+  <li><a href="#identificação-dos-autores" id="toc-identificação-dos-autores" class="nav-link" data-scroll-target="#identificação-dos-autores">Identificação dos autores</a></li>
   <li><a href="#resultado-esperado" id="toc-resultado-esperado" class="nav-link" data-scroll-target="#resultado-esperado">Resultado esperado</a></li>
+  <li><a href="#uso-de-ia-generativa" id="toc-uso-de-ia-generativa" class="nav-link" data-scroll-target="#uso-de-ia-generativa">Uso de IA generativa</a></li>
   <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências</a></li>
   <li><a href="#entrega-e-rubrica-do-miniartigo" id="toc-entrega-e-rubrica-do-miniartigo" class="nav-link" data-scroll-target="#entrega-e-rubrica-do-miniartigo">Entrega e rubrica do miniartigo</a></li>
   </ul></li>
@@ -249,7 +287,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="sec-miniartigo" class="level2">
 <h2 class="anchored" data-anchor-id="sec-miniartigo">Avaliação 2 — Miniartigo científico em LaTeX</h2>
-<p><strong>Valor: 20 pontos.</strong> Você usará o Overleaf e o LaTeX para montar partes definidas de um artigo curto publicado. A avaliação verifica se você sabe preparar um artigo para submissão; não exige um artigo original nem avalia autoria científica.</p>
+<p><strong>Valor: 20 pontos.</strong> Você usará o Overleaf e o LaTeX para montar partes definidas de um artigo curto publicado. O produto é um <strong>manuscrito composto na classe do periódico</strong>; a avaliação não exige um artigo original nem avalia autoria científica.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -265,9 +303,49 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>Cada estudante criará seu próprio projeto a partir do <a href="https://www.overleaf.com/latex/templates/elsevier-article-template-with-different-bibliography-styles/npwqmwvhvvrk" target="_blank">modelo oficial Elsevier <code>elsarticle</code> no Overleaf</a>. O artigo-fonte é Silva et al.&nbsp;(2024), “Portfolio optimization based on the pre-selection of stocks by the Support Vector Machine model”, <em>Finance Research Letters</em>, 61, 105014, DOI <a href="https://doi.org/10.1016/j.frl.2024.105014">10.1016/j.frl.2024.105014</a>.</p>
 <p>Esta avaliação verifica a organização do projeto, a geração do PDF, figuras, tabelas, a equação do índice de Sharpe e sua explicação, citações, arquivo <code>.bib</code>, menções no texto e a apresentação do documento. O resultado é um exercício em <code>elsarticle</code>, não uma reprodução do PDF final editado pela Elsevier.</p>
+<section id="configuração-da-classe" class="level3">
+<h3 class="anchored" data-anchor-id="configuração-da-classe">Configuração da classe</h3>
+<p>Declare o documento com as opções abaixo:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">\documentclass</span>[preprint, authoryear, 12pt]{<span class="ex">elsarticle</span>}</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A opção <code>preprint</code> é o padrão da classe: coluna única, espaço simples. A opção <code>authoryear</code> seleciona o modo de citação autor-ano, coerente com o estilo <code>elsarticle-harv</code> e com o formato Harvard que o <a href="https://www.sciencedirect.com/journal/finance-research-letters/publish/guide-for-authors" target="_blank">Guide for Authors da <em>Finance Research Letters</em></a> descreve.</p>
+<p>O periódico não impõe espaçamento nem layout. As opções <code>1p</code>, <code>3p</code> e <code>5p</code> imitam o layout final da revista, composto pela editora e não pelo autor, e <code>review</code> produz espaço duplo — nenhuma delas é exigida aqui.</p>
+</section>
+<section id="identificação-dos-autores" class="level3">
+<h3 class="anchored" data-anchor-id="identificação-dos-autores">Identificação dos autores</h3>
+<p>A <em>Finance Research Letters</em> opera revisão <strong>single anonymized</strong> (antes chamada <em>single blind</em>): o revisor conhece a autoria e o autor não conhece o revisor. Por isso, nome, filiação e e-mail dos autores vão no <strong>próprio manuscrito</strong>, no bloco <code>frontmatter</code>, e não em um arquivo separado de página de título. A declaração de conflito de interesses também fica no manuscrito.</p>
+<p>Esse procedimento muda conforme o periódico. Em revistas com revisão <strong>double anonymized</strong>, a Elsevier exige dois arquivos: um <em>Title Page</em> com a autoria e um <em>Anonymized Manuscript</em> sem ela, sem agradecimentos, sem fontes de financiamento e com os metadados do arquivo limpos. Antes de submeter a qualquer periódico, verifique o modelo de revisão adotado — é a primeira decisão que altera a estrutura dos arquivos.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>O que se submete é o projeto, não o PDF
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A <em>Finance Research Letters</em> exige arquivos-fonte editáveis e afirma que <strong>PDF não é um arquivo-fonte aceitável</strong>. Em submissões LaTeX, o que se envia é o <code>.tex</code>, acompanhado do <code>.bib</code>, das figuras e do que mais o projeto precisar para compilar.</p>
+<p>As figuras sobem como arquivos separados, nomeados <code>Figure_1</code>, <code>Figure_2</code> e assim por diante, com a resolução mínima que o periódico especifica. É por isso que a organização do projeto é critério desta avaliação: o projeto é a entrega.</p>
+</div>
+</div>
+<p>O periódico também limita o manuscrito a <strong>2500 palavras</strong> de texto principal — o que inclui citações no texto e notas de rodapé, e exclui resumo, referências, tabelas, figuras, legendas, agradecimentos, declarações e apêndices. O resumo não deve passar de <strong>250 palavras</strong>, e as palavras-chave devem ser entre <strong>1 e 7</strong>.</p>
+</section>
 <section id="resultado-esperado" class="level3">
 <h3 class="anchored" data-anchor-id="resultado-esperado">Resultado esperado</h3>
 <p>O artigo final deve incluir as <strong>três figuras</strong> e as <strong>duas tabelas</strong> do artigo-fonte, todas com legenda, rótulo e menção no texto. Inclua também a equação do índice de Sharpe, a explicação de seus símbolos, citações e uma lista de referências que apareça corretamente no PDF.</p>
+<p>Acrescente ainda os <strong>Highlights</strong>, que a <em>Finance Research Letters</em> exige na submissão e que o PDF publicado não exibe: de três a cinco tópicos, com no máximo 85 caracteres cada, incluindo espaços, que capturem os resultados e os métodos novos do trabalho. Eles vão em <strong>arquivo separado</strong>, com a palavra <code>highlights</code> no nome — não dentro do manuscrito.</p>
+</section>
+<section id="uso-de-ia-generativa" class="level3">
+<h3 class="anchored" data-anchor-id="uso-de-ia-generativa">Uso de IA generativa</h3>
+<p>Você pode usar uma ferramenta de IA generativa para rascunhar as entradas BibTeX, como indicado adiante. Se o fizer, inclua no manuscrito uma seção declarando esse uso, como o periódico exige de qualquer submissão:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\section*</span>{Declaration of generative AI use}</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>During the preparation of this work, the author used a generative AI</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>assistant to draft candidate BibTeX entries. All bibliographic fields</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>were subsequently verified against the published records. The author</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>reviewed and edited the content as needed and takes full</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>responsibility for it.</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A declaração descreve o que a ferramenta fez e o que você conferiu. Ela não transfere responsabilidade: a autoria e a correção continuam sendo suas. Se você não usou nenhuma ferramenta, não declare nada.</p>
 </section>
 <section id="referências" class="level3">
 <h3 class="anchored" data-anchor-id="referências">Referências</h3>
@@ -290,12 +368,20 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Arquivos organizados, <code>elsarticle</code> configurado e PDF gerado corretamente</td>
-<td style="text-align: right;">4</td>
+<td style="text-align: left;">Arquivos organizados, <code>elsarticle</code> com as opções corretas e PDF gerado</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>frontmatter</code> completo: título, autoria, filiação, resumo e palavras-chave</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Highlights</em> em arquivo separado, dentro dos limites do periódico</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Bloco inicial identificado como exercício didático e seções organizadas</td>
-<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Três figuras e duas tabelas legíveis, com legendas, rótulos e menções no texto</td>
@@ -307,11 +393,11 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Citações, arquivo <code>.bib</code> conferido e lista de referências exibida corretamente</td>
-<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Revisão final: PDF legível, sem erros e projeto mantido privado</td>
-<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
 </tr>
 </tbody>
 </table>
