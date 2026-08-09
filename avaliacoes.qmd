@@ -120,10 +120,12 @@ não é um arquivo-fonte aceitável**. Em submissões LaTeX, o que se envia é o
 `.tex`, acompanhado do `.bib`, das figuras e do que mais o projeto precisar
 para compilar.
 
-As figuras sobem como arquivos separados, nomeados `Figure_1`, `Figure_2` e
-assim por diante, com a resolução mínima que o periódico especifica. É por
-isso que a organização do projeto é critério desta avaliação: o projeto é a
-entrega.
+As figuras sobem como arquivos separados, numeradas na ordem em que aparecem
+no texto e com a resolução mínima que o periódico especifica. O guia não impõe
+nomes de arquivo: pede uma convenção **lógica** e cita `Figure_1` apenas como
+exemplo. A convenção adotada na disciplina é `01-fig-descritor.ext`, como em
+`01-fig-boxplot.png`, apresentada nos slides da aula. É por isso que a
+organização do projeto é critério desta avaliação: o projeto é a entrega.
 :::
 
 O periódico também limita o manuscrito a **2500 palavras** de texto principal
@@ -167,10 +169,12 @@ você não usou nenhuma ferramenta, não declare nada.
 
 ### Referências
 
-Não será fornecida uma referência BibTeX pronta. Crie o arquivo `.bib` e
-confira os dados da referência no artigo publicado ou na página oficial. Você
-pode usar uma ferramenta de IA generativa, como o ChatGPT, ou o Zotero para
-produzir uma primeira versão.
+A entrada do artigo-fonte é mostrada nos slides da Aula 2, como padrão de
+referência. Qualquer outra obra que você citar no miniartigo é de sua
+responsabilidade: crie a entrada no arquivo `.bib` e confira os dados no
+artigo publicado ou na página oficial do DOI. Você pode usar uma ferramenta de
+IA generativa, como o ChatGPT, ou o Zotero para produzir uma primeira versão —
+a competência avaliada é a conferência, não a digitação.
 
 Se usar o Zotero, inclua o artigo-fonte e apenas outras obras que você realmente
 cite no texto. Remova do `.bib` informações que não serão usadas, como o campo
