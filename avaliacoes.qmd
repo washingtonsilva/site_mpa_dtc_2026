@@ -150,22 +150,24 @@ métodos novos do trabalho. Eles vão em **arquivo separado**, com a palavra
 ### Uso de IA generativa
 
 Você pode usar uma ferramenta de IA generativa para rascunhar as entradas
-BibTeX, como indicado adiante. Se o fizer, inclua no manuscrito uma seção
-declarando esse uso, como o periódico exige de qualquer submissão:
+BibTeX, como indicado adiante. Se o fizer, inclua imediatamente antes da lista
+de referências uma seção declarando esse uso, como o periódico exige quando
+essas ferramentas participam da preparação do manuscrito:
 
 ```latex
-\section*{Declaration of generative AI use}
+\section*{Declaration of generative AI and AI-assisted technologies
+in the manuscript preparation process}
 
-During the preparation of this work, the author used a generative AI
-assistant to draft candidate BibTeX entries. All bibliographic fields
-were subsequently verified against the published records. The author
-reviewed and edited the content as needed and takes full
-responsibility for it.
+During the preparation of this work, the author used [name of tool or
+service] to draft candidate BibTeX entries. All bibliographic fields were
+subsequently verified against the published records. The author reviewed
+and edited the content as needed and takes full responsibility for the
+content of the published article.
 ```
 
-A declaração descreve o que a ferramenta fez e o que você conferiu. Ela não
-transfere responsabilidade: a autoria e a correção continuam sendo suas. Se
-você não usou nenhuma ferramenta, não declare nada.
+A declaração identifica a ferramenta, descreve o que ela fez e registra o que
+você conferiu. Ela não transfere responsabilidade: a autoria e a correção
+continuam sendo suas. Se você não usou nenhuma ferramenta, não declare nada.
 
 ### Referências
 
