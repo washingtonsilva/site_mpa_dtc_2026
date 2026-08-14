@@ -66,7 +66,7 @@ disciplina.
 :::
 
 Cada estudante criará seu próprio projeto a partir do
-[modelo oficial Elsevier `elsarticle` no Overleaf](https://www.overleaf.com/latex/templates/elsevier-article-template-with-different-bibliography-styles/npwqmwvhvvrk){target="_blank"}.
+[template oficial Elsevier `elsarticle` no Overleaf](https://www.overleaf.com/latex/templates/elsevier-article-template-with-different-bibliography-styles/npwqmwvhvvrk){target="_blank"}.
 O artigo-fonte é Silva et al. (2024), “Portfolio optimization based on the
 pre-selection of stocks by the Support Vector Machine model”, *Finance
 Research Letters*, 61, 105014, DOI

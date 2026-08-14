@@ -170,6 +170,7 @@ aberto no diretório do projeto, não é necessário usar `cd`.
 3. Escolha **File** → **New File** → **Text File**. Salve o arquivo na
    pasta-raiz do projeto com o nome exato `.gitignore`. Confirme que o nome
    exibido na aba **Files** é `.gitignore`, e não `.gitignore.txt`.
+   
 4. Cole o conteúdo abaixo no arquivo `.gitignore` e salve-o.
 
    ```bash

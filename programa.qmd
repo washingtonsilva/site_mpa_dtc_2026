@@ -28,7 +28,7 @@ Ao final da disciplina, espera-se que o mestrando seja capaz de:
 - Editar e compor um miniartigo científico em LaTeX no ambiente Overleaf,
   incluindo estrutura do documento, equações, figuras, tabelas, referências
   cruzadas e gestão de referências bibliográficas com arquivo `.bib` e
-  BibTeX, utilizando o modelo Elsevier `elsarticle` para preparar um exercício
+  BibTeX, utilizando a classe Elsevier `elsarticle` para preparar um exercício
   de artigo para submissão.
 
 - Criar documentos Quarto que integrem texto, código R, dados e resultados
@@ -136,7 +136,7 @@ Boca Raton: CRC Press, 2020. Disponível em:
 
 - [Overleaf Learn: Articles](https://www.overleaf.com/learn/latex/Articles){target="_blank"}: consulta para a estrutura e os elementos do miniartigo.
 
-- [Modelo oficial Elsevier `elsarticle` no Overleaf](https://www.overleaf.com/latex/templates/elsevier-article-template-with-different-bibliography-styles/npwqmwvhvvrk){target="_blank"}: ponto de partida para o projeto individual do miniartigo.
+- [Template oficial Elsevier `elsarticle` no Overleaf](https://www.overleaf.com/latex/templates/elsevier-article-template-with-different-bibliography-styles/npwqmwvhvvrk){target="_blank"}: ponto de partida para o projeto individual do miniartigo.
 
 - [Instruções LaTeX da Elsevier (classe `elsarticle`)](https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions){target="_blank"}: orientação complementar para preparar os arquivos de submissão.
 
@@ -196,7 +196,7 @@ da disciplina e rendimento da turma.
   estrutura semântica, figuras, tabelas, referências cruzadas, notas de
   rodapé, BibTeX, arquivos `.bib`, estilos de citação (`natbib`) e revisão
   tipográfica.
-- Modelo Elsevier `elsarticle` como padrão para que cada estudante configure
+- Classe Elsevier `elsarticle` como padrão para que cada estudante configure
   seu projeto individual; template da Revista Brasileira de Finanças como
   exemplo comparativo de convenções editoriais.
 
@@ -239,7 +239,7 @@ Entre os recursos didáticos utilizados na disciplina estão:
   
   - Arquivos quarto (*reports*) demonstrativos (.qmd).
 
-  - Link para o modelo Elsevier `elsarticle`, roteiro de configuração do
+  - Link para o template Elsevier `elsarticle`, roteiro de configuração do
     projeto individual e enunciado do miniartigo, com artigo de referência,
     escopo de reconstrução e critérios da atividade avaliativa.
 
@@ -290,7 +290,7 @@ conforme o andamento da disciplina.
 | Aula | Data | Tópicos planejados | Artefato prático e atividade | Nota da atividade |
 |:----:|:----:|:-------------------|:------------------------------|:------:|
 | 1 | 03/08/26 | Apresentação da disciplina. Distinção inicial entre composição tipográfica e programação literada. LaTeX no Overleaf: criação de projeto simples, estrutura do documento, texto, seções, listas e equações. | Documento LaTeX compilável em projeto individual simples, com título, seções, lista e equação. | 0–10 |
-| 2 | 10/08/26 | Miniartigo científico em LaTeX: criação de projeto individual com o modelo Elsevier `elsarticle`; montagem de elementos definidos de artigo de referência; figuras, tabelas, equação, menções no texto e BibTeX. RBFin como exemplo comparativo. | Preparação privada do miniartigo com uma figura, uma tabela, equação explicada no texto, citação, `.bib` e menções no texto que funcionem no PDF. | 0–10 |
+| 2 | 10/08/26 | Miniartigo científico em LaTeX: criação de projeto individual com a classe Elsevier `elsarticle`; montagem de elementos definidos de artigo de referência; figuras, tabelas, equação, menções no texto e BibTeX. RBFin como exemplo comparativo. | Preparação privada do miniartigo com uma figura, uma tabela, equação explicada no texto, citação, `.bib` e menções no texto que funcionem no PDF. | 0–10 |
 | 3 | 17/08/26 | Introdução ao Quarto: anatomia do `.qmd`, YAML, Markdown, código R e renderização em HTML. Comparação entre HTML, PDF e Word; uso do ambiente previamente validado. | Primeiro `.qmd` renderizado em HTML, com texto, código R e resultado computacional. | 0–10 |
 | 4 | 24/08/26 | Relatórios técnicos reprodutíveis: organização de projeto, dados, caminhos relativos, `README`, tabelas, gráficos, citações, referências cruzadas e `_brand.yml`. | Relatório técnico reproduzível para um problema de Administração ou Finanças. | 0–10 |
 | 5 | 31/08/26 | Relatórios parametrizados e automação simples para públicos, cenários ou períodos distintos. | Duas versões parametrizadas do relatório da Aula 4, com nomes de arquivo adequados. | 0–10 |
