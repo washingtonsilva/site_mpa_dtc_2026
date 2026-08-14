@@ -54,13 +54,13 @@ Ao final da disciplina, espera-se que o mestrando seja capaz de:
 O planejamento da disciplina prevê que os pontos serão distribuídos da 
 seguinte forma:
 
-1. **Atividades práticas em aula = 50 pontos**: 
+1. **Atividades práticas em aula = 50 pontos**.
 
-2. **Miniartigo científico em LaTeX = 20 pontos**: 
+2. **Miniartigo científico em LaTeX = 20 pontos**.
 
-3. **Blog Quarto = 30 pontos**: 
+3. **Blog Quarto = 30 pontos**.
 
-A página [Avaliaçoes](https://washingtonsilva.github.io/site_mpa_dtc_2026/avaliacoes.html){target="_blank"} 
+A página [Avaliações](avaliacoes.qmd)
 contém mais informações sobre estas atividades. Para aprovação, são necessários pelo 
 menos 60 pontos. Poderão ocorrer alterações neste planejamento. 
 
@@ -289,11 +289,11 @@ conforme o andamento da disciplina.
 
 | Aula | Data | Tópicos planejados | Artefato prático e atividade | Nota da atividade |
 |:----:|:----:|:-------------------|:------------------------------|:------:|
-| 1 | 03/08/26 | Apresentação da disciplina. Distinção inicial entre composição tipográfica e programação literada. LaTeX no Overleaf: criação de projeto simples, estrutura do documento, texto, seções, listas e equações. | Documento LaTeX compilável em projeto individual simples, com título, seções, lista e equação. | 0–10 |
-| 2 | 10/08/26 | Miniartigo científico em LaTeX: criação de projeto individual com a classe Elsevier `elsarticle`; montagem de elementos definidos de artigo de referência; figuras, tabelas, equação, menções no texto e BibTeX. RBFin como exemplo comparativo. | Preparação privada do miniartigo com uma figura, uma tabela, equação explicada no texto, citação, `.bib` e menções no texto que funcionem no PDF. | 0–10 |
-| 3 | 17/08/26 | Introdução ao Quarto: anatomia do `.qmd`, YAML, Markdown, código R e renderização em HTML. Comparação entre HTML, PDF e Word; uso do ambiente previamente validado. | Primeiro `.qmd` renderizado em HTML, com texto, código R e resultado computacional. | 0–10 |
-| 4 | 24/08/26 | Relatórios técnicos reprodutíveis: organização de projeto, dados, caminhos relativos, `README`, tabelas, gráficos, citações, referências cruzadas e `_brand.yml`. | Relatório técnico reproduzível para um problema de Administração ou Finanças. | 0–10 |
-| 5 | 31/08/26 | Relatórios parametrizados e automação simples para públicos, cenários ou períodos distintos. | Duas versões parametrizadas do relatório da Aula 4, com nomes de arquivo adequados. | 0–10 |
-| 6 | 14/09/26 | Apresentações com Quarto: Reveal.js como formato principal e Beamer como alternativa PDF. | Apresentação Reveal.js que comunique resultados de uma análise ou problema aplicado. | 0–10 |
-| 7 | 21/09/26 | Blogs e sites com Quarto: estrutura, temas, listagens, acessibilidade básica e publicação com GitHub Pages. | Blog publicado com estrutura inicial e primeira postagem. | 0–10 |
-| 8 | 28/09/26 | Panorama complementar: Quarto Manuscripts, `quarto-journals`, dashboards e Typst. Apresentação dos blogs, entrega final e encerramento. | Verificação final dos artefatos e apresentação do blog; não há nova atividade avaliativa. | — |
+| 1 | 03/08/26 | Apresentação da disciplina. Composição tipográfica e programação literada. Primeiro documento LaTeX no Overleaf. | Documento LaTeX compilável em projeto individual simples, com título, seções, lista e equação. | 0–10 |
+| 2 | 10/08/26 | Miniartigo em LaTeX na classe Elsevier `elsarticle`: figuras, tabelas, equação e BibTeX. | Preparação privada do miniartigo com uma figura, uma tabela, equação explicada no texto, citação, `.bib` e menções no texto que funcionem no PDF. | 0–10 |
+| 3 | 17/08/26 | Introdução ao Quarto: `.qmd`, YAML, Markdown, código R e renderização em HTML, PDF e Word. | Primeiro `.qmd` renderizado em HTML, com texto, código R e resultado computacional. | 0–10 |
+| 4 | 24/08/26 | Relatórios técnicos reprodutíveis: organização do projeto, dados e `_brand.yml`. | Relatório técnico reproduzível para um problema de Administração ou Finanças. | 0–10 |
+| 5 | 31/08/26 | Relatórios parametrizados e automação simples. | Duas versões parametrizadas do relatório da Aula 4, com nomes de arquivo adequados. | 0–10 |
+| 6 | 14/09/26 | Apresentações com Quarto: Reveal.js e Beamer. | Apresentação Reveal.js que comunique resultados de uma análise ou problema aplicado. | 0–10 |
+| 7 | 21/09/26 | Blogs e sites com Quarto, publicados no GitHub Pages. | Blog publicado com estrutura inicial e primeira postagem. | 0–10 |
+| 8 | 28/09/26 | Panorama complementar: Quarto Manuscripts, `quarto-journals`, dashboards e Typst. Encerramento. | Verificação final dos artefatos e apresentação do blog; não há nova atividade avaliativa. | — |
