@@ -1,7 +1,7 @@
 ---
 lang: pt-BR
 title: "Preparação do ambiente computacional"
-subtitle: "Windows: contas, instalação, configuração e validação antes da primeira aula"
+subtitle: "Windows: contas, instalação, configuração e validação para a disciplina"
 ---
 
 ## Roteiro de preparação {#sec-preparacao}
@@ -31,7 +31,7 @@ Os pacotes instalados no R 4.5 não estarão disponíveis automaticamente no R
 instalar quando eles forem usados.
 :::
 
-1. Crie uma conta gratuita no [Overleaf](https://www.overleaf.com){target="_blank"}
+1. Crie uma conta gratuita no [Overleaf](https://www.overleaf.com){target="_blank" rel="noopener"}
    e uma conta no [GitHub](#sec-github).
 
 2. Instale [R 4.6.1](#sec-r) e atualize [RStudio](#sec-rstudio), [Quarto](#sec-quarto),
@@ -45,20 +45,20 @@ instalar quando eles forem usados.
 5. Leia o tutorial [Overleaf: primeiros passos](tutorials/overleaf.qmd) e o
    [tutorial prático de Git e GitHub](tutorials/git-github.qmd) para conhecer
    os fluxos de trabalho da disciplina.
-   
-6. Crie seu repositório individual público no GitHub, seguindo o
+
+6. Crie seu repositório individual público a partir do template, seguindo o
    [tutorial prático de Git e GitHub](tutorials/git-github.qmd), e preserve sua
    URL para registrá-la no cadastro da disciplina quando ele for publicado. O
    artigo de referência e o enunciado do miniartigo no Overleaf serão
    disponibilizados apenas na atividade correspondente.
 
-Não há pré-requisito formal, mas Git e GitHub serão usados desde a primeira
-aula. Conclua o [tutorial prático de Git e GitHub](tutorials/git-github.qmd)
-desta disciplina antes do início das aulas. Para revisar conceitos ou consultar
-explicações adicionais, veja também o
-[tutorial de Git e GitHub do professor](https://washingtonsilva.github.io/tutorials/git/){target="_blank"}
+Não há pré-requisito formal, mas Git e GitHub serão usados a partir da Aula 3.
+Conclua o [tutorial prático de Git e GitHub](tutorials/git-github.qmd) antes
+desse encontro. Para revisar conceitos ou consultar explicações adicionais,
+veja também o
+[tutorial de Git e GitHub do professor](https://washingtonsilva.github.io/tutorials/git/){target="_blank" rel="noopener"}
 e, como aprofundamento opcional, o
-[*Happy Git and GitHub for the useR*](https://happygitwithr.com/){target="_blank"}.
+[*Happy Git and GitHub for the useR*](https://happygitwithr.com/){target="_blank" rel="noopener"}.
 Os comandos da disciplina serão executados no Git Bash, pelo Terminal do
 RStudio. Não haverá um bloco de nivelamento durante as aulas.
 
@@ -72,7 +72,7 @@ RStudio. Não haverá um bloco de nivelamento durante as aulas.
 ::: {.callout-tip icon="false"}
 ## Instalar R 4.6.1
 
-1. Acesse [CRAN](https://cloud.r-project.org/){target="_blank"}.
+1. Acesse [CRAN](https://cloud.r-project.org/){target="_blank" rel="noopener"}.
 2. Clique em **Download R for Windows** e, na página seguinte, em **base**.
 3. Clique em **Download R-4.6.1 for Windows**.
 4. Após o download, execute o instalador e aceite as opções padrão até a
@@ -87,7 +87,7 @@ RStudio. Não haverá um bloco de nivelamento durante as aulas.
 ::: {.callout-tip icon="false"}
 ## Instalar ou atualizar o RStudio Desktop
 
-1. Acesse a [página de download do RStudio](https://posit.co/download/rstudio-desktop/){target="_blank"}.
+1. Acesse a [página de download do RStudio](https://posit.co/download/rstudio-desktop/){target="_blank" rel="noopener"}.
 2. Na seção `2: Install RStudio`, clique em **Download RStudio Desktop for
    Windows**.
 3. Após o download, execute o instalador e avance até a instalação ser
@@ -102,7 +102,7 @@ RStudio. Não haverá um bloco de nivelamento durante as aulas.
 ::: {.callout-tip icon="false"}
 ## Instalar ou atualizar o Quarto CLI
 
-1. Acesse a [página de download do Quarto](https://quarto.org/docs/download/){target="_blank"}.
+1. Acesse a [página de download do Quarto](https://quarto.org/docs/download/){target="_blank" rel="noopener"}.
 2. Baixe o instalador de **Quarto CLI** para Windows.
 3. Execute o instalador e avance até a instalação ser concluída. Se o Quarto
    já estiver instalado, esse procedimento o atualizará.
@@ -115,7 +115,7 @@ RStudio. Não haverá um bloco de nivelamento durante as aulas.
 ::: {.callout-important icon="false"}
 ## Instalar o TinyTeX com antecedência
 
-[TinyTeX](https://quarto.org/docs/output-formats/pdf-engine.html){target="_blank"}
+[TinyTeX](https://quarto.org/docs/output-formats/pdf-engine.html){target="_blank" rel="noopener"}
 é a distribuição LaTeX recomendada para gerar PDF a partir de documentos
 Quarto. Instale-o depois de instalar o Quarto.
 
@@ -163,7 +163,7 @@ Isso pode ocorrer em instalações portáteis ou personalizadas.
 ::: {.callout-tip icon="false"}
 ## Instalar o Git for Windows
 
-1. Acesse [git-scm.com](https://git-scm.com){target="_blank"} e clique em
+1. Acesse [git-scm.com](https://git-scm.com){target="_blank" rel="noopener"} e clique em
    **Download for Windows**.
 2. Após o download, execute o instalador.
 3. Mantenha as configurações padrão sugeridas. Na janela **Adjusting the
@@ -178,7 +178,7 @@ Isso pode ocorrer em instalações portáteis ou personalizadas.
 
 ## Conta GitHub {#sec-github}
 
-Caso ainda não tenha uma conta, acesse [github.com](https://github.com){target="_blank"},
+Caso ainda não tenha uma conta, acesse [github.com](https://github.com){target="_blank" rel="noopener"},
 clique em **Sign up**, conclua o cadastro e confirme seu e-mail. Use uma conta
 individual que você possa manter durante toda a disciplina.
 
@@ -226,7 +226,7 @@ outro sistema operacional.
 
 ## Verificação do ambiente {#sec-validacao}
 
-Antes da primeira aula, confirme que você consegue:
+Antes da primeira aula:
 
 1. Abrir R e RStudio.
 2. Abrir o terminal do RStudio e executar:
@@ -238,9 +238,12 @@ Antes da primeira aula, confirme que você consegue:
 
 3. Confirmar que seu nome e e-mail do Git estão configurados conforme a
    seção anterior.
-4. Criar seu repositório individual público no GitHub, abri-lo como Projeto
-   RStudio, confirmar que o Terminal usa Git Bash, editar arquivos e usar
-   `git status`, `git add`, `git commit` e `git push` para enviá-los ao
-   GitHub.
-5. Registrar a URL do seu repositório no cadastro da disciplina quando o
+
+Antes da Aula 3:
+
+1. Criar seu repositório individual público a partir do template da
+   disciplina, abri-lo como Projeto RStudio, confirmar que o Terminal usa Git
+   Bash, editar arquivos e usar `git status`, `git add`, `git commit` e
+   `git push` para enviá-los ao GitHub.
+2. Registrar a URL do seu repositório no cadastro da disciplina quando o
    formulário for publicado.
