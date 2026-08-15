@@ -201,12 +201,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#antes-de-começar" id="toc-antes-de-começar" class="nav-link active" data-scroll-target="#antes-de-começar">Antes de começar</a></li>
-  <li><a href="#criar-um-documento-quarto" id="toc-criar-um-documento-quarto" class="nav-link" data-scroll-target="#criar-um-documento-quarto">1. Criar um documento Quarto</a></li>
-  <li><a href="#configurar-o-cabeçalho-yaml" id="toc-configurar-o-cabeçalho-yaml" class="nav-link" data-scroll-target="#configurar-o-cabeçalho-yaml">2. Configurar o cabeçalho YAML</a></li>
-  <li><a href="#escrever-o-primeiro-conteúdo" id="toc-escrever-o-primeiro-conteúdo" class="nav-link" data-scroll-target="#escrever-o-primeiro-conteúdo">3. Escrever o primeiro conteúdo</a></li>
-  <li><a href="#salvar-dentro-do-projeto-rstudio" id="toc-salvar-dentro-do-projeto-rstudio" class="nav-link" data-scroll-target="#salvar-dentro-do-projeto-rstudio">4. Salvar dentro do Projeto RStudio</a></li>
-  <li><a href="#renderizar-em-html" id="toc-renderizar-em-html" class="nav-link" data-scroll-target="#renderizar-em-html">5. Renderizar em HTML</a></li>
-  <li><a href="#verificar-o-resultado" id="toc-verificar-o-resultado" class="nav-link" data-scroll-target="#verificar-o-resultado">6. Verificar o resultado</a></li>
+  <li><a href="#criar-a-pasta-do-primeiro-relatório" id="toc-criar-a-pasta-do-primeiro-relatório" class="nav-link" data-scroll-target="#criar-a-pasta-do-primeiro-relatório">1. Criar a pasta do primeiro relatório</a></li>
+  <li><a href="#criar-um-documento-quarto" id="toc-criar-um-documento-quarto" class="nav-link" data-scroll-target="#criar-um-documento-quarto">2. Criar um documento Quarto</a></li>
+  <li><a href="#configurar-o-cabeçalho-yaml" id="toc-configurar-o-cabeçalho-yaml" class="nav-link" data-scroll-target="#configurar-o-cabeçalho-yaml">3. Configurar o cabeçalho YAML</a></li>
+  <li><a href="#escrever-o-primeiro-conteúdo" id="toc-escrever-o-primeiro-conteúdo" class="nav-link" data-scroll-target="#escrever-o-primeiro-conteúdo">4. Escrever o primeiro conteúdo</a></li>
+  <li><a href="#salvar-na-pasta-do-relatório" id="toc-salvar-na-pasta-do-relatório" class="nav-link" data-scroll-target="#salvar-na-pasta-do-relatório">5. Salvar na pasta do relatório</a></li>
+  <li><a href="#renderizar-em-html" id="toc-renderizar-em-html" class="nav-link" data-scroll-target="#renderizar-em-html">6. Renderizar em HTML</a></li>
+  <li><a href="#verificar-o-resultado" id="toc-verificar-o-resultado" class="nav-link" data-scroll-target="#verificar-o-resultado">7. Verificar o resultado</a></li>
   <li><a href="#próximo-passo" id="toc-próximo-passo" class="nav-link" data-scroll-target="#próximo-passo">Próximo passo</a></li>
   </ul>
 </nav>
@@ -217,7 +218,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Quarto e RStudio: primeiro documento</h1>
-<p class="subtitle lead">Crie um arquivo .qmd e renderize-o em HTML</p>
+<p class="subtitle lead">Organize e renderize o primeiro relatório em HTML</p>
 </div>
 
 
@@ -234,8 +235,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Neste tutorial, você criará seu primeiro documento Quarto dentro do seu <strong>Projeto RStudio</strong>, configurará seu cabeçalho YAML, escreverá um texto curto e produzirá uma página HTML:</p>
-<pre class="text"><code>arquivo .qmd → Render → documento HTML</code></pre>
+<p>Neste tutorial, você criará a pasta do primeiro relatório dentro do seu <strong>Projeto RStudio</strong>, produzirá o arquivo <code>relatorio.qmd</code>, configurará seu cabeçalho YAML, escreverá um texto curto e o renderizará em HTML:</p>
+<pre class="text"><code>relatorios/01-relatorio/relatorio.qmd → Render → relatorio.html</code></pre>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -246,7 +247,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Ao final, o arquivo <code>primeiro-documento.qmd</code> estará salvo no seu Projeto RStudio e o RStudio terá gerado e aberto <code>primeiro-documento.html</code>.</p>
+<p>Ao final, a pasta <code>relatorios/01-relatorio/</code> conterá a fonte <code>relatorio.qmd</code> e o resultado <code>relatorio.html</code>.</p>
 </div>
 </div>
 <section id="antes-de-começar" class="level2">
@@ -254,8 +255,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Conclua o tutorial <a href="../tutorials/git-github.html">Git e GitHub</a> e abra no RStudio o Projeto RStudio criado a partir do repositório individual. O nome desse projeto deve aparecer no canto superior direito da janela.</p>
 <p>Não é necessário instalar nada novo: a instalação e a verificação do Quarto já fazem parte da <a href="../instrucoes.html">Preparação do ambiente computacional</a>.</p>
 </section>
+<section id="criar-a-pasta-do-primeiro-relatório" class="level2">
+<h2 class="anchored" data-anchor-id="criar-a-pasta-do-primeiro-relatório">1. Criar a pasta do primeiro relatório</h2>
+<ol type="1">
+<li>Na aba <strong>Files</strong>, confirme que você está na raiz do projeto, onde aparecem <code>README.md</code> e <code>_quarto.yml</code>.</li>
+<li>Clique em <strong>New Folder</strong>, informe o nome <code>relatorios</code> e confirme.</li>
+<li>Abra a pasta <code>relatorios</code>, clique novamente em <strong>New Folder</strong> e crie <code>01-relatorio</code>.</li>
+<li>Abra a pasta <code>01-relatorio</code>.</li>
+</ol>
+<p>Cada relatório ficará em uma subpasta própria. O prefixo <code>01-</code> indica a ordem e permite localizar os documentos facilmente quando o projeto crescer.</p>
+</section>
 <section id="criar-um-documento-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="criar-um-documento-quarto">1. Criar um documento Quarto</h2>
+<h2 class="anchored" data-anchor-id="criar-um-documento-quarto">2. Criar um documento Quarto</h2>
 <ol type="1">
 <li>No RStudio, escolha <strong>File</strong> → <strong>New File</strong> → <strong>Quarto Document</strong>.</li>
 <li>Na janela de criação, preencha:
@@ -277,7 +288,7 @@ a opção HTML e o botão Create. Não incluir dados pessoais, outras janelas ou
 <p>O RStudio abrirá um novo arquivo com extensão <code>.qmd</code> no painel <strong>Source</strong>. Esse arquivo reúne o texto do documento e as opções de geração do resultado.</p>
 </section>
 <section id="configurar-o-cabeçalho-yaml" class="level2">
-<h2 class="anchored" data-anchor-id="configurar-o-cabeçalho-yaml">2. Configurar o cabeçalho YAML</h2>
+<h2 class="anchored" data-anchor-id="configurar-o-cabeçalho-yaml">3. Configurar o cabeçalho YAML</h2>
 <p>O cabeçalho YAML fica no início do arquivo, entre duas linhas de três hífens (<code>---</code>). Ele informa ao Quarto <strong>o que é o documento</strong> e <strong>como ele deve ser produzido</strong>. Substitua o cabeçalho criado pelo RStudio pelo bloco abaixo:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Primeiro documento"</span></span>
@@ -309,7 +320,7 @@ a opção HTML e o botão Create. Não incluir dados pessoais, outras janelas ou
 </div>
 </section>
 <section id="escrever-o-primeiro-conteúdo" class="level2">
-<h2 class="anchored" data-anchor-id="escrever-o-primeiro-conteúdo">3. Escrever o primeiro conteúdo</h2>
+<h2 class="anchored" data-anchor-id="escrever-o-primeiro-conteúdo">4. Escrever o primeiro conteúdo</h2>
 <p>Deixe uma linha em branco após a linha final <code>---</code> do YAML e substitua todo o conteúdo abaixo dela pelo trecho a seguir.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Desempenho trimestral</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -327,22 +338,22 @@ a opção HTML e o botão Create. Não incluir dados pessoais, outras janelas ou
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Receita   <span class="pp">|</span> 145   <span class="pp">|</span></span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Custos    <span class="pp">|</span> 92    <span class="pp">|</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="salvar-dentro-do-projeto-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="salvar-dentro-do-projeto-rstudio">4. Salvar dentro do Projeto RStudio</h2>
+<section id="salvar-na-pasta-do-relatório" class="level2">
+<h2 class="anchored" data-anchor-id="salvar-na-pasta-do-relatório">5. Salvar na pasta do relatório</h2>
 <ol type="1">
 <li>Escolha <strong>File</strong> → <strong>Save</strong>.</li>
-<li>Salve o arquivo com o nome <code>primeiro-documento.qmd</code> na pasta principal do seu Projeto RStudio.</li>
-<li>Confirme, na aba <strong>Files</strong>, que o arquivo aparece nessa pasta.</li>
+<li>Selecione a pasta <code>relatorios/01-relatorio/</code> e salve o arquivo com o nome <code>relatorio.qmd</code>.</li>
+<li>Confirme, na aba <strong>Files</strong>, que o arquivo aparece em <code>01-relatorio</code>.</li>
 </ol>
-<p>Salvar dentro do projeto é importante: os arquivos da disciplina, o documento Quarto e os resultados gerados ficarão reunidos em uma única localização.</p>
+<p>Manter cada fonte e seus recursos na pasta correspondente evita que os arquivos gerados se acumulem na raiz do projeto.</p>
 </section>
 <section id="renderizar-em-html" class="level2">
-<h2 class="anchored" data-anchor-id="renderizar-em-html">5. Renderizar em HTML</h2>
-<p>Com <code>primeiro-documento.qmd</code> aberto no painel <strong>Source</strong>, clique em <strong>Render</strong>, na barra superior do editor. Aguarde a conclusão do processo.</p>
+<h2 class="anchored" data-anchor-id="renderizar-em-html">6. Renderizar em HTML</h2>
+<p>Com <code>relatorio.qmd</code> aberto no painel <strong>Source</strong>, clique em <strong>Render</strong>, na barra superior do editor. Aguarde a conclusão do processo.</p>
 <!--
 IMAGEM PENDENTE 2 — nome sugerido: quarto-render-rstudio.png
 Captura de tela do Windows com um arquivo .qmd aberto no painel Source do
-RStudio. O enquadramento deve mostrar: o nome “primeiro-documento.qmd” na aba
+RStudio. O enquadramento deve mostrar: o nome “relatorio.qmd” na aba
 do editor, uma parte legível do cabeçalho YAML e do texto Markdown, o botão
 Render na barra do editor e a aba Files com o arquivo .qmd. Destacar somente o
 botão Render. Não é necessário mostrar o resultado HTML, o Console, dados
@@ -352,11 +363,11 @@ parágrafo.
 <p>Renderizar transforma o arquivo-fonte <code>.qmd</code> em um documento final. Neste caso, o resultado é um arquivo HTML. O RStudio normalmente o abrirá no painel <strong>Viewer</strong> ou no navegador padrão.</p>
 </section>
 <section id="verificar-o-resultado" class="level2">
-<h2 class="anchored" data-anchor-id="verificar-o-resultado">6. Verificar o resultado</h2>
+<h2 class="anchored" data-anchor-id="verificar-o-resultado">7. Verificar o resultado</h2>
 <p>Confirme os três pontos abaixo antes de encerrar:</p>
 <ol type="1">
 <li>o documento HTML mostra o título, seu nome, um sumário, os títulos de seção, a lista e a tabela;</li>
-<li>a aba <strong>Files</strong> contém <code>primeiro-documento.qmd</code> e <code>primeiro-documento.html</code>;</li>
+<li>a pasta <code>relatorios/01-relatorio/</code> contém <code>relatorio.qmd</code> e <code>relatorio.html</code>;</li>
 <li>não há mensagem de erro impedindo a renderização.</li>
 </ol>
 <p>Se o resultado não estiver correto, volte ao arquivo <code>.qmd</code>, corrija-o, salve e clique em <strong>Render</strong> novamente. Você repetirá esse ciclo ao longo da disciplina.</p>
@@ -377,7 +388,7 @@ parágrafo.
 <section id="próximo-passo" class="level2">
 <h2 class="anchored" data-anchor-id="próximo-passo">Próximo passo</h2>
 <p>Você concluiu o primeiro ciclo com Quarto: criou um <code>.qmd</code>, configurou seu YAML e gerou HTML. Continue com <a href="../tutorials/markdown.html">Markdown para documentos Quarto</a> para aprender a estruturar melhor o corpo do documento. Nas atividades da disciplina, esse fluxo receberá gradualmente código R, citações, referências cruzadas, figuras e outros formatos de saída.</p>
-<p>Para consulta posterior, veja a documentação oficial sobre <a href="https://quarto.org/docs/get-started/hello/rstudio.html" target="_blank">criação de documentos Quarto</a>.</p>
+<p>Para consulta posterior, veja a documentação oficial sobre <a href="https://quarto.org/docs/get-started/hello/rstudio.html" target="_blank" rel="noopener">criação de documentos Quarto</a>.</p>
 
 
 </section>

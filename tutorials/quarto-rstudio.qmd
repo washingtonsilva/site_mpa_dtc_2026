@@ -1,22 +1,22 @@
 ---
 lang: pt-BR
 title: "Quarto e RStudio: primeiro documento"
-subtitle: "Crie um arquivo .qmd e renderize-o em HTML"
+subtitle: "Organize e renderize o primeiro relatório em HTML"
 ---
 
-Neste tutorial, você criará seu primeiro documento Quarto dentro do seu
-**Projeto RStudio**, configurará seu cabeçalho YAML, escreverá um texto curto
-e produzirá uma página HTML:
+Neste tutorial, você criará a pasta do primeiro relatório dentro do seu
+**Projeto RStudio**, produzirá o arquivo `relatorio.qmd`, configurará seu
+cabeçalho YAML, escreverá um texto curto e o renderizará em HTML:
 
 ```text
-arquivo .qmd → Render → documento HTML
+relatorios/01-relatorio/relatorio.qmd → Render → relatorio.html
 ```
 
 ::: {.callout-important icon="false"}
 ## Resultado esperado
 
-Ao final, o arquivo `primeiro-documento.qmd` estará salvo no seu Projeto
-RStudio e o RStudio terá gerado e aberto `primeiro-documento.html`.
+Ao final, a pasta `relatorios/01-relatorio/` conterá a fonte `relatorio.qmd`
+e o resultado `relatorio.html`.
 :::
 
 ## Antes de começar
@@ -28,7 +28,19 @@ aparecer no canto superior direito da janela.
 Não é necessário instalar nada novo: a instalação e a verificação do Quarto
 já fazem parte da [Preparação do ambiente computacional](../instrucoes.qmd).
 
-## 1. Criar um documento Quarto
+## 1. Criar a pasta do primeiro relatório
+
+1. Na aba **Files**, confirme que você está na raiz do projeto, onde aparecem
+   `README.md` e `_quarto.yml`.
+2. Clique em **New Folder**, informe o nome `relatorios` e confirme.
+3. Abra a pasta `relatorios`, clique novamente em **New Folder** e crie
+   `01-relatorio`.
+4. Abra a pasta `01-relatorio`.
+
+Cada relatório ficará em uma subpasta própria. O prefixo `01-` indica a ordem
+e permite localizar os documentos facilmente quando o projeto crescer.
+
+## 2. Criar um documento Quarto
 
 1. No RStudio, escolha **File** → **New File** → **Quarto Document**.
 2. Na janela de criação, preencha:
@@ -49,7 +61,7 @@ a opção HTML e o botão Create. Não incluir dados pessoais, outras janelas ou
 O RStudio abrirá um novo arquivo com extensão `.qmd` no painel **Source**.
 Esse arquivo reúne o texto do documento e as opções de geração do resultado.
 
-## 2. Configurar o cabeçalho YAML
+## 3. Configurar o cabeçalho YAML
 
 O cabeçalho YAML fica no início do arquivo, entre duas linhas de três hífens
 (`---`). Ele informa ao Quarto **o que é o documento** e **como ele deve ser
@@ -85,7 +97,7 @@ no lugar de espaços pode impedir a renderização. Quando isso acontecer,
 verifique primeiro o YAML antes de alterar o restante do texto.
 :::
 
-## 3. Escrever o primeiro conteúdo
+## 4. Escrever o primeiro conteúdo
 
 Deixe uma linha em branco após a linha final `---` do YAML e substitua todo o
 conteúdo abaixo dela pelo trecho a seguir.
@@ -108,25 +120,25 @@ segundo trimestre.
 | Custos    | 92    |
 ```
 
-## 4. Salvar dentro do Projeto RStudio
+## 5. Salvar na pasta do relatório
 
 1. Escolha **File** → **Save**.
-2. Salve o arquivo com o nome `primeiro-documento.qmd` na pasta principal do
-   seu Projeto RStudio.
-3. Confirme, na aba **Files**, que o arquivo aparece nessa pasta.
+2. Selecione a pasta `relatorios/01-relatorio/` e salve o arquivo com o nome
+   `relatorio.qmd`.
+3. Confirme, na aba **Files**, que o arquivo aparece em `01-relatorio`.
 
-Salvar dentro do projeto é importante: os arquivos da disciplina, o documento
-Quarto e os resultados gerados ficarão reunidos em uma única localização.
+Manter cada fonte e seus recursos na pasta correspondente evita que os
+arquivos gerados se acumulem na raiz do projeto.
 
-## 5. Renderizar em HTML
+## 6. Renderizar em HTML
 
-Com `primeiro-documento.qmd` aberto no painel **Source**, clique em
+Com `relatorio.qmd` aberto no painel **Source**, clique em
 **Render**, na barra superior do editor. Aguarde a conclusão do processo.
 
 <!--
 IMAGEM PENDENTE 2 — nome sugerido: quarto-render-rstudio.png
 Captura de tela do Windows com um arquivo .qmd aberto no painel Source do
-RStudio. O enquadramento deve mostrar: o nome “primeiro-documento.qmd” na aba
+RStudio. O enquadramento deve mostrar: o nome “relatorio.qmd” na aba
 do editor, uma parte legível do cabeçalho YAML e do texto Markdown, o botão
 Render na barra do editor e a aba Files com o arquivo .qmd. Destacar somente o
 botão Render. Não é necessário mostrar o resultado HTML, o Console, dados
@@ -138,14 +150,14 @@ Renderizar transforma o arquivo-fonte `.qmd` em um documento final. Neste
 caso, o resultado é um arquivo HTML. O RStudio normalmente o abrirá no painel
 **Viewer** ou no navegador padrão.
 
-## 6. Verificar o resultado
+## 7. Verificar o resultado
 
 Confirme os três pontos abaixo antes de encerrar:
 
 1. o documento HTML mostra o título, seu nome, um sumário, os títulos de
    seção, a lista e a tabela;
-2. a aba **Files** contém `primeiro-documento.qmd` e
-   `primeiro-documento.html`;
+2. a pasta `relatorios/01-relatorio/` contém `relatorio.qmd` e
+   `relatorio.html`;
 3. não há mensagem de erro impedindo a renderização.
 
 Se o resultado não estiver correto, volte ao arquivo `.qmd`, corrija-o, salve
@@ -169,4 +181,4 @@ disciplina, esse fluxo receberá gradualmente código R, citações, referência
 cruzadas, figuras e outros formatos de saída.
 
 Para consulta posterior, veja a documentação oficial sobre
-[criação de documentos Quarto](https://quarto.org/docs/get-started/hello/rstudio.html){target="_blank"}.
+[criação de documentos Quarto](https://quarto.org/docs/get-started/hello/rstudio.html){target="_blank" rel="noopener"}.

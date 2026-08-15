@@ -4,7 +4,7 @@
     "href": "tutorials/quarto-rstudio.html",
     "title": "Quarto e RStudio: primeiro documento",
     "section": "",
-    "text": "Neste tutorial, você criará seu primeiro documento Quarto dentro do seu Projeto RStudio, configurará seu cabeçalho YAML, escreverá um texto curto e produzirá uma página HTML:"
+    "text": "Neste tutorial, você criará a pasta do primeiro relatório dentro do seu Projeto RStudio, produzirá o arquivo relatorio.qmd, configurará seu cabeçalho YAML, escreverá um texto curto e o renderizará em HTML:"
   },
   {
     "objectID": "tutorials/quarto-rstudio.html#antes-de-começar",
@@ -14,46 +14,53 @@
     "text": "Antes de começar\nConclua o tutorial Git e GitHub e abra no RStudio o Projeto RStudio criado a partir do repositório individual. O nome desse projeto deve aparecer no canto superior direito da janela.\nNão é necessário instalar nada novo: a instalação e a verificação do Quarto já fazem parte da Preparação do ambiente computacional."
   },
   {
+    "objectID": "tutorials/quarto-rstudio.html#criar-a-pasta-do-primeiro-relatório",
+    "href": "tutorials/quarto-rstudio.html#criar-a-pasta-do-primeiro-relatório",
+    "title": "Quarto e RStudio: primeiro documento",
+    "section": "1. Criar a pasta do primeiro relatório",
+    "text": "1. Criar a pasta do primeiro relatório\n\nNa aba Files, confirme que você está na raiz do projeto, onde aparecem README.md e _quarto.yml.\nClique em New Folder, informe o nome relatorios e confirme.\nAbra a pasta relatorios, clique novamente em New Folder e crie 01-relatorio.\nAbra a pasta 01-relatorio.\n\nCada relatório ficará em uma subpasta própria. O prefixo 01- indica a ordem e permite localizar os documentos facilmente quando o projeto crescer."
+  },
+  {
     "objectID": "tutorials/quarto-rstudio.html#criar-um-documento-quarto",
     "href": "tutorials/quarto-rstudio.html#criar-um-documento-quarto",
     "title": "Quarto e RStudio: primeiro documento",
-    "section": "1. Criar um documento Quarto",
-    "text": "1. Criar um documento Quarto\n\nNo RStudio, escolha File → New File → Quarto Document.\nNa janela de criação, preencha:\n\nTitle: Primeiro documento;\nAuthor: seu nome completo;\nFormat: HTML.\n\nClique em Create.\n\n\nO RStudio abrirá um novo arquivo com extensão .qmd no painel Source. Esse arquivo reúne o texto do documento e as opções de geração do resultado."
+    "section": "2. Criar um documento Quarto",
+    "text": "2. Criar um documento Quarto\n\nNo RStudio, escolha File → New File → Quarto Document.\nNa janela de criação, preencha:\n\nTitle: Primeiro documento;\nAuthor: seu nome completo;\nFormat: HTML.\n\nClique em Create.\n\n\nO RStudio abrirá um novo arquivo com extensão .qmd no painel Source. Esse arquivo reúne o texto do documento e as opções de geração do resultado."
   },
   {
     "objectID": "tutorials/quarto-rstudio.html#configurar-o-cabeçalho-yaml",
     "href": "tutorials/quarto-rstudio.html#configurar-o-cabeçalho-yaml",
     "title": "Quarto e RStudio: primeiro documento",
-    "section": "2. Configurar o cabeçalho YAML",
-    "text": "2. Configurar o cabeçalho YAML\nO cabeçalho YAML fica no início do arquivo, entre duas linhas de três hífens (---). Ele informa ao Quarto o que é o documento e como ele deve ser produzido. Substitua o cabeçalho criado pelo RStudio pelo bloco abaixo:\n---\ntitle: \"Primeiro documento\"\nauthor: \"Seu nome completo\"\nlang: pt-BR\nformat:\n  html:\n    toc: true\n---\nFaça três verificações antes de continuar:\n\nsubstitua Seu nome completo pelo seu nome;\nmantenha as duas linhas ---, uma no começo e outra no fim do cabeçalho;\nuse espaços, e nunca a tecla Tab, antes de html: e toc:.\n\nAs linhas title, author e lang definem propriedades diretas do documento. Já html está dentro de format, e toc: true está dentro de html; por isso essas duas linhas são recuadas. Essa estrutura gera um documento HTML com sumário automático.\n\n\n\n\n\n\nDicaYAML exige atenção à estrutura\n\n\n\nUm cabeçalho sem a linha final ---, com uma indentação incorreta ou com Tab no lugar de espaços pode impedir a renderização. Quando isso acontecer, verifique primeiro o YAML antes de alterar o restante do texto."
+    "section": "3. Configurar o cabeçalho YAML",
+    "text": "3. Configurar o cabeçalho YAML\nO cabeçalho YAML fica no início do arquivo, entre duas linhas de três hífens (---). Ele informa ao Quarto o que é o documento e como ele deve ser produzido. Substitua o cabeçalho criado pelo RStudio pelo bloco abaixo:\n---\ntitle: \"Primeiro documento\"\nauthor: \"Seu nome completo\"\nlang: pt-BR\nformat:\n  html:\n    toc: true\n---\nFaça três verificações antes de continuar:\n\nsubstitua Seu nome completo pelo seu nome;\nmantenha as duas linhas ---, uma no começo e outra no fim do cabeçalho;\nuse espaços, e nunca a tecla Tab, antes de html: e toc:.\n\nAs linhas title, author e lang definem propriedades diretas do documento. Já html está dentro de format, e toc: true está dentro de html; por isso essas duas linhas são recuadas. Essa estrutura gera um documento HTML com sumário automático.\n\n\n\n\n\n\nDicaYAML exige atenção à estrutura\n\n\n\nUm cabeçalho sem a linha final ---, com uma indentação incorreta ou com Tab no lugar de espaços pode impedir a renderização. Quando isso acontecer, verifique primeiro o YAML antes de alterar o restante do texto."
   },
   {
     "objectID": "tutorials/quarto-rstudio.html#escrever-o-primeiro-conteúdo",
     "href": "tutorials/quarto-rstudio.html#escrever-o-primeiro-conteúdo",
     "title": "Quarto e RStudio: primeiro documento",
-    "section": "3. Escrever o primeiro conteúdo",
-    "text": "3. Escrever o primeiro conteúdo\nDeixe uma linha em branco após a linha final --- do YAML e substitua todo o conteúdo abaixo dela pelo trecho a seguir.\n## Desempenho trimestral\n\nEste documento apresenta uma síntese dos **resultados financeiros** do\nsegundo trimestre.\n\n### Principais achados\n\n- A receita cresceu 12%.\n- Os custos permaneceram sob controle.\n- A margem operacional aumentou.\n\n| Indicador | Valor |\n|:----------|------:|\n| Receita   | 145   |\n| Custos    | 92    |"
+    "section": "4. Escrever o primeiro conteúdo",
+    "text": "4. Escrever o primeiro conteúdo\nDeixe uma linha em branco após a linha final --- do YAML e substitua todo o conteúdo abaixo dela pelo trecho a seguir.\n## Desempenho trimestral\n\nEste documento apresenta uma síntese dos **resultados financeiros** do\nsegundo trimestre.\n\n### Principais achados\n\n- A receita cresceu 12%.\n- Os custos permaneceram sob controle.\n- A margem operacional aumentou.\n\n| Indicador | Valor |\n|:----------|------:|\n| Receita   | 145   |\n| Custos    | 92    |"
   },
   {
-    "objectID": "tutorials/quarto-rstudio.html#salvar-dentro-do-projeto-rstudio",
-    "href": "tutorials/quarto-rstudio.html#salvar-dentro-do-projeto-rstudio",
+    "objectID": "tutorials/quarto-rstudio.html#salvar-na-pasta-do-relatório",
+    "href": "tutorials/quarto-rstudio.html#salvar-na-pasta-do-relatório",
     "title": "Quarto e RStudio: primeiro documento",
-    "section": "4. Salvar dentro do Projeto RStudio",
-    "text": "4. Salvar dentro do Projeto RStudio\n\nEscolha File → Save.\nSalve o arquivo com o nome primeiro-documento.qmd na pasta principal do seu Projeto RStudio.\nConfirme, na aba Files, que o arquivo aparece nessa pasta.\n\nSalvar dentro do projeto é importante: os arquivos da disciplina, o documento Quarto e os resultados gerados ficarão reunidos em uma única localização."
+    "section": "5. Salvar na pasta do relatório",
+    "text": "5. Salvar na pasta do relatório\n\nEscolha File → Save.\nSelecione a pasta relatorios/01-relatorio/ e salve o arquivo com o nome relatorio.qmd.\nConfirme, na aba Files, que o arquivo aparece em 01-relatorio.\n\nManter cada fonte e seus recursos na pasta correspondente evita que os arquivos gerados se acumulem na raiz do projeto."
   },
   {
     "objectID": "tutorials/quarto-rstudio.html#renderizar-em-html",
     "href": "tutorials/quarto-rstudio.html#renderizar-em-html",
     "title": "Quarto e RStudio: primeiro documento",
-    "section": "5. Renderizar em HTML",
-    "text": "5. Renderizar em HTML\nCom primeiro-documento.qmd aberto no painel Source, clique em Render, na barra superior do editor. Aguarde a conclusão do processo.\n\nRenderizar transforma o arquivo-fonte .qmd em um documento final. Neste caso, o resultado é um arquivo HTML. O RStudio normalmente o abrirá no painel Viewer ou no navegador padrão."
+    "section": "6. Renderizar em HTML",
+    "text": "6. Renderizar em HTML\nCom relatorio.qmd aberto no painel Source, clique em Render, na barra superior do editor. Aguarde a conclusão do processo.\n\nRenderizar transforma o arquivo-fonte .qmd em um documento final. Neste caso, o resultado é um arquivo HTML. O RStudio normalmente o abrirá no painel Viewer ou no navegador padrão."
   },
   {
     "objectID": "tutorials/quarto-rstudio.html#verificar-o-resultado",
     "href": "tutorials/quarto-rstudio.html#verificar-o-resultado",
     "title": "Quarto e RStudio: primeiro documento",
-    "section": "6. Verificar o resultado",
-    "text": "6. Verificar o resultado\nConfirme os três pontos abaixo antes de encerrar:\n\no documento HTML mostra o título, seu nome, um sumário, os títulos de seção, a lista e a tabela;\na aba Files contém primeiro-documento.qmd e primeiro-documento.html;\nnão há mensagem de erro impedindo a renderização.\n\nSe o resultado não estiver correto, volte ao arquivo .qmd, corrija-o, salve e clique em Render novamente. Você repetirá esse ciclo ao longo da disciplina.\n\n\n\n\n\n\nDicaSe o botão Render não aparecer\n\n\n\nVerifique se o arquivo aberto termina em .qmd e se você está no Projeto RStudio correto. Se o problema persistir, retorne à seção de verificação do Quarto na Preparação do ambiente computacional."
+    "section": "7. Verificar o resultado",
+    "text": "7. Verificar o resultado\nConfirme os três pontos abaixo antes de encerrar:\n\no documento HTML mostra o título, seu nome, um sumário, os títulos de seção, a lista e a tabela;\na pasta relatorios/01-relatorio/ contém relatorio.qmd e relatorio.html;\nnão há mensagem de erro impedindo a renderização.\n\nSe o resultado não estiver correto, volte ao arquivo .qmd, corrija-o, salve e clique em Render novamente. Você repetirá esse ciclo ao longo da disciplina.\n\n\n\n\n\n\nDicaSe o botão Render não aparecer\n\n\n\nVerifique se o arquivo aberto termina em .qmd e se você está no Projeto RStudio correto. Se o problema persistir, retorne à seção de verificação do Quarto na Preparação do ambiente computacional."
   },
   {
     "objectID": "tutorials/quarto-rstudio.html#próximo-passo",
@@ -109,7 +116,7 @@
     "href": "tutorials/markdown.html#um-pequeno-exemplo-completo",
     "title": "Markdown para documentos Quarto",
     "section": "5. Um pequeno exemplo completo",
-    "text": "5. Um pequeno exemplo completo\nO trecho abaixo reúne os elementos mais usados. Escreva o conteúdo interno no arquivo primeiro-documento.qmd criado no tutorial anterior e renderize-o.\nSintaxe\n## Desempenho trimestral\n\nEste relatório resume os **resultados financeiros** do segundo trimestre.\n\n### Principais achados\n\n- A receita cresceu 12%.\n- Os custos permaneceram sob controle.\n- A margem operacional aumentou.\n\n| Indicador | Valor |\n|:----------|------:|\n| Receita   | 145   |\n| Custos    | 92    |\n\nPara o método de cálculo, consulte a\n[documentação do projeto](https://quarto.org/docs/).\nResultado\n\n\n\n\n\n\nNotaResultado no documento\n\n\n\nDesempenho trimestral\nEste relatório resume os resultados financeiros do segundo trimestre.\nPrincipais achados\n\nA receita cresceu 12%.\nOs custos permaneceram sob controle.\nA margem operacional aumentou.\n\n\n\n\nIndicador\nValor\n\n\n\n\nReceita\n145\n\n\nCustos\n92\n\n\n\nPara o método de cálculo, consulte a documentação do projeto.\n\n\nO texto-fonte continua legível antes da renderização. Isso facilita revisão, controle de versão com Git e colaboração."
+    "text": "5. Um pequeno exemplo completo\nO trecho abaixo reúne os elementos mais usados. Escreva o conteúdo interno no arquivo relatorios/01-relatorio/relatorio.qmd, criado no tutorial anterior, e renderize-o.\nSintaxe\n## Desempenho trimestral\n\nEste relatório resume os **resultados financeiros** do segundo trimestre.\n\n### Principais achados\n\n- A receita cresceu 12%.\n- Os custos permaneceram sob controle.\n- A margem operacional aumentou.\n\n| Indicador | Valor |\n|:----------|------:|\n| Receita   | 145   |\n| Custos    | 92    |\n\nPara o método de cálculo, consulte a\n[documentação do projeto](https://quarto.org/docs/).\nResultado\n\n\n\n\n\n\nNotaResultado no documento\n\n\n\nDesempenho trimestral\nEste relatório resume os resultados financeiros do segundo trimestre.\nPrincipais achados\n\nA receita cresceu 12%.\nOs custos permaneceram sob controle.\nA margem operacional aumentou.\n\n\n\n\nIndicador\nValor\n\n\n\n\nReceita\n145\n\n\nCustos\n92\n\n\n\nPara o método de cálculo, consulte a documentação do projeto.\n\n\nO texto-fonte continua legível antes da renderização. Isso facilita revisão, controle de versão com Git e colaboração."
   },
   {
     "objectID": "tutorials/markdown.html#um-recurso-próprio-do-quarto-chamadas",
@@ -558,7 +565,7 @@
     "href": "tutorials/index.html#quarto-e-rstudio-primeiro-documento",
     "title": "Tutoriais",
     "section": "Quarto e RStudio: primeiro documento",
-    "text": "Quarto e RStudio: primeiro documento\nCrie um arquivo .qmd no seu Projeto RStudio, configure seu cabeçalho YAML, escreva um texto curto e renderize-o em HTML.\nAbrir tutorial",
+    "text": "Quarto e RStudio: primeiro documento\nCrie relatorios/01-relatorio/relatorio.qmd no seu Projeto RStudio, configure seu cabeçalho YAML, escreva um texto curto e renderize-o em HTML.\nAbrir tutorial",
     "crumbs": [
       "Tutoriais"
     ]

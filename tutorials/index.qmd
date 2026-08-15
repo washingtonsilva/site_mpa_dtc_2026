@@ -24,8 +24,8 @@ usando Git Bash no Terminal.
 
 ## Quarto e RStudio: primeiro documento
 
-Crie um arquivo `.qmd` no seu Projeto RStudio, configure seu cabeçalho YAML,
-escreva um texto curto e renderize-o em HTML.
+Crie `relatorios/01-relatorio/relatorio.qmd` no seu Projeto RStudio, configure
+seu cabeçalho YAML, escreva um texto curto e renderize-o em HTML.
 
 [Abrir tutorial](quarto-rstudio.qmd)
 

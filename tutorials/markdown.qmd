@@ -168,7 +168,8 @@ nas atividades da disciplina.
 ## 5. Um pequeno exemplo completo
 
 O trecho abaixo reúne os elementos mais usados. Escreva o conteúdo interno no
-arquivo `primeiro-documento.qmd` criado no tutorial anterior e renderize-o.
+arquivo `relatorios/01-relatorio/relatorio.qmd`, criado no tutorial anterior,
+e renderize-o.
 
 **Sintaxe**
 
