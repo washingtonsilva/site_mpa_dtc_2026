@@ -47,6 +47,10 @@ Os slides abrem em uma nova aba do navegador.
 
 # Aula 3 (17/08/26)
 
+- **Slides:**
+
+  - [Slides Aula 3](slides/03-aula.html){target="_blank"}
+
 - **Arquivo da aula:**
 
   - Baixe [`dados-vendas.csv`](recursos/aula-3/dados-vendas.csv){download="dados-vendas.csv"}
