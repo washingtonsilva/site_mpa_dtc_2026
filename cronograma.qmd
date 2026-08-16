@@ -49,8 +49,6 @@ Os slides abrem em uma nova aba do navegador.
 
 - **Arquivo da aula:**
 
-  - [Baixar `dados-vendas.csv`](recursos/aula-3/dados-vendas.csv){download="dados-vendas.csv"}
+  - Baixe [`dados-vendas.csv`](recursos/aula-3/dados-vendas.csv){download="dados-vendas.csv"}
+  - Salve esse arquivo na pasta `dados/dados-vendas.csv` do seu projeto/repositório.
 
-Salve o arquivo fornecido como `dados/dados-vendas.csv` no repositório
-individual. A pasta `dados/` fica na raiz do projeto, no mesmo nível de
-`_quarto.yml` e `relatorios/`.

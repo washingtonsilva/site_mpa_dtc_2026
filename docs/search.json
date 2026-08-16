@@ -305,7 +305,7 @@
     "href": "cronograma.html",
     "title": "Cronograma",
     "section": "",
-    "text": "Aqui estão o cronograma e os materiais de cada aula, como slides, dados e leituras.\n\n\n\n\n\n\nDicaComo navegar pelos slides\n\n\n\nOs slides são interativos e foram produzidos em revealjs.\nAo abrir um arquivo de slides, utilize:\n\nSetas (← →): avançar e voltar.\nF: tela cheia.\nO: visão geral dos slides.\nEsc: sair da visão geral.\nEm dispositivos móveis, deslize para os lados.\n\nOs slides abrem em uma nova aba do navegador.\n\n\n\nAula 1 (03/08/26)\n\nSlides:\n\nSlides Aula 1\nSolução: Atividade Prática 1\n\n\n\n\nAula 2 (10/08/26)\n\nSlides:\n\nSlides Aula 2\n\n\n\n\nAula 3 (17/08/26)\n\nArquivo da aula:\n\nBaixar dados-vendas.csv\n\n\nSalve o arquivo fornecido como dados/dados-vendas.csv no repositório individual. A pasta dados/ fica na raiz do projeto, no mesmo nível de _quarto.yml e relatorios/.",
+    "text": "Aqui estão o cronograma e os materiais de cada aula, como slides, dados e leituras.\n\n\n\n\n\n\nDicaComo navegar pelos slides\n\n\n\nOs slides são interativos e foram produzidos em revealjs.\nAo abrir um arquivo de slides, utilize:\n\nSetas (← →): avançar e voltar.\nF: tela cheia.\nO: visão geral dos slides.\nEsc: sair da visão geral.\nEm dispositivos móveis, deslize para os lados.\n\nOs slides abrem em uma nova aba do navegador.\n\n\n\nAula 1 (03/08/26)\n\nSlides:\n\nSlides Aula 1\nSolução: Atividade Prática 1\n\n\n\n\nAula 2 (10/08/26)\n\nSlides:\n\nSlides Aula 2\n\n\n\n\nAula 3 (17/08/26)\n\nArquivo da aula:\n\nBaixe dados-vendas.csv\nSalve esse arquivo na pasta dados/dados-vendas.csv do seu projeto/repositório.",
     "crumbs": [
       "Cronograma"
     ]
