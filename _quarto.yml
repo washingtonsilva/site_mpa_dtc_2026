@@ -6,6 +6,7 @@ project:
     - "tutorials/*.qmd"
   resources:
     - "slides/"
+    - "recursos/"
 
 website:
   title: "Documentos Técnicos e Científicos com Quarto e LaTeX"

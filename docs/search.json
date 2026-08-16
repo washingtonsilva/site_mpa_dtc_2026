@@ -4,7 +4,7 @@
     "href": "tutorials/quarto-rstudio.html",
     "title": "Quarto e RStudio: primeiro documento",
     "section": "",
-    "text": "Neste tutorial, você criará a pasta do primeiro relatório dentro do seu Projeto RStudio, produzirá o arquivo relatorio.qmd, configurará seu cabeçalho YAML, escreverá um texto curto e o renderizará em HTML:"
+    "text": "Este tutorial de consulta apresenta o ciclo de criação do primeiro relatório dentro de um Projeto RStudio: produzir relatorio.qmd, configurar seu cabeçalho YAML, escrever um texto curto e renderizá-lo em HTML:"
   },
   {
     "objectID": "tutorials/quarto-rstudio.html#antes-de-começar",
@@ -46,7 +46,7 @@
     "href": "tutorials/quarto-rstudio.html#salvar-na-pasta-do-relatório",
     "title": "Quarto e RStudio: primeiro documento",
     "section": "5. Salvar na pasta do relatório",
-    "text": "5. Salvar na pasta do relatório\n\nEscolha File → Save.\nSelecione a pasta relatorios/01-relatorio/ e salve o arquivo com o nome relatorio.qmd.\nConfirme, na aba Files, que o arquivo aparece em 01-relatorio.\n\nManter cada fonte e seus recursos na pasta correspondente evita que os arquivos gerados se acumulem na raiz do projeto."
+    "text": "5. Salvar na pasta do relatório\n\nEscolha File → Save.\nSelecione a pasta relatorios/01-relatorio/ e salve o arquivo com o nome relatorio.qmd.\nConfirme, na aba Files, que o arquivo aparece em 01-relatorio.\n\nMantenha a fonte, o HTML e os recursos exclusivos do relatório nessa pasta. Dados compartilhados por documentos do projeto ficam em dados/, na raiz. Na Aula 3, o CSV fornecido será salvo como dados/dados-vendas.csv."
   },
   {
     "objectID": "tutorials/quarto-rstudio.html#renderizar-em-html",
@@ -60,7 +60,7 @@
     "href": "tutorials/quarto-rstudio.html#verificar-o-resultado",
     "title": "Quarto e RStudio: primeiro documento",
     "section": "7. Verificar o resultado",
-    "text": "7. Verificar o resultado\nConfirme os três pontos abaixo antes de encerrar:\n\no documento HTML mostra o título, seu nome, um sumário, os títulos de seção, a lista e a tabela;\na pasta relatorios/01-relatorio/ contém relatorio.qmd e relatorio.html;\nnão há mensagem de erro impedindo a renderização.\n\nSe o resultado não estiver correto, volte ao arquivo .qmd, corrija-o, salve e clique em Render novamente. Você repetirá esse ciclo ao longo da disciplina.\n\n\n\n\n\n\nDicaSe o botão Render não aparecer\n\n\n\nVerifique se o arquivo aberto termina em .qmd e se você está no Projeto RStudio correto. Se o problema persistir, retorne à seção de verificação do Quarto na Preparação do ambiente computacional."
+    "text": "7. Verificar o resultado\nConfirme os quatro pontos abaixo antes de encerrar:\n\no documento HTML mostra o título, seu nome, um sumário, os títulos de seção, a lista e a tabela;\na pasta relatorios/01-relatorio/ contém relatorio.qmd e relatorio.html;\ndados compartilhados pelo projeto permanecem em dados/, e não na pasta do relatório;\nnão há mensagem de erro impedindo a renderização.\n\nSe o resultado não estiver correto, volte ao arquivo .qmd, corrija-o, salve e clique em Render novamente. Você repetirá esse ciclo ao longo da disciplina.\n\n\n\n\n\n\nDicaSe o botão Render não aparecer\n\n\n\nVerifique se o arquivo aberto termina em .qmd e se você está no Projeto RStudio correto. Se o problema persistir, retorne à seção de verificação do Quarto na Preparação do ambiente computacional."
   },
   {
     "objectID": "tutorials/quarto-rstudio.html#próximo-passo",
@@ -305,7 +305,7 @@
     "href": "cronograma.html",
     "title": "Cronograma",
     "section": "",
-    "text": "Aqui estão o cronograma e os materiais de cada aula, como slides, dados e leituras.\n\n\n\n\n\n\nDicaComo navegar pelos slides\n\n\n\nOs slides são interativos e foram produzidos em revealjs.\nAo abrir um arquivo de slides, utilize:\n\nSetas (← →): avançar e voltar.\nF: tela cheia.\nO: visão geral dos slides.\nEsc: sair da visão geral.\nEm dispositivos móveis, deslize para os lados.\n\nOs slides abrem em uma nova aba do navegador.\n\n\n\nAula 1 (03/08/26)\n\nSlides:\n\nSlides Aula 1\nSolução: Atividade Prática 1\n\n\n\n\nAula 2 (10/08/26)\n\nSlides:\n\nSlides Aula 2",
+    "text": "Aqui estão o cronograma e os materiais de cada aula, como slides, dados e leituras.\n\n\n\n\n\n\nDicaComo navegar pelos slides\n\n\n\nOs slides são interativos e foram produzidos em revealjs.\nAo abrir um arquivo de slides, utilize:\n\nSetas (← →): avançar e voltar.\nF: tela cheia.\nO: visão geral dos slides.\nEsc: sair da visão geral.\nEm dispositivos móveis, deslize para os lados.\n\nOs slides abrem em uma nova aba do navegador.\n\n\n\nAula 1 (03/08/26)\n\nSlides:\n\nSlides Aula 1\nSolução: Atividade Prática 1\n\n\n\n\nAula 2 (10/08/26)\n\nSlides:\n\nSlides Aula 2\n\n\n\n\nAula 3 (17/08/26)\n\nArquivo da aula:\n\nBaixar dados-vendas.csv\n\n\nSalve o arquivo fornecido como dados/dados-vendas.csv no repositório individual. A pasta dados/ fica na raiz do projeto, no mesmo nível de _quarto.yml e relatorios/.",
     "crumbs": [
       "Cronograma"
     ]
@@ -535,7 +535,7 @@
     "href": "tutorials/index.html",
     "title": "Tutoriais",
     "section": "",
-    "text": "Conclua primeiro a Preparação do ambiente computacional. Em seguida, siga os tutoriais disponíveis na ordem indicada.",
+    "text": "Conclua primeiro a Preparação do ambiente computacional. Antes da Aula 3, conclua o tutorial de Git e GitHub. Os tutoriais de Quarto e Markdown são materiais de consulta usados a partir da Aula 3; não crie nem substitua relatorios/01-relatorio/relatorio.qmd antes da demonstração ao vivo.",
     "crumbs": [
       "Tutoriais"
     ]
@@ -565,7 +565,7 @@
     "href": "tutorials/index.html#quarto-e-rstudio-primeiro-documento",
     "title": "Tutoriais",
     "section": "Quarto e RStudio: primeiro documento",
-    "text": "Quarto e RStudio: primeiro documento\nCrie relatorios/01-relatorio/relatorio.qmd no seu Projeto RStudio, configure seu cabeçalho YAML, escreva um texto curto e renderize-o em HTML.\nAbrir tutorial",
+    "text": "Quarto e RStudio: primeiro documento\nConsulte o ciclo de criação, configuração e renderização de um documento Quarto. Na Aula 3, o primeiro relatorio.qmd será criado durante a demonstração ao vivo.\nAbrir tutorial",
     "crumbs": [
       "Tutoriais"
     ]

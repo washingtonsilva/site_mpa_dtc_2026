@@ -4,13 +4,25 @@ title: "Quarto e RStudio: primeiro documento"
 subtitle: "Organize e renderize o primeiro relatório em HTML"
 ---
 
-Neste tutorial, você criará a pasta do primeiro relatório dentro do seu
-**Projeto RStudio**, produzirá o arquivo `relatorio.qmd`, configurará seu
-cabeçalho YAML, escreverá um texto curto e o renderizará em HTML:
+Este tutorial de consulta apresenta o ciclo de criação do primeiro relatório
+dentro de um **Projeto RStudio**: produzir `relatorio.qmd`, configurar seu
+cabeçalho YAML, escrever um texto curto e renderizá-lo em HTML:
 
 ```text
 relatorios/01-relatorio/relatorio.qmd → Render → relatorio.html
 ```
+
+::: {.callout-important icon="false"}
+## Quando usar este tutorial
+
+Esta página não é uma atividade adicional. O primeiro `relatorio.qmd` será
+criado durante a demonstração ao vivo da Aula 3. Antes desse encontro, prepare
+somente o repositório e o Projeto RStudio. Não crie nem substitua
+`relatorios/01-relatorio/relatorio.qmd` antecipadamente.
+
+Depois da aula, use esta página para consultar o ciclo de criação e
+renderização, sem substituir o relatório produzido na demonstração.
+:::
 
 ::: {.callout-important icon="false"}
 ## Resultado esperado
@@ -127,8 +139,9 @@ segundo trimestre.
    `relatorio.qmd`.
 3. Confirme, na aba **Files**, que o arquivo aparece em `01-relatorio`.
 
-Manter cada fonte e seus recursos na pasta correspondente evita que os
-arquivos gerados se acumulem na raiz do projeto.
+Mantenha a fonte, o HTML e os recursos exclusivos do relatório nessa pasta.
+Dados compartilhados por documentos do projeto ficam em `dados/`, na raiz. Na
+Aula 3, o CSV fornecido será salvo como `dados/dados-vendas.csv`.
 
 ## 6. Renderizar em HTML
 
@@ -152,13 +165,15 @@ caso, o resultado é um arquivo HTML. O RStudio normalmente o abrirá no painel
 
 ## 7. Verificar o resultado
 
-Confirme os três pontos abaixo antes de encerrar:
+Confirme os quatro pontos abaixo antes de encerrar:
 
 1. o documento HTML mostra o título, seu nome, um sumário, os títulos de
    seção, a lista e a tabela;
 2. a pasta `relatorios/01-relatorio/` contém `relatorio.qmd` e
    `relatorio.html`;
-3. não há mensagem de erro impedindo a renderização.
+3. dados compartilhados pelo projeto permanecem em `dados/`, e não na pasta do
+   relatório;
+4. não há mensagem de erro impedindo a renderização.
 
 Se o resultado não estiver correto, volte ao arquivo `.qmd`, corrija-o, salve
 e clique em **Render** novamente. Você repetirá esse ciclo ao longo da

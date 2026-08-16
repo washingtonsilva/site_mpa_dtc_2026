@@ -4,8 +4,10 @@ title: "Tutoriais"
 ---
 
 Conclua primeiro a [Preparação do ambiente computacional](../instrucoes.qmd).
-Em seguida, siga os
-tutoriais disponíveis na ordem indicada.
+Antes da Aula 3, conclua o tutorial de Git e GitHub. Os tutoriais de Quarto e
+Markdown são materiais de consulta usados a partir da Aula 3; não crie nem
+substitua `relatorios/01-relatorio/relatorio.qmd` antes da demonstração ao
+vivo.
 
 ## Overleaf
 
@@ -24,8 +26,9 @@ usando Git Bash no Terminal.
 
 ## Quarto e RStudio: primeiro documento
 
-Crie `relatorios/01-relatorio/relatorio.qmd` no seu Projeto RStudio, configure
-seu cabeçalho YAML, escreva um texto curto e renderize-o em HTML.
+Consulte o ciclo de criação, configuração e renderização de um documento
+Quarto. Na Aula 3, o primeiro `relatorio.qmd` será criado durante a demonstração
+ao vivo.
 
 [Abrir tutorial](quarto-rstudio.qmd)
 

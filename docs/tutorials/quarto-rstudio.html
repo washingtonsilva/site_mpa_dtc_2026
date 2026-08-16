@@ -235,8 +235,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Neste tutorial, você criará a pasta do primeiro relatório dentro do seu <strong>Projeto RStudio</strong>, produzirá o arquivo <code>relatorio.qmd</code>, configurará seu cabeçalho YAML, escreverá um texto curto e o renderizará em HTML:</p>
+<p>Este tutorial de consulta apresenta o ciclo de criação do primeiro relatório dentro de um <strong>Projeto RStudio</strong>: produzir <code>relatorio.qmd</code>, configurar seu cabeçalho YAML, escrever um texto curto e renderizá-lo em HTML:</p>
 <pre class="text"><code>relatorios/01-relatorio/relatorio.qmd → Render → relatorio.html</code></pre>
+<div class="callout callout-style-default callout-important no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Quando usar este tutorial
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Esta página não é uma atividade adicional. O primeiro <code>relatorio.qmd</code> será criado durante a demonstração ao vivo da Aula 3. Antes desse encontro, prepare somente o repositório e o Projeto RStudio. Não crie nem substitua <code>relatorios/01-relatorio/relatorio.qmd</code> antecipadamente.</p>
+<p>Depois da aula, use esta página para consultar o ciclo de criação e renderização, sem substituir o relatório produzido na demonstração.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -345,7 +359,7 @@ a opção HTML e o botão Create. Não incluir dados pessoais, outras janelas ou
 <li>Selecione a pasta <code>relatorios/01-relatorio/</code> e salve o arquivo com o nome <code>relatorio.qmd</code>.</li>
 <li>Confirme, na aba <strong>Files</strong>, que o arquivo aparece em <code>01-relatorio</code>.</li>
 </ol>
-<p>Manter cada fonte e seus recursos na pasta correspondente evita que os arquivos gerados se acumulem na raiz do projeto.</p>
+<p>Mantenha a fonte, o HTML e os recursos exclusivos do relatório nessa pasta. Dados compartilhados por documentos do projeto ficam em <code>dados/</code>, na raiz. Na Aula 3, o CSV fornecido será salvo como <code>dados/dados-vendas.csv</code>.</p>
 </section>
 <section id="renderizar-em-html" class="level2">
 <h2 class="anchored" data-anchor-id="renderizar-em-html">6. Renderizar em HTML</h2>
@@ -364,10 +378,11 @@ parágrafo.
 </section>
 <section id="verificar-o-resultado" class="level2">
 <h2 class="anchored" data-anchor-id="verificar-o-resultado">7. Verificar o resultado</h2>
-<p>Confirme os três pontos abaixo antes de encerrar:</p>
+<p>Confirme os quatro pontos abaixo antes de encerrar:</p>
 <ol type="1">
 <li>o documento HTML mostra o título, seu nome, um sumário, os títulos de seção, a lista e a tabela;</li>
 <li>a pasta <code>relatorios/01-relatorio/</code> contém <code>relatorio.qmd</code> e <code>relatorio.html</code>;</li>
+<li>dados compartilhados pelo projeto permanecem em <code>dados/</code>, e não na pasta do relatório;</li>
 <li>não há mensagem de erro impedindo a renderização.</li>
 </ol>
 <p>Se o resultado não estiver correto, volte ao arquivo <code>.qmd</code>, corrija-o, salve e clique em <strong>Render</strong> novamente. Você repetirá esse ciclo ao longo da disciplina.</p>

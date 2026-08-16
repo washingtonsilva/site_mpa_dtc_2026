@@ -42,3 +42,15 @@ Os slides abrem em uma nova aba do navegador.
 
   - [Slides Aula 2](slides/02-aula.html){target="_blank"}
 
+
+
+
+# Aula 3 (17/08/26)
+
+- **Arquivo da aula:**
+
+  - [Baixar `dados-vendas.csv`](recursos/aula-3/dados-vendas.csv){download="dados-vendas.csv"}
+
+Salve o arquivo fornecido como `dados/dados-vendas.csv` no repositório
+individual. A pasta `dados/` fica na raiz do projeto, no mesmo nível de
+`_quarto.yml` e `relatorios/`.
