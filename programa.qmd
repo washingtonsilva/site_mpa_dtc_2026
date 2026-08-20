@@ -292,8 +292,8 @@ conforme o andamento da disciplina.
 | 1 | 03/08/26 | Apresentação da disciplina. Composição tipográfica e programação literada. Primeiro documento LaTeX no Overleaf. | Documento LaTeX compilável em projeto individual simples, com título, seções, lista e equação. | 0–10 |
 | 2 | 10/08/26 | Miniartigo em LaTeX na classe Elsevier `elsarticle`: figuras, tabelas, equação e BibTeX. | Preparação privada do miniartigo com uma figura, uma tabela, equação explicada no texto, citação, `.bib` e menções no texto que funcionem no PDF. | 0–10 |
 | 3 | 17/08/26 | Introdução ao Quarto: `.qmd`, YAML, Markdown, código R e renderização em HTML, PDF e Word. | Primeiro `.qmd` renderizado em HTML, com texto, código R e resultado computacional. | 0–10 |
-| 4 | 24/08/26 | Relatórios técnicos reprodutíveis: organização do projeto, dados e `_brand.yml`. | Relatório técnico reproduzível para um problema de Administração ou Finanças. | 0–10 |
-| 5 | 31/08/26 | Relatórios parametrizados e automação simples. | Duas versões parametrizadas do relatório da Aula 4, com nomes de arquivo adequados. | 0–10 |
+| 4 | 24/08/26 | Relatórios parametrizados com Quarto. | Duas versões parametrizadas de um relatório, com nomes de arquivo adequados. | 0–10 |
+| 5 | 31/08/26 | Relatórios técnicos reprodutíveis: organização do projeto, dados e `_brand.yml`. | Relatório técnico reproduzível para um problema de Administração ou Finanças. | 0–10 |
 | 6 | 14/09/26 | Apresentações com Quarto: Reveal.js e Beamer. | Apresentação Reveal.js que comunique resultados de uma análise ou problema aplicado. | 0–10 |
 | 7 | 21/09/26 | Blogs e sites com Quarto, publicados no GitHub Pages. | Blog publicado com estrutura inicial e primeira postagem. | 0–10 |
 | 8 | 28/09/26 | Panorama complementar: Quarto Manuscripts, `quarto-journals`, dashboards e Typst. Encerramento. | Verificação final dos artefatos e apresentação do blog; não há nova atividade avaliativa. | — |
