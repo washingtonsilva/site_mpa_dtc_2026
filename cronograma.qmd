@@ -56,3 +56,11 @@ Os slides abrem em uma nova aba do navegador.
   - Baixe [`dados-vendas.csv`](recursos/aula-3/dados-vendas.csv){download="dados-vendas.csv"}
   - Salve esse arquivo na pasta `dados/dados-vendas.csv` do seu projeto/repositório.
 
+
+
+
+# Aula 4 (24/08/26)
+
+- **Slides:**
+
+  - [Slides Aula 4](slides/04-aula.html){target="_blank"}
