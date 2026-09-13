@@ -85,3 +85,4 @@ Os slides abrem em uma nova aba do navegador.
 - **Slides:**
 
   - [Slides Aula 6](slides/06-aula.html){target="_blank"}
+  - [logo.jpeg](imagens/logo.jpeg){download="logo.jpeg"}
