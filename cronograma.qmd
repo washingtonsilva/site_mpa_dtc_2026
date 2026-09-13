@@ -75,3 +75,13 @@ Os slides abrem em uma nova aba do navegador.
   - [Slides Aula 5](slides/05-aula.html){target="_blank"}
   - Baixe [`analise_dados.zip`](recursos/aula-5/analise_dados.zip){download="analise_dados.zip"}. (Descompacte e salve esse arquivo na pasta `notebooks/analise_dados.qmd` do seu projeto de Quarto Manuscript.)
   - Baixe [`associacao-brasileira-de-normas-tecnicas-ipea.zip`](recursos/aula-5/associacao-brasileira-de-normas-tecnicas-ipea.zip){download="associacao-brasileira-de-normas-tecnicas-ipea.zip"}. (Descompacte e salve esse arquivo na raiz (`quarto-manuscript-caschools`) do seu projeto de Quarto Manuscript.)
+
+
+
+
+
+# Aula 6 (14/09/26)
+
+- **Slides:**
+
+  - [Slides Aula 6](slides/06-aula.html){target="_blank"}
