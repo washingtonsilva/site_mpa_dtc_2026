@@ -295,5 +295,5 @@ conforme o andamento da disciplina.
 | 4 | 24/08/26 | Relatórios parametrizados com Quarto. | Duas versões parametrizadas de um relatório, com nomes de arquivo adequados. |
 | 5 | 31/08/26 | Quarto Manuscripts | Projeto publicado de um Quarto Manuscript |
 | 6 | 14/09/26 | Apresentações com Quarto: Reveal.js | Apresentação Revealjs construída |
-| 7 | 21/09/26 | Blog com Quarto, publicados no GitHub Pages. | Blog publicado com estrutura inicial e primeira postagem. |
-| 8 | 28/09/26 | Apresentação do miniartigo em LaTeX usando a classe Elsevier. | Verificação final dos artefatos e apresentação do blog. |
+| 7 | 21/09/26 | Quarto Websites e Blog | Website + Blog criados localmente + publicação via GitHub Pages. |
+| 8 | 28/09/26 | Apresentação do miniartigo em LaTeX usando a classe Elsevier. | Verificação da tentativa. |
