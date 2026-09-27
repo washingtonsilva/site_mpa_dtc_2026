@@ -98,3 +98,13 @@ Os slides abrem em uma nova aba do navegador.
   - [Slides Aula 7](slides/07-aula.html){target="_blank"}
 
 
+
+
+# Aula 8 (28/09/26) 
+
+- **Slides:**
+
+  - [Slides Aula 8](slides/08-aula.html){target="_blank"}
+
+
+
